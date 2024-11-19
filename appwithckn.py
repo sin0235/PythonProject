@@ -4,6 +4,7 @@ import requests
 from PIL import Image, ImageTk
 from customtkinter import CTkImage
 import io
+from datetime import datetime, timedelta
 
 from pygments.styles.dracula import background
 
@@ -17,6 +18,26 @@ public_ip = requests.get("https://api64.ipify.org?format=json").json()["ip"]
 response = requests.get(f"http://ip-api.com/json/{public_ip}").json()
 country = response.get("country", "Unknown")
 city = response.get("city", "Unknown")
+class Clock:
+    def __init__(self, root):
+        self.root = root
+        self.clock_label = ctk.CTkLabel(self.root, width=50, height=40, font=('digital-7', 32), text_color="skyblue", 
+                                        fg_color= "transparent")
+        self.clock_label.place(x=3, y=3)
+        self.update_clock()
+
+    def update_clock(self):
+        clock = datetime.now()
+        h = int(clock.hour)
+        m = int(clock.minute)
+        s = int(clock.second)
+        am_pm = clock.strftime('%p')
+
+        time_string = f"{h:02d}:{m:02d}:{s:02d} {am_pm}"
+        self.clock_label.configure(text=time_string)
+        self.root.after(1000, self.update_clock)
+    
+
 class WeatherAtLocation:
     def __init__(self):
         # Configure customtkinter appearance
@@ -35,8 +56,9 @@ class WeatherAtLocation:
         self.label.pack(pady = 10)
         #Show weather
         self.show_weather()
-
-        #Chart
+        #Clock
+        self.clock = Clock(self.root)
+        #Framne 2
         self.frame2 = ctk.CTkFrame(master = self.root, width= 260, height= 160, corner_radius= 15)
         self.frame2.place(x = 750,y = 460)
 
@@ -54,8 +76,33 @@ class WeatherAtLocation:
                                     hover_color= "#4158D0", text = "OK", font = ("Arial", 18), border_width= 2, border_color= "#B2B2B2",
                                     command = self.show_weather_location)
         self.button.pack(pady = 40)
+        # Create the forecast display
+        self.forecast_frame = ctk.CTkFrame(self.main_frame)
+        self.forecast_frame.pack(side="left", padx=20, pady=20)
 
+        self.forecast_labels = []
+        for i in range(7):
+            forecast_label = ctk.CTkLabel(self.forecast_frame, text="", font=("Arial", 16))
+            forecast_label.pack(pady=10)
+            self.forecast_labels.append(forecast_label)
 
+        self.update_weather()
+    def update_weather(self):
+        # Get the current weather data and update the widgets
+        now = datetime.now()
+        self.time_label.config(text=now.strftime("%a %d, %I:%M %p"))
+        self.temperature_label.config(text=f"{29}°C")
+        self.weather_label.config(text="Mostly clear")
+
+        # Update the forecast
+        for i in range(7):
+            forecast_date = now + timedelta(days=i)
+            forecast_text = f"{forecast_date.strftime('%a %d')}\n{33}°C / {26}°C"
+            self.forecast_labels[i].config(text=forecast_text)
+
+        self.after(60000, self.update_weather)  # Update every minute
+
+       
         # Run
         self.root.mainloop()
 
@@ -170,7 +217,8 @@ class WeatherAtLocation:
             self.show_weather_location()
     def clear_text_box(self ):
         self.textbox.delete("0.0", "end")
-
+        
 
 # Run the app
 WeatherAtLocation()
+

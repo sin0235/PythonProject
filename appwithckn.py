@@ -5,7 +5,6 @@ from PIL import Image, ImageTk
 from customtkinter import CTkImage
 import io
 
-from pygments.styles.dracula import background
 
 api_key = '30d4741c779ba94c470ca1f63045390a'
 # api_key = '5dc4c93a4b357abf361daa99a99cd63b'
@@ -173,4 +172,5 @@ class WeatherAtLocation:
 
 
 # Run the app
-WeatherAtLocation()
+if __name__ == "__main__":
+    WeatherAtLocation()

@@ -1,0 +1,86 @@
+{
+    "appearance_mode": "light",
+    "color_theme": "blue",
+    "window_size": {
+        "width": 1400,
+        "height": 900
+    },
+    "news_sources": {
+        "Giải trí": [
+            {
+                "name": "VnExpress",
+                "url": "https://vnexpress.net/rss/giai-tri.rss"
+            },
+            {
+                "name": "Dân Trí",
+                "url": "https://dantri.com.vn/giai-tri.rss"
+            }
+        ],
+        "Thể thao": [
+            {
+                "name": "VnExpress",
+                "url": "https://vnexpress.net/rss/the-thao.rss"
+            },
+            {
+                "name": "Tuổi Trẻ",
+                "url": "https://tuoitre.vn/rss/the-thao.rss"
+            }
+        ],
+        "Công nghệ": [
+            {
+                "name": "VnExpress",
+                "url": "https://vnexpress.net/rss/so-hoa.rss"
+            },
+            {
+                "name": "ICTNews",
+                "url": "https://ictnews.vietnamnet.vn/rss/cong-nghe.rss"
+            }
+        ],
+        "Kinh tế": [
+            {
+                "name": "VnExpress",
+                "url": "https://vnexpress.net/rss/kinh-doanh.rss"
+            },
+            {
+                "name": "Dân Trí",
+                "url": "https://dantri.com.vn/kinh-doanh.rss"
+            }
+        ],
+        "Chính trị": [
+            {
+                "name": "VnExpress",
+                "url": "https://vnexpress.net/rss/thoi-su.rss"
+            },
+            {
+                "name": "Tuổi Trẻ",
+                "url": "https://tuoitre.vn/rss/thoi-su.rss"
+            }
+        ]
+    },
+    "api_keys": {
+        "weather": "",
+        "news": ""
+    },
+    "gradient_colors": {
+        "Giải trí": [
+            "#FF69B4",
+            "#FF1493"
+        ],
+        "Thể thao": [
+            "#4CAF50",
+            "#2E7D32"
+        ],
+        "Công nghệ": [
+            "#2196F3",
+            "#1976D2"
+        ],
+        "Kinh tế": [
+            "#9C27B0",
+            "#673AB7"
+        ],
+        "Chính trị": [
+            "#FF5722",
+            "#F44336"
+        ]
+    }
+}

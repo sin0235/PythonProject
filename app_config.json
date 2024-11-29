@@ -6,56 +6,31 @@
         "height": 900
     },
     "news_sources": {
-        "Giải trí": [
-            {
-                "name": "VnExpress",
-                "url": "https://vnexpress.net/rss/giai-tri.rss"
-            },
-            {
-                "name": "Dân Trí",
-                "url": "https://dantri.com.vn/giai-tri.rss"
-            }
-        ],
-        "Thể thao": [
-            {
-                "name": "VnExpress",
-                "url": "https://vnexpress.net/rss/the-thao.rss"
-            },
-            {
-                "name": "Tuổi Trẻ",
-                "url": "https://tuoitre.vn/rss/the-thao.rss"
-            }
-        ],
-        "Công nghệ": [
-            {
-                "name": "VnExpress",
-                "url": "https://vnexpress.net/rss/so-hoa.rss"
-            },
-            {
-                "name": "ICTNews",
-                "url": "https://ictnews.vietnamnet.vn/rss/cong-nghe.rss"
-            }
-        ],
-        "Kinh tế": [
-            {
-                "name": "VnExpress",
-                "url": "https://vnexpress.net/rss/kinh-doanh.rss"
-            },
-            {
-                "name": "Dân Trí",
-                "url": "https://dantri.com.vn/kinh-doanh.rss"
-            }
-        ],
-        "Chính trị": [
-            {
-                "name": "VnExpress",
-                "url": "https://vnexpress.net/rss/thoi-su.rss"
-            },
-            {
-                "name": "Tuổi Trẻ",
-                "url": "https://tuoitre.vn/rss/thoi-su.rss"
-            }
-        ]
+                   "Giải trí": [
+                {"name": "VnExpress", "url": "https://vnexpress.net/rss/giai-tri.rss"},
+                {"name": "Dân Trí", "url": "https://dantri.com.vn/giai-tri.rss"},
+                {"name": "Zing News", "url": "https://zingnews.vn/rss/giai-tri.rss"}
+            ],
+            "Thể thao": [
+                {"name": "VnExpress", "url": "https://vnexpress.net/rss/the-thao.rss"},
+                {"name": "Tuổi Trẻ", "url": "https://tuoitre.vn/rss/the-thao.rss"},
+                {"name": "Dân Trí", "url": "https://dantri.com.vn/the-thao.rss"}
+            ],
+            "Công nghệ": [
+                {"name": "VnExpress", "url": "https://vnexpress.net/rss/so-hoa.rss"},
+                {"name": "ICTNews", "url": "https://ictnews.vietnamnet.vn/rss/cong-nghe.rss"},
+                {"name": "GenK", "url": "https://genk.vn/rss/home.rss"}
+            ],
+            "Kinh tế": [
+                {"name": "VnExpress", "url": "https://vnexpress.net/rss/kinh-doanh.rss"},
+                {"name": "Dân Trí", "url": "https://dantri.com.vn/kinh-doanh.rss"},
+                {"name": "Cafebiz", "url": "https://cafebiz.vn/trang-chu.rss"}
+            ],
+            "Chính trị": [
+                {"name": "VnExpress", "url": "https://vnexpress.net/rss/thoi-su.rss"},
+                {"name": "Tuổi Trẻ", "url": "https://tuoitre.vn/rss/thoi-su.rss"},
+                {"name": "VietnamPlus", "url": "https://www.vietnamplus.vn/rss/thoi-su.rss"}
+            ]
     },
     "api_keys": {
         "weather": "",

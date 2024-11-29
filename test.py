@@ -4,6 +4,7 @@ from SchedulePanel import *
 from WeatherForecastPanel import *
 
 
+
 class ApplicationConfig:
     DEFAULT_CONFIG = {
         "appearance_mode": "light",
@@ -12,25 +13,31 @@ class ApplicationConfig:
         "news_sources": {
             "Giải trí": [
                 {"name": "VnExpress", "url": "https://vnexpress.net/rss/giai-tri.rss"},
-                {"name": "Dân Trí", "url": "https://dantri.com.vn/giai-tri.rss"}
+                {"name": "Dân Trí", "url": "https://dantri.com.vn/giai-tri.rss"},
+                {"name": "Zing News", "url": "https://zingnews.vn/rss/giai-tri.rss"}
             ],
             "Thể thao": [
                 {"name": "VnExpress", "url": "https://vnexpress.net/rss/the-thao.rss"},
-                {"name": "Tuổi Trẻ", "url": "https://tuoitre.vn/rss/the-thao.rss"}
+                {"name": "Tuổi Trẻ", "url": "https://tuoitre.vn/rss/the-thao.rss"},
+                {"name": "Dân Trí", "url": "https://dantri.com.vn/the-thao.rss"}
             ],
             "Công nghệ": [
                 {"name": "VnExpress", "url": "https://vnexpress.net/rss/so-hoa.rss"},
-                {"name": "ICTNews", "url": "https://ictnews.vietnamnet.vn/rss/cong-nghe.rss"}
+                {"name": "ICTNews", "url": "https://ictnews.vietnamnet.vn/rss/cong-nghe.rss"},
+                {"name": "GenK", "url": "https://genk.vn/rss/home.rss"}
             ],
             "Kinh tế": [
                 {"name": "VnExpress", "url": "https://vnexpress.net/rss/kinh-doanh.rss"},
-                {"name": "Dân Trí", "url": "https://dantri.com.vn/kinh-doanh.rss"}
+                {"name": "Dân Trí", "url": "https://dantri.com.vn/kinh-doanh.rss"},
+                {"name": "Cafebiz", "url": "https://cafebiz.vn/trang-chu.rss"},
             ],
             "Chính trị": [
                 {"name": "VnExpress", "url": "https://vnexpress.net/rss/thoi-su.rss"},
-                {"name": "Tuổi Trẻ", "url": "https://tuoitre.vn/rss/thoi-su.rss"}
+                {"name": "Tuổi Trẻ", "url": "https://tuoitre.vn/rss/thoi-su.rss"},
+                {"name": "VietnamPlus", "url": "https://www.vietnamplus.vn/rss/thoi-su.rss"}
             ]
-        },
+        }
+        ,
         "api_keys": {
             "weather": "",
             "news": ""
@@ -45,7 +52,7 @@ class ApplicationConfig:
     }
 
     @staticmethod
-    def load_config(config_path: str = 'app_config.json') -> Dict[str, Any]:
+    def load_config(config_path: str = 'app_config.json') -> dict[str, Any]:
         try:
             if not os.path.exists(config_path):
                 with open(config_path, 'w', encoding='utf-8') as f:
@@ -61,7 +68,6 @@ class ApplicationConfig:
         except (json.JSONDecodeError, IOError) as e:
             logging.error(f"Configuration load error: {e}")
             return ApplicationConfig.DEFAULT_CONFIG
-
 class FunctionExecute:
 
     def __init__(self):
@@ -130,7 +136,7 @@ class FunctionExecute:
         logo_label = ctk.CTkLabel(
             self.sidebar,
             text="App gì gì đó",
-            font=("Arial", 22, "bold"),
+            font=("Roboto", 22, "bold"),
             text_color="#2C3E50"
         )
         logo_label.pack(pady=(30, 40))
@@ -152,7 +158,7 @@ class FunctionExecute:
             category_label = ctk.CTkLabel(
                 self.sidebar,
                 text=section["category"],
-                font=("Arial", 15, "bold"),
+                font=("Roboto", 18, "bold"),
                 text_color="#34495E"
             )
             category_label.pack(pady=(15, 10), anchor="w", padx=20)
@@ -168,7 +174,7 @@ class FunctionExecute:
                     border_width=2,
                     border_color=item['color'],
                     text_color=item['color'],
-                    font=("Arial", 15, "bold"),
+                    font=("Roboto", 18, "bold"),
                     anchor="w",
                     width=210
                 )
@@ -214,7 +220,7 @@ class FunctionExecute:
         title_label = ctk.CTkLabel(
             panel,
             text="Cài Đặt Ứng Dụng",
-            font=("Arial", 18, "bold")
+            font=("Roboto", 18, "bold")
         )
         title_label.pack(pady=20)
         return panel

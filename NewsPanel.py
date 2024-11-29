@@ -1,19 +1,20 @@
 import re
-import os
-import hashlib
-import logging
 import threading
 import webbrowser
-from typing import List, Dict, Optional
 from urllib.parse import urljoin
-
-import requests
 import feedparser
 import customtkinter as ctk
 import concurrent.futures
+from bs4 import BeautifulSoup
+import os
+import hashlib
+import logging
+import requests
 from PIL import Image, ImageTk
 from io import BytesIO
-from bs4 import BeautifulSoup
+from collections import OrderedDict
+from typing import Optional
+import time
 
 
 class ImageCacheManager:
@@ -21,7 +22,8 @@ class ImageCacheManager:
         self.cache_dir = cache_dir
         self.max_size = max_size
         os.makedirs(cache_dir, exist_ok=True)
-        self._memory_cache = {}
+
+        self._memory_cache = OrderedDict()
 
     def load_image(self, image_url: str) -> Optional[ImageTk.PhotoImage]:
         cached_image = self.get_cached_image(image_url)
@@ -46,9 +48,11 @@ class ImageCacheManager:
     def get_cached_image(self, url: str) -> Optional[ImageTk.PhotoImage]:
         if not url:
             return None
+
         key = hashlib.md5(url.encode()).hexdigest()
 
         if key in self._memory_cache:
+            self._memory_cache.move_to_end(key)
             return self._memory_cache[key]
 
         cache_path = os.path.join(self.cache_dir, f"{key}.webp")
@@ -56,7 +60,9 @@ class ImageCacheManager:
             try:
                 image = Image.open(cache_path)
                 photo_image = ImageTk.PhotoImage(image)
+
                 self._memory_cache[key] = photo_image
+                self._ensure_cache_size()
                 return photo_image
             except Exception as e:
                 logging.warning(f"Cache retrieval error: {e}")
@@ -76,8 +82,16 @@ class ImageCacheManager:
 
             photo_image = ImageTk.PhotoImage(image)
             self._memory_cache[key] = photo_image
+
+            self._ensure_cache_size()
         except Exception as e:
             logging.error(f"Image caching error: {e}")
+
+    def _ensure_cache_size(self):
+        while len(self._memory_cache) > self.max_size:
+            old_key, _ = self._memory_cache.popitem(last=False)
+            logging.info(f"Removed least recently used cache item: {old_key}")
+
 
 
 class NewsPanel(ctk.CTkFrame):
@@ -88,6 +102,49 @@ class NewsPanel(ctk.CTkFrame):
         self.app = parent
         self.image_cache = ImageCacheManager()
         self.setup_ui_for_News()
+        time.sleep(2)
+        self.default_topic = "Giải trí"
+        self.load_topic(self.default_topic)
+        threading.Thread(target=self.preload_all_topics, daemon=True).start()
+
+    def preload_all_topics(self):
+        all_articles = {}
+        with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+            topic_futures = {
+                executor.submit(self.fetch_articles_for_topic, topic, sources): topic
+                for topic, sources in self.topics.items()
+            }
+
+            for future in concurrent.futures.as_completed(topic_futures):
+                topic = topic_futures[future]
+                try:
+                    articles = future.result()
+                    all_articles[topic] = articles
+
+                    self.cache_images_for_articles(articles, executor)
+                except Exception as e:
+                    logging.error(f"Error loading topic '{topic}': {e}")
+
+        self.preloaded_articles = all_articles
+
+    def fetch_articles_for_topic(self, topic_name, sources):
+        all_articles = []
+        for source in sources:
+            articles = self.fetch_rss(source['url'])
+            all_articles.extend(articles)
+        return all_articles
+
+    def cache_images_for_articles(self, articles, executor):
+        image_futures = {
+            executor.submit(self.image_cache.load_image, article.get('image_url')): article
+            for article in articles if article.get('image_url')
+        }
+        for future in concurrent.futures.as_completed(image_futures):
+            try:
+                _ = future.result()
+            except Exception as e:
+                logging.warning(f"Error caching image: {e}")
+
 
     def setup_ui_for_News(self):
         self.category_frame = ctk.CTkFrame(
@@ -113,7 +170,8 @@ class NewsPanel(ctk.CTkFrame):
                 text_color=self.gradient_colors.get(topic, ("#4A90E2", "#50E3C2"))[0],
                 hover_color="#E0E0E0",
                 border_width=2,
-                border_color=self.gradient_colors.get(topic, ("#4A90E2", "#50E3C2"))[0]
+                border_color=self.gradient_colors.get(topic, ("#4A90E2", "#50E3C2"))[0],
+            font= ("Roboto", 16, 'bold'),
             )
             button.pack(side="left", padx=5)
 

@@ -4,6 +4,7 @@ from SchedulePanel import *
 from WeatherForecastPanel import *
 
 
+
 class ApplicationConfig:
     DEFAULT_CONFIG = {
         "appearance_mode": "light",
@@ -45,7 +46,7 @@ class ApplicationConfig:
     }
 
     @staticmethod
-    def load_config(config_path: str = 'app_config.json') -> Dict[str, Any]:
+    def load_config(config_path: str = 'app_config.json') -> dict[str, Any]:
         try:
             if not os.path.exists(config_path):
                 with open(config_path, 'w', encoding='utf-8') as f:

@@ -77,7 +77,7 @@ class CalendarPanel(ctk.CTkFrame):
 
         self.label_year = ctk.CTkLabel(self.frame_controls, text="Year:",
                                        text_color=self.COLORS["text_light"],
-                                       font=("Arial", 14, "bold"))
+                                       font=("Roboto", 14, "bold"))
         self.label_year.pack(side="left", padx=5)
         self.entry_year = ctk.CTkEntry(self.frame_controls,
                                        width=80,
@@ -87,7 +87,7 @@ class CalendarPanel(ctk.CTkFrame):
 
         self.label_month = ctk.CTkLabel(self.frame_controls, text="Month:",
                                         text_color=self.COLORS["text_light"],
-                                        font=("Arial", 14, "bold"))
+                                        font=("Roboto", 14, "bold"))
         self.label_month.pack(side="left", padx=5)
         self.entry_month = ctk.CTkEntry(self.frame_controls,
                                         width=50,
@@ -119,7 +119,7 @@ class CalendarPanel(ctk.CTkFrame):
             "fg_color": self.COLORS["primary"],
             "hover_color": self.COLORS["secondary"],
             "text_color": self.COLORS["text_light"],
-            "font": ("Arial", 14, "bold")
+            "font": ("Roboto", 14, "bold")
         }
 
         self.button_add = ctk.CTkButton(self.frame_left, text="Add Event",
@@ -154,7 +154,7 @@ class CalendarPanel(ctk.CTkFrame):
         for col, day in enumerate(days_of_week):
             day_label = ctk.CTkLabel(self.calendar_frame,
                                      text=day,
-                                     font=("Arial", 12, "bold"),
+                                     font=("Roboto", 12, "bold"),
                                      fg_color=self.COLORS["secondary"],
                                      text_color=self.COLORS["text_light"],
                                      width=60,
@@ -176,7 +176,7 @@ class CalendarPanel(ctk.CTkFrame):
 
             day_label = ctk.CTkLabel(self.calendar_frame,
                                      text=str(day),
-                                     font=("Arial", 12, "bold"),
+                                     font=("Roboto", 12, "bold"),
                                      fg_color=bg_color,
                                      text_color=text_color,
                                      width=60,
@@ -196,7 +196,7 @@ class CalendarPanel(ctk.CTkFrame):
 
         days_of_week = ["Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy", "Chủ nhật"]
         for col, day in enumerate(days_of_week):
-            day_label = ctk.CTkLabel(self.calendar_frame, text=day, font=("Arial", 12, "bold"),
+            day_label = ctk.CTkLabel(self.calendar_frame, text=day, font=("Roboto", 12, "bold"),
                                      fg_color="#333333", text_color="white", width=60, height=30, corner_radius=4)
             day_label.grid(row=0, column=col, padx=2, pady=2)
 
@@ -213,7 +213,7 @@ class CalendarPanel(ctk.CTkFrame):
             bg_color = "#444444" if not is_selected else "#FF8C00"
             text_color = "white" if not is_selected else "black"
 
-            day_label = ctk.CTkLabel(self.calendar_frame, text=str(day), font=("Arial", 12),
+            day_label = ctk.CTkLabel(self.calendar_frame, text=str(day), font=("Roboto", 12),
                                      fg_color=bg_color, text_color=text_color, width=60, height=30, corner_radius=4)
             day_label.grid(row=row, column=col, padx=2, pady=2)
             day_label.bind("<Button-1>", lambda e, d=date_str: self.on_day_selected(d))
@@ -332,7 +332,7 @@ class CalendarPanel(ctk.CTkFrame):
             height=12,
             width=50,
             selectmode="single",
-            font=("Arial", 14),
+            font=("Roboto", 14),
             yscrollcommand=scrollbar.set
         )
         listbox_events.pack(side="left", fill="both", expand=True)
@@ -377,7 +377,7 @@ class CalendarPanel(ctk.CTkFrame):
 
         event_listbox = Listbox(
             listbox_frame,
-            font=("Arial", 14),
+            font=("Roboto", 14),
             height=12,
             width=50,
             selectmode="single",
@@ -403,22 +403,22 @@ class CalendarPanel(ctk.CTkFrame):
             edit_event_window.title("Edit Event Details")
             edit_event_window.geometry("500x500")
 
-            label_time = ctk.CTkLabel(edit_event_window, text="Time :", text_color="black", font=("Arial", 14))
+            label_time = ctk.CTkLabel(edit_event_window, text="Time :", text_color="black", font=("Roboto", 14))
             label_time.pack(pady=5)
-            entry_time = ctk.CTkEntry(edit_event_window, font=("Arial", 14))
+            entry_time = ctk.CTkEntry(edit_event_window, font=("Roboto", 14))
             entry_time.insert(0, event_to_edit['time'])
             entry_time.pack(pady=5)
 
-            label_title = ctk.CTkLabel(edit_event_window, text="Event Title:", text_color="black", font=("Arial", 14))
+            label_title = ctk.CTkLabel(edit_event_window, text="Event Title:", text_color="black", font=("Roboto", 14))
             label_title.pack(pady=5)
-            entry_title = ctk.CTkEntry(edit_event_window, font=("Arial", 14))
+            entry_title = ctk.CTkEntry(edit_event_window, font=("Roboto", 14))
             entry_title.insert(0, event_to_edit['title'])
             entry_title.pack(pady=5)
 
             label_content = ctk.CTkLabel(edit_event_window, text="Event Content:", text_color="black",
-                                         font=("Arial", 14))
+                                         font=("Roboto", 14))
             label_content.pack(pady=5)
-            entry_content = ctk.CTkEntry(edit_event_window, font=("Arial", 14))
+            entry_content = ctk.CTkEntry(edit_event_window, font=("Roboto", 14))
             entry_content.insert(0, event_to_edit['content'])
             entry_content.pack(pady=5)
 
@@ -443,10 +443,10 @@ class CalendarPanel(ctk.CTkFrame):
                 edit_window.destroy()
 
             button_save = ctk.CTkButton(edit_event_window, text="Save Changes",
-                                        command=save_edited_event, font=("Arial", 14))
+                                        command=save_edited_event, font=("Roboto", 14))
             button_save.pack(pady=10)
         button_edit = ctk.CTkButton(edit_window, text="Edit Selected Event",
-                                    command=edit_selected_event, font=("Arial", 14))
+                                    command=edit_selected_event, font=("Roboto", 14))
         button_edit.pack(pady=(5, 10))
 
     def get_upcoming_events(self):
@@ -496,7 +496,7 @@ class CalendarPanel(ctk.CTkFrame):
             yscrollcommand=scrollbar.set,
             bg="#222222",
             fg="white",
-            font=("Arial", 14),
+            font=("Roboto", 14),
             relief="flat",
             height=20,
             width=70,

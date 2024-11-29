@@ -67,7 +67,7 @@ class WeatherPanel(ctk.CTkFrame):
             self,
             width=60,
             height=50,
-            font=('Arial', 28, 'bold'),
+            font=('Roboto', 28, 'bold'),
             text_color=self.colors['accent'],
             fg_color="transparent"
         )
@@ -89,12 +89,12 @@ class WeatherPanel(ctk.CTkFrame):
             corner_radius=25,
             fg_color=self.colors['primary']
         )
-        input_frame.place(x=25, y=600)
+        input_frame.pack(side = "bottom")
 
         location_label = ctk.CTkLabel(
             input_frame,
             text="Vị trí khác",
-            font=('Arial', 20, 'bold'),
+            font=('Roboto', 20, 'bold'),
             text_color=self.colors['text_primary']
         )
         location_label.pack(pady=10)
@@ -106,7 +106,7 @@ class WeatherPanel(ctk.CTkFrame):
             corner_radius=20,
             fg_color=self.colors['secondary'],
             text_color=self.colors['text_primary'],
-            font=("Arial", 16),
+            font=("Roboto", 16),
             border_width=2,
             border_color=self.colors['accent'],
             activate_scrollbars=False
@@ -120,6 +120,7 @@ class WeatherPanel(ctk.CTkFrame):
         ok_button = ctk.CTkButton(
             button_frame,
             width=120,
+            font=("Roboto", 15, 'bold'),
             text="Search",
             command=self._show_weather_for_location,
             corner_radius=20,
@@ -134,6 +135,7 @@ class WeatherPanel(ctk.CTkFrame):
             width=120,
             text="Xem thêm",
             command=self._show_extended_forecast,
+            font= ("Roboto", 15, 'bold'),
             corner_radius=20,
             fg_color=self.colors['accent'],
             hover_color='#2980B9',
@@ -180,7 +182,7 @@ class WeatherPanel(ctk.CTkFrame):
             location_label = ctk.CTkLabel(
                 details_frame,
                 text=f"{location.title()}",
-                font=('Arial', 40, 'bold'),
+                font=('Roboto', 40, 'bold'),
                 text_color=self.colors['text_primary']
             )
             location_label.pack(pady=20)
@@ -188,7 +190,7 @@ class WeatherPanel(ctk.CTkFrame):
             temp_label = ctk.CTkLabel(
                 details_frame,
                 text=f"{temp}°C",
-                font=('Arial', 40, 'bold'),
+                font=('Roboto', 40, 'bold'),
                 text_color=self.colors['accent']
             )
             temp_label.pack(pady=10)
@@ -229,7 +231,7 @@ class WeatherPanel(ctk.CTkFrame):
             text_label = ctk.CTkLabel(
                 icon_frame,
                 text=text,
-                font=("Arial", 16),
+                font=("Roboto", 16),
                 text_color="black"
             )
             text_label.pack()
@@ -271,7 +273,7 @@ class WeatherPanel(ctk.CTkFrame):
             ctk.CTkLabel(
                 self.content_frame,
                 text=f"Dự báo thời tiết 5 ngày tới: {self.current_location}",
-                font=('Arial', 20, 'bold'),
+                font=('Roboto', 20, 'bold'),
                 text_color='black'
             ).pack(pady=10)
 
@@ -285,7 +287,7 @@ class WeatherPanel(ctk.CTkFrame):
             forecast_frame = ctk.CTkScrollableFrame(
                 self.content_frame,
                 width=350,
-                height=550,
+                height=400,
                 fg_color=self.colors['primary'],
                 corner_radius=25
             )
@@ -294,14 +296,14 @@ class WeatherPanel(ctk.CTkFrame):
             for date, forecasts in list(daily_forecasts.items())[:5]:
                 midday_forecast = min(forecasts, key=lambda x: abs(int(x['dt_txt'].split()[1].split(':')[0]) - 12))
 
-                forecast_item = ctk.CTkFrame(forecast_frame, fg_color="#f5f7fa")
+                forecast_item = ctk.CTkFrame(forecast_frame, fg_color="#f5f7fa",  width=300)
                 forecast_item.pack(pady=5, fill="x")
 
                 ctk.CTkLabel(
                     forecast_item,
                     text=datetime.strptime(date, "%Y-%m-%d").strftime("%B %d"),
-                    font=('Arial', 16, 'bold'),
-                    text_color='#E0E0E0'
+                    font=('Roboto', 16, 'bold'),
+                    text_color='#30cfd0'
                 ).pack(pady=5)
 
                 description = midday_forecast['weather'][0]['main']
@@ -315,20 +317,20 @@ class WeatherPanel(ctk.CTkFrame):
                 icon_path = icon_paths.get(description, "Icon/clear.png")
 
                 image = Image.open(icon_path)
-                picture = ctk.CTkImage(dark_image=image, light_image=image, size=(80, 80))
+                picture = ctk.CTkImage(dark_image=image, light_image=image, size=(100, 100))
                 icon_label = ctk.CTkLabel(forecast_item, image=picture, text="")
                 icon_label.pack(pady=5)
 
                 ctk.CTkLabel(
                     forecast_item,
                     text=f"{midday_forecast['main']['temp']:.1f}°C",
-                    font=('Arial', 16)
+                    font=('Roboto', 20)
                 ).pack()
 
                 ctk.CTkLabel(
                     forecast_item,
                     text=description,
-                    font=('Arial', 14)
+                    font=('Roboto', 14)
                 ).pack(pady=5)
 
             back_button = ctk.CTkButton(
@@ -344,7 +346,7 @@ class WeatherPanel(ctk.CTkFrame):
     def load_icon(self, icon_path, text):
         try:
             image = Image.open(icon_path)
-            picture = ctk.CTkImage(dark_image=image, light_image=image, size=(40, 40))
+            picture = ctk.CTkImage(dark_image=image, light_image=image, size=(60, 60))
             icon_frame = ctk.CTkFrame(self.content_frame, fg_color="transparent")
             icon_frame.pack(side="right", padx=10)
 
@@ -354,7 +356,7 @@ class WeatherPanel(ctk.CTkFrame):
             text_label = ctk.CTkLabel(
                 icon_frame,
                 text=text,
-                font=("Arial", 14),
+                font=("Roboto", 16),
                 text_color="black"
             )
             text_label.pack()

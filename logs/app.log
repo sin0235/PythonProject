@@ -40,3 +40,869 @@
 2024-11-29 21:22:53,016 - INFO: Application closed
 2024-11-29 21:23:53,297 - INFO: Application started successfully
 2024-11-29 21:24:42,999 - INFO: Application closed
+2024-11-29 21:30:39,440 - INFO: Application started successfully
+2024-11-29 21:31:04,820 - INFO: Application closed
+2024-11-29 21:34:27,789 - INFO: Application started successfully
+2024-11-29 21:50:00,040 - INFO: Application closed
+2024-11-29 22:06:24,787 - INFO: Application started successfully
+2024-11-29 22:06:26,511 - INFO: Application closed
+2024-11-29 22:22:45,003 - INFO: Application started successfully
+2024-11-29 22:22:53,300 - INFO: Application closed
+2024-11-29 22:24:14,060 - INFO: Application started successfully
+2024-11-29 22:24:22,442 - INFO: Application closed
+2024-11-29 22:24:52,075 - INFO: Application started successfully
+2024-11-29 22:25:00,484 - INFO: Application closed
+2024-11-29 22:26:13,891 - INFO: Application started successfully
+2024-11-29 22:26:36,896 - INFO: Application closed
+2024-11-29 22:28:28,605 - INFO: Application started successfully
+2024-11-29 22:29:26,441 - INFO: Application closed
+2024-11-29 22:31:30,062 - INFO: Application started successfully
+2024-11-29 22:31:42,026 - INFO: Application closed
+2024-11-29 22:32:26,853 - INFO: Application started successfully
+2024-11-29 22:32:34,692 - INFO: Application closed
+2024-11-29 22:33:45,885 - INFO: Application started successfully
+2024-11-29 22:34:08,049 - INFO: Application closed
+2024-11-29 22:36:01,218 - INFO: Application started successfully
+2024-11-29 22:36:18,937 - INFO: Application closed
+2024-11-29 22:37:59,809 - INFO: Application started successfully
+2024-11-29 22:38:28,595 - INFO: Application closed
+2024-11-29 22:40:54,166 - INFO: Application started successfully
+2024-11-29 22:41:08,953 - INFO: Application closed
+2024-11-29 22:45:16,950 - INFO: Application started successfully
+2024-11-29 22:45:26,756 - INFO: Application closed
+2024-11-29 22:46:44,913 - INFO: Application started successfully
+2024-11-29 22:46:49,487 - INFO: Application closed
+2024-11-29 22:51:04,912 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 22:51:04,914 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 22:51:04,914 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 22:51:04,914 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 22:51:04,914 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 22:51:04,928 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 22:51:04,928 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 22:51:04,928 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 22:51:04,928 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 22:51:05,190 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 22:51:06,420 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 22:51:06,435 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 22:51:06,594 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 22:51:06,734 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 22:51:06,734 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 22:51:06,766 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 22:51:06,955 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 22:51:07,188 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 22:51:08,356 - INFO: Application started successfully
+2024-11-29 22:57:12,178 - INFO: Application closed
+2024-11-29 22:59:30,542 - INFO: Application started successfully
+2024-11-29 23:00:47,542 - INFO: Application closed
+2024-11-29 23:03:07,234 - INFO: Application started successfully
+2024-11-29 23:03:49,897 - INFO: Application closed
+2024-11-29 23:04:58,479 - INFO: Application started successfully
+2024-11-29 23:05:13,130 - INFO: Application closed
+2024-11-29 23:05:35,084 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:35,099 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:35,115 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:35,146 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:35,146 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:35,147 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:35,147 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:35,162 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:35,162 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:35,254 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:35,396 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:35,396 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:35,396 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:35,396 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:35,396 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:35,399 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:35,427 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:35,442 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:35,457 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:35,503 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:36,181 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:36,214 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:36,214 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:36,217 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:36,233 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:36,283 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:36,666 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:36,666 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:36,666 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:36,772 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:36,772 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:36,893 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:36,969 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:37,108 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:37,155 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:37,323 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:37,431 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:37,696 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:37,820 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:37,867 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:37,993 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:38,085 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:38,117 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:38,133 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:38,228 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:38,244 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:38,291 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:38,306 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:38,386 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:38,418 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:38,433 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:38,433 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:38,511 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:38,527 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:38,527 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:38,589 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:38,744 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:38,949 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:39,228 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:39,711 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:40,802 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:40,803 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:40,804 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:40,804 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:40,804 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:40,804 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:40,804 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:40,804 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:40,804 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:42,102 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:43,161 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:43,161 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:43,194 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:05:43,270 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:43,317 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:43,427 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:43,626 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:43,704 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:05:44,023 - INFO: Application started successfully
+2024-11-29 23:05:48,849 - INFO: Application closed
+2024-11-29 23:06:03,155 - INFO: Application started successfully
+2024-11-29 23:06:09,317 - WARNING: Image fetch error for https://vnexpress.net/chi-trung-quang-teo-tau-hai-chuyen-lam-tu-thien-4821740.html: HTTPSConnectionPool(host='vnexpress.net', port=443): Max retries exceeded with url: /chi-trung-quang-teo-tau-hai-chuyen-lam-tu-thien-4821740.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000022D831FB9D0>, 'Connection to vnexpress.net timed out. (connect timeout=5)'))
+2024-11-29 23:06:09,332 - WARNING: Image fetch error for https://vnexpress.net/rapper-duc-goc-viet-da-nang-o-chi-dep-dap-gio-2024-4820417.html: HTTPSConnectionPool(host='vnexpress.net', port=443): Max retries exceeded with url: /rapper-duc-goc-viet-da-nang-o-chi-dep-dap-gio-2024-4820417.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000022D8770E850>, 'Connection to vnexpress.net timed out. (connect timeout=5)'))
+2024-11-29 23:06:33,149 - INFO: Application closed
+2024-11-29 23:07:27,299 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,315 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,315 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,316 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,316 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,316 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,316 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,316 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,316 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,316 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,316 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,331 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,348 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,348 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,379 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,379 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,394 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,394 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,395 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,395 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,395 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,426 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,427 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,427 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,427 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,427 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,427 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:27,838 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:28,768 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:28,862 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:28,894 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:29,290 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:29,327 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:29,327 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:29,337 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:29,352 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:29,433 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:29,526 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:29,685 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:29,701 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:29,733 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:29,765 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:30,014 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:30,015 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:30,029 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:30,030 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:30,124 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:30,124 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:30,140 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:30,251 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:30,345 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:30,345 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:30,345 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:30,361 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:30,455 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:30,535 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:30,535 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:30,614 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:31,689 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:31,880 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:32,988 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:32,989 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:32,989 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:32,989 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:32,989 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:32,989 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:32,989 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:32,989 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:32,989 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:32,989 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:34,191 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:34,301 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:34,348 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:34,617 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:34,633 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:34,633 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:34,728 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:34,854 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:35,075 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:35,075 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:36,185 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:36,185 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:36,185 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:36,185 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:36,185 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:36,185 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:36,185 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:36,185 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:36,185 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:36,185 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:07:37,900 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:38,327 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:38,645 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:07:38,670 - INFO: Application started successfully
+2024-11-29 23:07:57,553 - INFO: Application closed
+2024-11-29 23:08:08,473 - INFO: Application started successfully
+2024-11-29 23:08:29,507 - INFO: Application closed
+2024-11-29 23:10:21,242 - INFO: Application started successfully
+2024-11-29 23:11:29,308 - INFO: Application closed
+2024-11-29 23:13:42,163 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,164 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,165 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,166 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,166 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,166 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,166 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,166 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,167 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,167 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,619 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,619 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,619 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,619 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,619 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,619 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,758 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,774 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,774 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,774 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,774 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,774 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,774 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,774 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,774 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:42,774 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:43,026 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:43,672 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:43,766 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:43,766 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:43,798 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:43,829 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:43,876 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:43,876 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:43,939 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:43,955 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:44,048 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:44,096 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:44,097 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:44,269 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:44,559 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:44,620 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:44,999 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:45,047 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:45,159 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:45,224 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:45,365 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:45,381 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:45,397 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:45,414 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:45,635 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:45,653 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:45,747 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:46,016 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:46,213 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:46,317 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:46,317 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:46,332 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:46,791 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:46,902 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:48,009 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:48,009 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:48,010 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:48,010 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:48,010 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:48,011 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:48,011 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:48,011 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:48,011 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:49,280 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:49,311 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:49,327 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:49,343 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:49,453 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:49,549 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:49,643 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:49,691 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:49,787 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:13:50,388 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:13:52,326 - INFO: Application started successfully
+2024-11-29 23:14:43,619 - INFO: Application closed
+2024-11-29 23:16:46,203 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,219 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,221 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,222 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,222 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,223 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,224 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,488 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,489 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,489 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,489 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,489 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,489 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,489 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,489 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,489 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,489 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,568 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,963 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,963 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,963 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,963 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,963 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,963 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,963 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,963 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,963 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:46,963 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:47,422 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:47,500 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:47,516 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:47,611 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:47,768 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:47,799 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:47,831 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:47,878 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:47,910 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:48,069 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:48,511 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:48,526 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:48,574 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:48,590 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:48,606 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:48,653 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:48,749 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:48,781 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:48,813 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:48,813 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:48,813 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:48,861 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:48,877 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:48,988 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:49,004 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:49,193 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:49,506 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:49,759 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:50,215 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:50,263 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:52,031 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:52,506 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:53,138 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:53,140 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:53,140 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:53,140 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:53,140 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:53,141 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:53,140 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:53,143 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:54,343 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:54,343 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:54,421 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:54,468 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:54,499 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:54,593 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:54,705 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:54,736 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:16:55,452 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:55,453 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:16:56,639 - INFO: Application started successfully
+2024-11-29 23:19:06,216 - INFO: Application closed
+2024-11-29 23:19:22,930 - INFO: Application started successfully
+2024-11-29 23:21:07,980 - INFO: Application closed
+2024-11-29 23:21:41,143 - INFO: Application started successfully
+2024-11-29 23:21:52,289 - INFO: Application closed
+2024-11-29 23:21:53,996 - ERROR: Error loading topic 'Kinh tế': cannot schedule new futures after shutdown
+2024-11-29 23:22:19,360 - INFO: Application started successfully
+2024-11-29 23:23:24,446 - INFO: Application closed
+2024-11-29 23:26:14,569 - ERROR: Configuration load error: Illegal trailing comma before end of array: line 27 column 79 (char 1325)
+2024-11-29 23:26:17,162 - INFO: Application started successfully
+2024-11-29 23:26:19,024 - INFO: Application closed
+2024-11-29 23:26:19,818 - ERROR: Error loading topic 'Giải trí': cannot schedule new futures after shutdown
+2024-11-29 23:26:20,168 - ERROR: Error loading topic 'Kinh tế': cannot schedule new futures after shutdown
+2024-11-29 23:26:22,389 - ERROR: Error loading topic 'Thể thao': cannot schedule new futures after shutdown
+2024-11-29 23:26:31,082 - ERROR: Error loading topic 'Công nghệ': cannot schedule new futures after shutdown
+2024-11-29 23:26:42,984 - INFO: Application started successfully
+2024-11-29 23:27:27,932 - INFO: Application closed
+2024-11-29 23:28:10,511 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:10,527 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:10,559 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:10,730 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:11,315 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:11,347 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:11,425 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:11,566 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:11,715 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:11,715 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:11,943 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:11,944 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:12,007 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:12,007 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:12,055 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:12,055 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:12,071 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:12,176 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:12,178 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:12,181 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:12,276 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:12,289 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:12,527 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:12,622 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:12,622 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:12,750 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:12,859 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:12,955 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:13,098 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:13,176 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:13,208 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:13,328 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:13,336 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:13,416 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:13,432 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:13,464 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:13,512 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:13,591 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:13,639 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:13,830 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:13,910 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:14,005 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:14,037 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:14,069 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:14,096 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:14,209 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:14,368 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:14,447 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:14,654 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:14,937 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:14,984 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:15,063 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:15,142 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:15,220 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:15,299 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:15,696 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:15,759 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:15,868 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:15,900 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:17,327 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:28:20,406 - INFO: Application started successfully
+2024-11-29 23:29:02,448 - INFO: Application closed
+2024-11-29 23:32:11,368 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:32:11,370 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:32:11,370 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:32:11,370 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:32:11,370 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:32:11,370 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:32:12,578 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:32:12,753 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:32:12,753 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:32:12,784 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:32:12,864 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:32:12,992 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:32:13,686 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:32:13,859 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:32:13,860 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:32:13,891 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:32:14,871 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:32:15,013 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:32:15,093 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:32:16,090 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:32:23,226 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:32:23,242 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:32:23,274 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:32:23,307 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:32:23,307 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:32:23,313 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:32:23,338 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:32:23,338 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:32:23,347 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:32:23,347 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:32:23,546 - INFO: Application started successfully
+2024-11-29 23:32:30,563 - INFO: Application closed
+2024-11-29 23:34:25,181 - INFO: Application started successfully
+2024-11-29 23:34:47,471 - INFO: Application closed
+2024-11-29 23:45:44,122 - INFO: Application started successfully
+2024-11-29 23:45:45,944 - INFO: Application closed
+2024-11-29 23:45:45,965 - ERROR: Image load error: Too early to create image: no default root window
+2024-11-29 23:45:46,063 - ERROR: Image load error: Too early to create image: no default root window
+2024-11-29 23:45:46,145 - ERROR: Image load error: Too early to create image: no default root window
+2024-11-29 23:45:46,232 - ERROR: Image load error: Too early to create image: no default root window
+2024-11-29 23:45:46,305 - ERROR: Image load error: Too early to create image: no default root window
+2024-11-29 23:45:46,474 - ERROR: Image load error: Too early to create image: no default root window
+2024-11-29 23:45:47,238 - ERROR: Error loading topic 'Chính trị': cannot schedule new futures after shutdown
+2024-11-29 23:45:47,390 - ERROR: Error loading topic 'Thể thao': cannot schedule new futures after shutdown
+2024-11-29 23:45:56,436 - ERROR: Error loading topic 'Kinh tế': cannot schedule new futures after shutdown
+2024-11-29 23:45:57,140 - ERROR: Image load error: Too early to create image: no default root window
+2024-11-29 23:45:57,248 - ERROR: Image load error: Too early to create image: no default root window
+2024-11-29 23:45:57,273 - ERROR: Image load error: Too early to create image: no default root window
+2024-11-29 23:45:57,299 - ERROR: Image load error: Too early to create image: no default root window
+2024-11-29 23:45:57,396 - ERROR: Image load error: Too early to create image: no default root window
+2024-11-29 23:45:57,411 - ERROR: Image load error: Too early to create image: no default root window
+2024-11-29 23:45:57,542 - ERROR: Image load error: Too early to create image: no default root window
+2024-11-29 23:45:57,547 - ERROR: Image load error: Too early to create image: no default root window
+2024-11-29 23:45:57,550 - ERROR: Image load error: Too early to create image: no default root window
+2024-11-29 23:45:57,640 - ERROR: Image load error: Too early to create image: no default root window
+2024-11-29 23:45:58,580 - ERROR: Error loading topic 'Công nghệ': cannot schedule new futures after shutdown
+2024-11-29 23:46:06,649 - ERROR: Error loading topic 'Giải trí': cannot schedule new futures after shutdown
+2024-11-29 23:46:38,454 - INFO: Application started successfully
+2024-11-29 23:46:52,495 - ERROR: Image load error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2024-11-29 23:47:21,117 - INFO: Application closed
+2024-11-29 23:49:06,620 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:06,636 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:06,651 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:06,667 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:06,667 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:06,682 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:08,145 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:08,161 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:08,161 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:08,176 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:08,176 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:08,176 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:08,176 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:08,176 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:08,176 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:08,177 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:08,177 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:08,269 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:08,394 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:08,427 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:08,506 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:08,616 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:09,022 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:09,511 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:09,547 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:09,610 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:10,516 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:10,798 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:11,043 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:11,285 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:12,383 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:12,383 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:12,383 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:12,383 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:12,384 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:12,384 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:12,384 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:12,384 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:12,384 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:12,384 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:13,770 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:13,785 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:13,880 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:13,911 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:13,941 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:14,004 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:14,050 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:14,065 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:14,065 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:14,238 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:14,861 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:14,876 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:14,971 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:15,002 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:15,033 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:15,096 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:15,143 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:15,159 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:15,159 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:15,328 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:49:16,171 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:16,266 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:16,281 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:16,296 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:16,389 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:16,420 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:16,451 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:16,498 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:49:16,994 - INFO: Application started successfully
+2024-11-29 23:50:24,197 - INFO: Application closed
+2024-11-29 23:54:09,348 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:54:09,349 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:54:09,349 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:54:09,350 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:54:09,350 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:54:09,350 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:54:09,350 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:54:09,350 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:54:09,350 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:54:09,350 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:54:10,518 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:54:10,628 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:54:10,644 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:54:10,767 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:54:10,924 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:54:11,065 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:54:11,189 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:54:11,532 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:54:11,610 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:54:11,672 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:54:11,703 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:54:11,719 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:54:11,735 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:54:11,860 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:54:12,017 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:54:12,159 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:54:12,283 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:54:12,629 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:54:12,768 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:54:12,799 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-29 23:54:13,936 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:54:13,983 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:54:14,825 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:54:23,983 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:54:23,983 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:54:24,014 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:54:24,078 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:54:24,078 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:54:24,203 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:54:24,203 - ERROR: Image load error: main thread is not in main loop
+2024-11-29 23:54:47,909 - INFO: Application started successfully
+2024-11-29 23:54:52,433 - INFO: Application closed
+2024-11-29 23:55:02,543 - ERROR: Error loading topic 'Chính trị': cannot schedule new futures after shutdown
+2024-11-30 00:01:01,541 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:01,542 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:01,542 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:01,542 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:01,542 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:01,542 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:01,542 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:01,543 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:01,543 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:01,544 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:02,698 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:02,713 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:02,790 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:02,852 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:02,993 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:03,055 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:03,118 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:03,149 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:03,615 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:03,615 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:03,788 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:03,804 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:03,882 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:03,944 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:04,084 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:04,147 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:04,210 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:04,241 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:04,707 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:04,708 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:16,058 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:16,198 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:16,214 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:16,229 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:16,262 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:16,323 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:16,371 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:16,371 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:16,402 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:16,402 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:20,444 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:20,460 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:20,492 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:20,509 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:20,510 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:20,509 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:21,792 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:22,726 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:22,726 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:22,942 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:22,942 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:22,957 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:23,202 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:23,650 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:23,944 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:23,976 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:24,101 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:24,163 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:24,289 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:25,189 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:26,284 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:26,284 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:26,285 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:26,285 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:26,285 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:26,285 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:26,286 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:26,286 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:26,286 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:26,287 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:01:39,016 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:01:39,122 - INFO: Application started successfully
+2024-11-30 00:02:31,846 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:31,847 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:31,848 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:31,849 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:31,849 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:31,849 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:31,849 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:31,849 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:31,849 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:31,849 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:33,053 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:33,164 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:33,320 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:33,351 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:33,398 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:33,428 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:33,443 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:33,460 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:33,553 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:33,694 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:34,148 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:34,257 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:34,411 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:34,442 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:34,489 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:34,521 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:34,536 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:34,552 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:34,645 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:34,786 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:35,473 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:35,583 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:35,708 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:35,771 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:35,894 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:36,052 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:36,146 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:36,303 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:36,318 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:36,429 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:41,095 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:41,095 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:41,127 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:41,158 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:41,176 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:41,176 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:42,423 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:42,650 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:42,778 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:42,887 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:42,901 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:43,104 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:43,568 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:43,678 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:43,740 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:43,911 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:44,829 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:44,938 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:44,954 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:45,406 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:46,503 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:46,503 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:46,503 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:46,503 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:46,503 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:46,503 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:46,503 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:46,503 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:46,503 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:46,733 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:47,664 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:47,681 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:47,696 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:47,758 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:47,774 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:47,789 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:47,789 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:47,960 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:48,148 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:48,411 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:02:48,757 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:48,772 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:48,787 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:48,848 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:48,863 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:48,878 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:48,878 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:49,049 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:49,237 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:49,501 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 00:02:49,852 - INFO: Application started successfully
+2024-11-30 00:03:33,543 - INFO: Application started successfully
+2024-11-30 00:03:37,799 - INFO: Application closed
+2024-11-30 00:03:53,487 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:03:53,519 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:03:53,535 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:03:53,535 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:03:53,550 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:03:54,376 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:03:54,423 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:03:54,643 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:03:54,644 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:03:54,895 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:03:59,557 - INFO: Application started successfully
+2024-11-30 00:04:11,064 - ERROR: Image load error: HTTPSConnectionPool(host='i2-vnexpress.vnecdn.net', port=443): Read timed out.
+2024-11-30 00:04:17,149 - WARNING: Image fetch error for https://vnexpress.net/tuyen-thu-thai-lan-doi-mat-an-tu-neu-sang-singapore-da-aff-cup-2024-4822047.html: HTTPSConnectionPool(host='vnexpress.net', port=443): Max retries exceeded with url: /tuyen-thu-thai-lan-doi-mat-an-tu-neu-sang-singapore-da-aff-cup-2024-4822047.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001E4FA105090>, 'Connection to vnexpress.net timed out. (connect timeout=5)'))
+2024-11-30 00:04:58,622 - INFO: Application closed
+2024-11-30 00:06:11,209 - INFO: Application started successfully
+2024-11-30 00:06:17,933 - INFO: Application closed
+2024-11-30 00:06:50,186 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:06:50,187 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:06:50,188 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:06:50,248 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:06:50,248 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:06:50,248 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:06:50,310 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:06:50,403 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:06:50,545 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:06:50,623 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:06:51,714 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:06:51,730 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:06:51,950 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:06:52,012 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:06:52,028 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:06:52,028 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:06:52,106 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:06:52,604 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:06:52,681 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:06:52,697 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 00:06:57,783 - INFO: Application started successfully
+2024-11-30 00:07:05,563 - INFO: Application closed
+2024-11-30 00:12:12,093 - INFO: Application started successfully
+2024-11-30 00:12:19,683 - INFO: Application closed
+2024-11-30 00:12:29,636 - ERROR: Image load error: Too early to create image: no default root window
+2024-11-30 00:12:29,681 - ERROR: Image load error: Too early to create image: no default root window
+2024-11-30 00:12:29,835 - ERROR: Image load error: Too early to create image: no default root window
+2024-11-30 00:12:29,948 - ERROR: Image load error: Too early to create image: no default root window
+2024-11-30 00:12:30,075 - ERROR: Image load error: Too early to create image: no default root window
+2024-11-30 00:12:39,679 - INFO: Application started successfully
+2024-11-30 00:12:48,086 - WARNING: Image fetch error for https://znews.vn/luong-thuy-linh-toi-tinh-tao-post1514596.html: HTTPSConnectionPool(host='znews.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 00:14:34,085 - INFO: Application closed

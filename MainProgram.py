@@ -1,3 +1,4 @@
+import time
 from typing import Any
 from NewsPanel import *
 from SchedulePanel import *
@@ -62,6 +63,8 @@ class ApplicationConfig:
         except (json.JSONDecodeError, IOError) as e:
             logging.error(f"Configuration load error: {e}")
             return ApplicationConfig.DEFAULT_CONFIG
+
+
 class FunctionExecute:
 
     def __init__(self):

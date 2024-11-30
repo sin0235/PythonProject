@@ -39,9 +39,6 @@ class CalendarPanel(ctk.CTkFrame):
         self.setup_initial_state()
 
     def setup_logging(self):
-        """
-        Set up more comprehensive logging
-        """
         log_dir = 'logs'
         os.makedirs(log_dir, exist_ok=True)
 
@@ -248,7 +245,7 @@ class CalendarPanel(ctk.CTkFrame):
 
         self.events_popup = ctk.CTkToplevel(self)
         self.events_popup.title(f"Events on {self.selected_date}")
-
+        self.events_popup.iconbitmap("Icon/chinhSua.ico")
         x = self.winfo_rootx()
         y = self.winfo_rooty()
         self.events_popup.geometry(f"400x500+{x}+{y}")
@@ -262,7 +259,6 @@ class CalendarPanel(ctk.CTkFrame):
         )
         events_frame.pack(padx=10, pady=10, fill="both", expand=True)
 
-        # Tiêu đề
         title_label = ctk.CTkLabel(
             events_frame,
             text=f"Events on {self.selected_date}",
@@ -280,7 +276,6 @@ class CalendarPanel(ctk.CTkFrame):
                 )
                 event_frame.pack(pady=5, fill="x")
 
-                # Chi tiết sự kiện
                 time_label = ctk.CTkLabel(
                     event_frame,
                     text=f"Time: {event['time']}",
@@ -309,7 +304,6 @@ class CalendarPanel(ctk.CTkFrame):
                 )
                 content_label.pack(anchor="w", padx=10, pady=(0, 10))
 
-                # Nút chỉnh sửa và xóa cho từng sự kiện
                 action_frame = ctk.CTkFrame(event_frame, fg_color="transparent")
                 action_frame.pack(side="bottom", fill="x", padx=10, pady=(0, 5))
 

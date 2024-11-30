@@ -12,7 +12,7 @@ class WeatherPanel(ctk.CTkFrame):
         self.api_key = '30d4741c779ba94c470ca1f63045390a'
         self.colors = {
             'background': '#F0F4F8',  # Xám nhạt, tạo cảm giác không gian mở và sạch sẽ
-            'primary': '#FFFFFF',  # Nền trắng chính, tạo độ tương phản và sáng sủa
+            'primary': 'transparent',  # Nền trắng chính, tạo độ tương phản và sáng sủa
             'secondary': '#E6EAF0',  # Xám blue-tint nhẹ cho các phần phụ
             'accent': '#2196F3',  # Xanh dương (material design) - tượng trưng cho bầu trời
             'text_primary': '#2C3E50',  # Xanh navy đậm cho văn bản chính - dễ đọc

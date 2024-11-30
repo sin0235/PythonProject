@@ -67,7 +67,7 @@ class WeatherPanel(ctk.CTkFrame):
             self,
             width=60,
             height=50,
-            font=('Roboto', 28, 'bold'),
+            font=('digital-7', 32),
             text_color=self.colors['accent'],
             fg_color="transparent"
         )
@@ -87,7 +87,7 @@ class WeatherPanel(ctk.CTkFrame):
             width=350,
             height=250,
             corner_radius=25,
-            fg_color=self.colors['primary']
+            fg_color= "transparent"
         )
         input_frame.pack(side = "bottom")
 
@@ -104,7 +104,7 @@ class WeatherPanel(ctk.CTkFrame):
             width=300,
             height=40,
             corner_radius=20,
-            fg_color=self.colors['secondary'],
+            fg_color="transparent",
             text_color=self.colors['text_primary'],
             font=("Roboto", 16),
             border_width=2,

@@ -4,225 +4,203 @@ import json
 import os
 from tkinter import messagebox, Toplevel, Listbox, END, Scrollbar, Text
 import calendar
+import logging
+from tkinter import Text, Scrollbar
+from datetime import datetime
 
 
 class CalendarPanel(ctk.CTkFrame):
     def __init__(self, master, **kwargs):
         super().__init__(master, **kwargs)
+        logging.basicConfig(
+            filename='calendar_app.log',
+            level=logging.INFO,
+            format='%(asctime)s - %(levelname)s: %(message)s'
+        )
 
         self.COLORS = {
-            "background": "#FFFFFF",
-            "primary": "#00BCD4",
-            "secondary": "#E0F7FA",
-            "text_light": "#212121",
-            "text_dark": "#37474F",
-            "highlight": "#FF4081",
-            "accent": "#FFEB3B"
+            "background": "#F0F4F8",     # Soft light blue-gray background
+            "primary": "#2C7BE5",        # Professional blue
+            "secondary": "#FFFFFF",      # Pure white
+            "text_dark": "#1A365D",      # Deep blue for dark text
+            "text_light": "#2D3748",     # Slightly softer dark text
+            "highlight": "#E53E3E",      # Vibrant red for highlights
+            "accent": "#38A169",         # Bright green for accents
+            "border": "#CBD5E0",         # Light gray border color
+            "hover": "#EDF2F7"           # Light hover effect color
         }
 
         self.EVENTS_FILE = "events.json"
+        self.DATE_FORMAT = "%m/%d/%Y"
 
         self.events = {}
-
-        self.load_events()
-        self.normalize_dates()
-
         self.selected_date = None
 
-        self.configure(fg_color=self.COLORS["background"])
-        self.create_ui()
+        self.setup_initial_state()
 
-        now = datetime.now()
-        self.entry_year.insert(0, str(now.year))
-        self.entry_month.insert(0, str(now.month))
-        self.generate_calendar(now.year, now.month)
-        self.display_upcoming_events()
+    def setup_logging(self):
+        """
+        Set up more comprehensive logging
+        """
+        log_dir = 'logs'
+        os.makedirs(log_dir, exist_ok=True)
+
+        logging.basicConfig(
+            level=logging.INFO,
+            format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+            handlers=[
+                logging.FileHandler(f"{log_dir}/calendar_app.log"),
+                logging.StreamHandler()
+            ]
+        )
+    def setup_initial_state(self):
+        try:
+            self.load_events()
+            self.normalize_dates()
+
+            self.configure(fg_color=self.COLORS["background"])
+            self.create_ui()
+
+            now = datetime.now()
+            self.entry_year.insert(0, str(now.year))
+            self.entry_month.insert(0, str(now.month))
+            self.generate_calendar(now.year, now.month)
+            self.display_upcoming_events()
+
+            logging.info("Calendar panel initialized successfully")
+        except Exception as e:
+            logging.error(f"Error in setup_initial_state: {e}")
+            messagebox.showerror("Initialization Error", str(e))
 
     def load_events(self):
-        if os.path.exists(self.EVENTS_FILE):
+        try:
             with open(self.EVENTS_FILE, "r") as file:
-                try:
-                    self.events = json.load(file)
-                except json.JSONDecodeError:
-                    self.events = {}
-        else:
+                self.events = json.load(file) if os.path.getsize(self.EVENTS_FILE) > 0 else {}
+        except FileNotFoundError:
+            self.events = {}
+        except json.JSONDecodeError:
+            logging.error("Corrupted events file")
             self.events = {}
 
     def save_events(self):
-        with open(self.EVENTS_FILE, "w") as file:
-            json.dump(self.events, file, indent=4)
+        try:
+            with open(self.EVENTS_FILE, "w") as file:
+                json.dump(self.events, file, indent=4)
+            logging.info("Events saved successfully")
+        except IOError as e:
+            logging.error(f"Event saving error: {e}")
+            messagebox.showerror("Save Error", "Could not save events.")
 
     def normalize_dates(self):
         updated_events = {}
-        for date_str, day_events in self.events.items():
-            if not isinstance(date_str, str) or len(date_str) != 10:
-                continue
-
+        for date_str, day_events in list(self.events.items()):
             try:
-                date = datetime.strptime(date_str, "%m/%d/%Y")
-            except ValueError:
+                parsed_date = None
+                for fmt in ["%m/%d/%Y", "%Y-%m-%d", "%d-%m-%Y", "%m-%d-%Y"]:
+                    try:
+                        parsed_date = datetime.strptime(date_str, fmt)
+                        break
+                    except ValueError:
+                        continue
+
+                if parsed_date:
+                    normalized_date = parsed_date.strftime(self.DATE_FORMAT)
+                    updated_events[normalized_date] = day_events
+            except Exception as e:
+                logging.error(f"Date normalization error: {e}")
+
+        if updated_events:
+            self.events = updated_events
+            self.save_events()
+
+    def parse_event_time(self, time_str):
+        try:
+            time_formats = [
+                "%I:%M%p",
+                "%H:%M",
+                "%I:%M %p",
+            ]
+
+            for fmt in time_formats:
                 try:
-                    date = datetime.strptime(date_str, "%m/%d/%y")
+                    return datetime.strptime(time_str, fmt).strftime("%I:%M %p")
                 except ValueError:
                     continue
 
-            normalized_date_str = date.strftime("%m/%d/%Y")
-            updated_events[normalized_date_str] = day_events
-        self.events = updated_events
-        self.save_events()
+            raise ValueError("Unsupported time format")
+        except ValueError:
+            logging.warning(f"Invalid time format: {time_str}")
+            return time_str
 
     def create_ui(self):
-        self.frame_controls = ctk.CTkFrame(self, fg_color=self.COLORS["secondary"])
+        self.frame_controls = ctk.CTkFrame(self, fg_color=self.COLORS["secondary"], border_color=self.COLORS["border"],
+                                           border_width=1)
         self.frame_controls.pack(pady=10, padx=10, fill="x")
 
         self.label_year = ctk.CTkLabel(self.frame_controls, text="Year:",
-                                       text_color=self.COLORS["text_light"],
+                                       text_color=self.COLORS["text_dark"],
                                        font=("Roboto", 14, "bold"))
         self.label_year.pack(side="left", padx=5)
         self.entry_year = ctk.CTkEntry(self.frame_controls,
                                        width=80,
-                                       text_color="#FFFFFF",
-                                       fg_color=self.COLORS["text_light"])
+                                       text_color=self.COLORS["text_dark"],
+                                       fg_color=self.COLORS["hover"])
         self.entry_year.pack(side="left", padx=5)
 
         self.label_month = ctk.CTkLabel(self.frame_controls, text="Month:",
-                                        text_color=self.COLORS["text_light"],
+                                        text_color=self.COLORS["text_dark"],
                                         font=("Roboto", 14, "bold"))
         self.label_month.pack(side="left", padx=5)
         self.entry_month = ctk.CTkEntry(self.frame_controls,
                                         width=50,
-                                        text_color="#FFFFFF",
-                                        fg_color=self.COLORS["text_light"])
+                                        text_color=self.COLORS["text_dark"],
+                                        fg_color=self.COLORS["hover"])
         self.entry_month.pack(side="left", padx=5)
+
+        button_style = {
+            "fg_color": self.COLORS["primary"],
+            "hover_color": self.COLORS["hover"],
+            "text_color": "white",
+            "font": ("Roboto", 14, "bold"),
+            "border_width": 0
+        }
 
         self.button_update = ctk.CTkButton(self.frame_controls,
                                            text="Update",
                                            command=self.update_calendar,
-                                           fg_color=self.COLORS["primary"],
-                                           hover_color=self.COLORS["secondary"],
-                                           text_color=self.COLORS["text_light"])
+                                           **button_style)
         self.button_update.pack(side="left", padx=10)
 
         self.calendar_frame = ctk.CTkFrame(self, fg_color=self.COLORS["background"])
         self.calendar_frame.pack(pady=10, padx=10)
 
-        self.frame_event = ctk.CTkFrame(self, fg_color=self.COLORS["background"])
-        self.frame_event.pack(pady=10, padx=10)
-
-        self.frame_left = ctk.CTkFrame(self.frame_event, fg_color=self.COLORS["background"])
-        self.frame_left.pack(side="left", padx=20)
-
-        self.frame_right = ctk.CTkFrame(self.frame_event, fg_color=self.COLORS["background"])
-        self.frame_right.pack(side="left", padx=20)
-
-        button_style = {
-            "fg_color": self.COLORS["primary"],
-            "hover_color": self.COLORS["secondary"],
-            "text_color": self.COLORS["text_light"],
-            "font": ("Roboto", 14, "bold")
-        }
-
-        self.button_add = ctk.CTkButton(self.frame_left, text="Add Event",
+        self.button_add = ctk.CTkButton(self, text="Add Event",
                                         command=self.on_add_event, **button_style)
-        self.button_add.pack(pady=5)
-
-        self.button_view = ctk.CTkButton(self.frame_left, text="View Event",
-                                         command=self.view_events, **button_style)
-        self.button_view.pack(pady=5)
-
-        delete_button_style = button_style.copy()
-        delete_button_style["fg_color"] = self.COLORS["highlight"]
-        delete_button_style["hover_color"] = "#C0392B"
-        self.button_edit_event = ctk.CTkButton(self.frame_right, text="Edit Event",
-                                               command=lambda: self.open_edit_event_window(self.selected_date),
-                                               **button_style)
-        self.button_edit_event.pack(pady=5)
-
-        self.button_delete_event = ctk.CTkButton(self.frame_right, text="Delete Event",
-                                                 command=self.open_delete_event_window,
-                                                 **delete_button_style)
-        self.button_delete_event.pack(pady=5)
+        self.button_add.pack(pady=10)
 
         self.events_display_frame = ctk.CTkFrame(self, fg_color=self.COLORS["background"])
         self.events_display_frame.pack(pady=10, padx=10)
 
-    def generate_calendar(self, year, month, selected_date=None):
-        for widget in self.calendar_frame.winfo_children():
-            widget.destroy()
+    def validate_event_data(self, time, title, content):
+        if not time or not title or not content:
+            messagebox.showerror("Validation Error", "All fields are required!")
+            return False
 
-        days_of_week = ["Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy", "Chủ nhật"]
-        for col, day in enumerate(days_of_week):
-            day_label = ctk.CTkLabel(self.calendar_frame,
-                                     text=day,
-                                     font=("Roboto", 12, "bold"),
-                                     fg_color=self.COLORS["secondary"],
-                                     text_color=self.COLORS["text_light"],
-                                     width=60,
-                                     height=30,
-                                     corner_radius=6)
-            day_label.grid(row=0, column=col, padx=2, pady=2)
+        if len(title) > 100:
+            messagebox.showerror("Validation Error", "Title too long (max 100 characters)")
+            return False
 
-        first_day = datetime(year, month, 1)
-        start_day = first_day.weekday()
-        days_in_month = calendar.monthrange(year, month)[1]
-
-        row = 1
-        col = start_day
-        for day in range(1, days_in_month + 1):
-            date_str = f"{month:02}/{day:02}/{year}"
-            is_selected = selected_date == date_str
-            bg_color = self.COLORS["secondary"] if not is_selected else self.COLORS["highlight"]
-            text_color = self.COLORS["text_light"] if not is_selected else "white"
-
-            day_label = ctk.CTkLabel(self.calendar_frame,
-                                     text=str(day),
-                                     font=("Roboto", 12, "bold"),
-                                     fg_color=bg_color,
-                                     text_color=text_color,
-                                     width=60,
-                                     height=30,
-                                     corner_radius=6)
-            day_label.grid(row=row, column=col, padx=2, pady=2)
-            day_label.bind("<Button-1>", lambda e, d=date_str: self.on_day_selected(d))
-
-            col += 1
-            if col > 6:
-                col = 0
-                row += 1
-
-    def generate_calendar(self, year, month, selected_date=None):
-        for widget in self.calendar_frame.winfo_children():
-            widget.destroy()
-
-        days_of_week = ["Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy", "Chủ nhật"]
-        for col, day in enumerate(days_of_week):
-            day_label = ctk.CTkLabel(self.calendar_frame, text=day, font=("Roboto", 12, "bold"),
-                                     fg_color="#333333", text_color="white", width=60, height=30, corner_radius=4)
-            day_label.grid(row=0, column=col, padx=2, pady=2)
-
-        first_day = datetime(year, month, 1)
-        start_day = first_day.weekday()
-
-        days_in_month = calendar.monthrange(year, month)[1]
-
-        row = 1
-        col = start_day
-        for day in range(1, days_in_month + 1):
-            date_str = f"{month:02}/{day:02}/{year}"
-            is_selected = selected_date == date_str
-            bg_color = "#444444" if not is_selected else "#FF8C00"
-            text_color = "white" if not is_selected else "black"
-
-            day_label = ctk.CTkLabel(self.calendar_frame, text=str(day), font=("Roboto", 12),
-                                     fg_color=bg_color, text_color=text_color, width=60, height=30, corner_radius=4)
-            day_label.grid(row=row, column=col, padx=2, pady=2)
-            day_label.bind("<Button-1>", lambda e, d=date_str: self.on_day_selected(d))
-
-            col += 1
-            if col > 6:
-                col = 0
-                row += 1
-
+        return True
+    def validate_input(self, year, month):
+        try:
+            year = int(year)
+            month = int(month)
+            if not (1 <= month <= 12 and year > 0):
+                raise ValueError("Invalid month or year")
+            return year, month
+        except ValueError:
+            messagebox.showerror("Input Error", "Please enter a valid year and month!")
+            return None, None
     def update_calendar(self, event=None):
         try:
             year = int(self.entry_year.get())
@@ -235,11 +213,177 @@ class CalendarPanel(ctk.CTkFrame):
             messagebox.showerror("Input Error", "Vui lòng nhập năm và tháng hợp lệ!")
 
     def on_day_selected(self, date_str):
-        self.selected_date = date_str
-        year = int(self.entry_year.get())
-        month = int(self.entry_month.get())
-        self.generate_calendar(year, month, self.selected_date)
+        self.reset_day_selection()
 
+        self.selected_date = date_str
+
+        for widget in self.calendar_frame.winfo_children():
+            if isinstance(widget, ctk.CTkLabel) and widget.cget("text") == date_str.split("/")[1]:
+                widget.configure(
+                    fg_color=self.COLORS["primary"],
+                    text_color="white",
+                    font=("Roboto", 12, "bold")
+                )
+                break
+
+        self.display_selected_date_events()
+
+    def reset_day_selection(self):
+        for widget in self.calendar_frame.winfo_children():
+            if isinstance(widget, ctk.CTkLabel):
+                try:
+                    day_num = int(widget.cget("text"))
+                    widget.configure(
+                        fg_color=self.COLORS["secondary"],
+                        text_color=self.COLORS["text_dark"],
+                        font=("Roboto", 12)
+                    )
+                except ValueError:
+                    pass
+
+    def display_selected_date_events(self):
+
+        if hasattr(self, 'events_popup') and self.events_popup.winfo_exists():
+            self.events_popup.destroy()
+
+        self.events_popup = ctk.CTkToplevel(self)
+        self.events_popup.title(f"Events on {self.selected_date}")
+
+        x = self.winfo_rootx()
+        y = self.winfo_rooty()
+        self.events_popup.geometry(f"400x500+{x}+{y}")
+
+        self.events_popup.attributes('-topmost', True)
+
+        events_frame = ctk.CTkScrollableFrame(
+            self.events_popup,
+            fg_color=self.COLORS["background"],
+            scrollbar_fg_color=self.COLORS["primary"]
+        )
+        events_frame.pack(padx=10, pady=10, fill="both", expand=True)
+
+        # Tiêu đề
+        title_label = ctk.CTkLabel(
+            events_frame,
+            text=f"Events on {self.selected_date}",
+            font=("Roboto", 18, "bold"),
+            text_color=self.COLORS["primary"]
+        )
+        title_label.pack(pady=(0, 10))
+
+        if self.selected_date in self.events and self.events[self.selected_date]:
+            for idx, event in enumerate(self.events[self.selected_date], 1):
+                event_frame = ctk.CTkFrame(
+                    events_frame,
+                    fg_color=self.COLORS["secondary"],
+                    corner_radius=10
+                )
+                event_frame.pack(pady=5, fill="x")
+
+                # Chi tiết sự kiện
+                time_label = ctk.CTkLabel(
+                    event_frame,
+                    text=f"Time: {event['time']}",
+                    font=("Roboto", 14),
+                    text_color=self.COLORS["text_dark"],
+                    anchor="w"
+                )
+                time_label.pack(anchor="w", padx=10)
+
+                title_label = ctk.CTkLabel(
+                    event_frame,
+                    text=f"Title: {event['title']}",
+                    font=("Roboto", 14, "bold"),
+                    text_color=self.COLORS["primary"],
+                    anchor="w"
+                )
+                title_label.pack(anchor="w", padx=10)
+
+                content_label = ctk.CTkLabel(
+                    event_frame,
+                    text=f"Content: {event['content']}",
+                    font=("Roboto", 12),
+                    text_color=self.COLORS["text_dark"],
+                    anchor="w",
+                    wraplength=350
+                )
+                content_label.pack(anchor="w", padx=10, pady=(0, 10))
+
+                # Nút chỉnh sửa và xóa cho từng sự kiện
+                action_frame = ctk.CTkFrame(event_frame, fg_color="transparent")
+                action_frame.pack(side="bottom", fill="x", padx=10, pady=(0, 5))
+
+                edit_btn = ctk.CTkButton(
+                    action_frame,
+                    text="Edit",
+                    width=50,
+                    height=25,
+                    fg_color=self.COLORS["accent"],
+                    hover_color=self.COLORS["primary"],
+                    command=lambda e=event: self.open_edit_event_window(self.selected_date, e)
+                )
+                edit_btn.pack(side="right", padx=5)
+
+                delete_btn = ctk.CTkButton(
+                    action_frame,
+                    text="Delete",
+                    width=50,
+                    height=25,
+                    fg_color=self.COLORS["highlight"],
+                    hover_color="#FF4500",
+                    command=lambda e=event: self.delete_specific_event(self.selected_date, e)
+                )
+                delete_btn.pack(side="right")
+    def delete_specific_event(self, date, event):
+        if messagebox.askyesno("Confirm", "Bạn có muốn xóa sự kiện này?"):
+            self.events[date].remove(event)
+            self.save_events()
+
+            if hasattr(self, 'events_popup'):
+                self.events_popup.destroy()
+            self.display_selected_date_events()
+            self.display_upcoming_events()
+    def generate_calendar(self, year, month, selected_date=None):
+        for widget in self.calendar_frame.winfo_children():
+            widget.destroy()
+
+        days_of_week = ["Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy", "Chủ nhật"]
+        for col, day in enumerate(days_of_week):
+            day_label = ctk.CTkLabel(self.calendar_frame, text=day,
+                                     font=("Roboto", 12, "bold"),
+                                     fg_color=self.COLORS["hover"],
+                                     text_color=self.COLORS["text_dark"],
+                                     width=60,
+                                     height=30,
+                                     corner_radius=4)
+            day_label.grid(row=0, column=col, padx=2, pady=2)
+
+        first_day = datetime(year, month, 1)
+        start_day = first_day.weekday()
+        days_in_month = calendar.monthrange(year, month)[1]
+
+        row = 1
+        col = start_day
+        for day in range(1, days_in_month + 1):
+            date_str = f"{month:02}/{day:02}/{year}"
+            is_selected = selected_date == date_str
+            bg_color = self.COLORS["secondary"] if not is_selected else self.COLORS["primary"]
+            text_color = self.COLORS["text_dark"] if not is_selected else "white"
+
+            day_label = ctk.CTkLabel(self.calendar_frame, text=str(day),
+                                     font=("Roboto", 12),
+                                     fg_color=bg_color,
+                                     text_color=text_color,
+                                     width=60,
+                                     height=30,
+                                     corner_radius=4)
+            day_label.grid(row=row, column=col, padx=2, pady=2)
+            day_label.bind("<Button-1>", lambda e, d=date_str: self.on_day_selected(d))
+
+            col += 1
+            if col > 6:
+                col = 0
+                row += 1
     def on_add_event(self):
         if not self.selected_date:
             messagebox.showerror("Error", "No date selected! Please select a date.")
@@ -360,163 +504,143 @@ class CalendarPanel(ctk.CTkFrame):
         button_delete = ctk.CTkButton(delete_window, text="Delete Selected Event", command=delete_event)
         button_delete.pack(pady=(5, 10))
 
-    def open_edit_event_window(self, selected_date):
-        if selected_date not in self.events or not self.events[selected_date]:
-            messagebox.showerror("Error", f"No events found for {selected_date}.")
-            return
+    def open_edit_event_window(self, selected_date, event=None):
+        if hasattr(self, 'events_popup'):
+            self.events_popup.destroy()
 
-        edit_window = Toplevel(self)
-        edit_window.title(f"Edit Event - {selected_date}")
-        edit_window.geometry("500x500")
+        edit_window = ctk.CTkToplevel(self)
+        edit_window.title("Edit Event")
+        edit_window.geometry("450x450")
 
-        listbox_frame = ctk.CTkFrame(edit_window)
-        listbox_frame.pack(pady=10, padx=10, fill="both", expand=True)
+        time_var = ctk.StringVar(value=event['time'])
+        title_var = ctk.StringVar(value=event['title'])
+        content_var = ctk.StringVar(value=event['content'])
 
-        scrollbar = Scrollbar(listbox_frame, orient="vertical")
-        scrollbar.pack(side="right", fill="y")
+        ctk.CTkLabel(edit_window, text="Time:").pack(pady=(10, 0))
+        time_entry = ctk.CTkEntry(edit_window, textvariable=time_var)
+        time_entry.pack(pady=5)
 
-        event_listbox = Listbox(
-            listbox_frame,
-            font=("Roboto", 14),
-            height=12,
-            width=50,
-            selectmode="single",
-            yscrollcommand=scrollbar.set
-        )
-        event_listbox.pack(side="left", fill="both", expand=True)
+        ctk.CTkLabel(edit_window, text="Title:").pack(pady=(10, 0))
+        title_entry = ctk.CTkEntry(edit_window, textvariable=title_var)
+        title_entry.pack(pady=5)
 
-        scrollbar.config(command=event_listbox.yview)
+        ctk.CTkLabel(edit_window, text="Content:").pack(pady=(10, 0))
+        content_entry = ctk.CTkEntry(edit_window, textvariable=content_var)
+        content_entry.pack(pady=5)
 
-        for idx, event in enumerate(self.events[selected_date], 1):
-            event_listbox.insert(END, f"{idx}. {event['time']} - {event['title']}")
+        def save_changes():
+            index = self.events[selected_date].index(event)
+            self.events[selected_date][index] = {
+                'time': time_var.get(),
+                'title': title_var.get(),
+                'content': content_var.get()
+            }
+            self.save_events()
+            edit_window.destroy()
 
-        def edit_selected_event():
-            selected_index = event_listbox.curselection()
-            if not selected_index:
-                messagebox.showerror("Error", "Please select an event to edit!")
-                return
+            self.display_selected_date_events()
+            self.display_upcoming_events()
 
-            event_index = selected_index[0]
-            event_to_edit = self.events[selected_date][event_index]
-
-            edit_event_window = Toplevel(edit_window)
-            edit_event_window.title("Edit Event Details")
-            edit_event_window.geometry("500x500")
-
-            label_time = ctk.CTkLabel(edit_event_window, text="Time :", text_color="black", font=("Roboto", 14))
-            label_time.pack(pady=5)
-            entry_time = ctk.CTkEntry(edit_event_window, font=("Roboto", 14))
-            entry_time.insert(0, event_to_edit['time'])
-            entry_time.pack(pady=5)
-
-            label_title = ctk.CTkLabel(edit_event_window, text="Event Title:", text_color="black", font=("Roboto", 14))
-            label_title.pack(pady=5)
-            entry_title = ctk.CTkEntry(edit_event_window, font=("Roboto", 14))
-            entry_title.insert(0, event_to_edit['title'])
-            entry_title.pack(pady=5)
-
-            label_content = ctk.CTkLabel(edit_event_window, text="Event Content:", text_color="black",
-                                         font=("Roboto", 14))
-            label_content.pack(pady=5)
-            entry_content = ctk.CTkEntry(edit_event_window, font=("Roboto", 14))
-            entry_content.insert(0, event_to_edit['content'])
-            entry_content.pack(pady=5)
-
-            def save_edited_event():
-                new_time = entry_time.get()
-                new_title = entry_title.get()
-                new_content = entry_content.get()
-
-                if not new_time or not new_title or not new_content:
-                    messagebox.showerror("Error", "Please fill in all fields!")
-                    return
-
-                self.events[selected_date][event_index] = {
-                    "time": new_time,
-                    "title": new_title,
-                    "content": new_content
-                }
-                self.save_events()
-                self.display_upcoming_events()
-                messagebox.showinfo("Success", "Event updated successfully!")
-                edit_event_window.destroy()
-                edit_window.destroy()
-
-            button_save = ctk.CTkButton(edit_event_window, text="Save Changes",
-                                        command=save_edited_event, font=("Roboto", 14))
-            button_save.pack(pady=10)
-        button_edit = ctk.CTkButton(edit_window, text="Edit Selected Event",
-                                    command=edit_selected_event, font=("Roboto", 14))
-        button_edit.pack(pady=(5, 10))
+        save_button = ctk.CTkButton(edit_window, text="Save Changes", command=save_changes)
+        save_button.pack(pady=20)
 
     def get_upcoming_events(self):
         now = datetime.now()
-        today_str = now.strftime("%m/%d/%Y")
-        next_day = now + timedelta(days=1)
-        next_day_str = next_day.strftime("%m/%d/%Y")
+        start_date = now.date()
+        end_date = (now + timedelta(days=7)).date()
 
         upcoming_events = []
         for date_str, day_events in self.events.items():
-            if today_str <= date_str <= next_day_str:
-                for event in day_events:
-                    try:
-                        event_datetime = datetime.strptime(f"{date_str} {event['time']}", "%m/%d/%Y %I:%M%p")
-                    except ValueError:
+            try:
+                event_date = datetime.strptime(date_str, "%m/%d/%Y").date()
+                if start_date <= event_date <= end_date:
+                    for event in day_events:
                         try:
-                            event_time_24 = datetime.strptime(event['time'], "%H:%M")
-                            event_time_12 = event_time_24.strftime("%I:%M%p")
-                            event_datetime = datetime.strptime(f"{date_str} {event_time_12}", "%m/%d/%Y %I:%M%p")
+                            event_time = self.parse_event_time(event['time'])
+                            event_datetime = datetime.combine(
+                                event_date,
+                                datetime.strptime(event_time, "%I:%M %p").time()
+                            )
+
+                            upcoming_events.append({
+                                "datetime": event_datetime,
+                                "date": date_str,
+                                "time": event_time,
+                                "title": event['title'],
+                                "content": event['content']
+                            })
                         except ValueError:
                             continue
+            except ValueError:
+                continue
 
-                    upcoming_events.append({
-                        "datetime": event_datetime,
-                        "date": date_str,
-                        "time": event["time"],
-                        "title": event["title"],
-                        "content": event["content"]
-                    })
-
-        upcoming_events.sort(key=lambda x: x["datetime"])
-        return upcoming_events
+        return sorted(upcoming_events, key=lambda x: x["datetime"])
 
     def display_upcoming_events(self):
         for widget in self.events_display_frame.winfo_children():
             widget.destroy()
-
-        self.events_display_frame.configure(
-            width=int(self.winfo_width() * 0.7),
-            height=int(self.winfo_height() * 0.7)
-        )
-
-        scrollbar = Scrollbar(self.events_display_frame, orient="vertical")
-        text_widget = Text(
+        events_container = ctk.CTkFrame(
             self.events_display_frame,
-            wrap="word",
-            yscrollcommand=scrollbar.set,
-            bg="#222222",
-            fg="white",
-            font=("Roboto", 14),
-            relief="flat",
-            height=20,
-            width=70,
+            fg_color=self.COLORS["secondary"],
+            corner_radius=10,
+            border_color=self.COLORS["border"],
+            border_width=1
         )
-        scrollbar.config(command=text_widget.yview)
+        events_container.pack(expand=True, fill="both", padx=10, pady=10)
 
-        scrollbar.pack(side="right", fill="y")
-        text_widget.pack(side="left", fill="both", expand=True)
+        title_label = ctk.CTkLabel(
+            events_container,
+            text="📅 Upcoming Events",
+            font=("Roboto", 18, "bold"),
+            text_color=self.COLORS["text_dark"],
+            fg_color="transparent"
+        )
+        title_label.pack(pady=(10, 5))
+
+        text_widget = Text(
+            events_container,
+            wrap="word",
+            bg=self.COLORS["hover"],
+            fg=self.COLORS["text_dark"],
+            insertbackground=self.COLORS["text_dark"],
+            selectbackground=self.COLORS["primary"],
+            selectforeground="white",
+            relief="flat",
+            padx=10,
+            pady=10,
+            font=("Roboto", 14)
+        )
+
+        scrollbar = ctk.CTkScrollbar(
+            events_container,
+            orientation="vertical",
+            command=text_widget.yview
+        )
+        text_widget.configure(yscrollcommand=scrollbar.set)
+
+        scrollbar.pack(side="right", fill="y", padx=(0, 10), pady=10)
+        text_widget.pack(side="left", expand=True, fill="both", padx=10, pady=10)
 
         upcoming_events = self.get_upcoming_events()
+        text_widget.tag_configure("title", foreground=self.COLORS["primary"], font=("Roboto", 16, "bold"))
+        text_widget.tag_configure("date", foreground=self.COLORS["accent"], font=("Roboto", 14, "italic"))
+        text_widget.tag_configure("time", foreground="#D69E2E", font=("Roboto", 14))
+        text_widget.tag_configure("content", foreground=self.COLORS["text_dark"], font=("Roboto", 14))
+        text_widget.tag_configure("separator", foreground="#718096", font=("Roboto", 12))
 
         if not upcoming_events:
-            message = "No upcoming events (Today & Tomorrow)."
+            text_widget.insert("end", "No upcoming events", "title")
         else:
-            message = "Upcoming Events (Today & Tomorrow):\n\n"
-            for event in upcoming_events:
-                message += f"{event['date']} - {event['time']} - {event['title']}\n   {event['content']}\n\n"
+            text_widget.insert("end", f"Upcoming Events ({len(upcoming_events)})\n\n", "title")
 
-        text_widget.insert("1.0", message)
+            for i, event in enumerate(upcoming_events, 1):
+                text_widget.insert("end", f"Event {i}\n", "title")
+                text_widget.insert("end", f"Date: {event['date']}\n", "date")
+                text_widget.insert("end", f"Time: {event['time']}\n", "time")
+                text_widget.insert("end", f"Title: {event['title']}\n", "title")
+                text_widget.insert("end", f"Details: {event['content']}\n", "content")
 
-        text_widget.tag_configure("center", justify="center")
-        text_widget.tag_add("center", "1.0", "end")
-        text_widget.config(state="disabled")
+                if i < len(upcoming_events):
+                    text_widget.insert("end", "----------------------------\n", "separator")
+
+        text_widget.configure(state="disabled")

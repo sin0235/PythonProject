@@ -75,6 +75,9 @@ class FunctionExecute:
 
         self.initialize_panels()
 
+
+
+
     def setup_logging(self):
         log_dir = 'logs'
         os.makedirs(log_dir, exist_ok=True)
@@ -92,13 +95,20 @@ class FunctionExecute:
         ctk.set_default_color_theme(self.config.get('color_theme', 'blue'))
 
         self.root = ctk.CTk()
-        self.root.title("Ứng dụng xà lơ")
+        self.root.title("Nhịp sống số")
 
-        window_size = self.config.get('window_size', {'width': 1400, 'height': 900})
-        self.root.geometry(f"{window_size['width']}x{window_size['height']}")
-        self.root.minsize(1100, 700)
 
+        # window_size = self.config.get('window_size', {'width': 1400, 'height': 900})
+        # self.root.geometry(f"{window_size['width']}x{window_size['height']}")
+        # self.root.minsize(1400, 900)
+
+        screen_width = self.root.winfo_screenwidth()
+        screen_height = self.root.winfo_screenheight()
+        self.root.geometry(f"{screen_width}x{screen_height}+0+0")
+        self.root.minsize(screen_width, screen_height)
+        self.root.maxsize(screen_width, screen_height)
         self.root.iconbitmap('bieuTuong.ico')
+
 
     def create_layout(self):
         self.main_container = ctk.CTkFrame(
@@ -129,8 +139,8 @@ class FunctionExecute:
 
         logo_label = ctk.CTkLabel(
             self.sidebar,
-            text="App gì gì đó",
-            font=("Roboto", 22, "bold"),
+            text="Trợ thủ ◡̈\ntin tức - lịch trình",
+            font=("Fz - Lemands", 22, "italic" , "bold"),
             text_color="#2C3E50"
         )
         logo_label.pack(pady=(30, 40))
@@ -152,7 +162,7 @@ class FunctionExecute:
             category_label = ctk.CTkLabel(
                 self.sidebar,
                 text=section["category"],
-                font=("Roboto", 18, "bold"),
+                font=("Fz - Lemands", 20, "bold"),
                 text_color="#34495E"
             )
             category_label.pack(pady=(15, 10), anchor="w", padx=20)
@@ -168,7 +178,7 @@ class FunctionExecute:
                     border_width=2,
                     border_color=item['color'],
                     text_color=item['color'],
-                    font=("Roboto", 18, "bold"),
+                    font=("Fz - Lemands", 16, "bold"),
                     anchor="w",
                     width=210
                 )
@@ -214,7 +224,7 @@ class FunctionExecute:
         title_label = ctk.CTkLabel(
             panel,
             text="Cài Đặt Ứng Dụng",
-            font=("Roboto", 18, "bold")
+            font=("Fz - Lemands", 18, "bold")
         )
         title_label.pack(pady=20)
         return panel

@@ -15,6 +15,7 @@ from io import BytesIO
 from collections import OrderedDict
 from typing import Optional
 from queue import Queue
+import time
 
 
 class ImageCacheManager:
@@ -135,36 +136,7 @@ class NewsPanel(ctk.CTkFrame):
         self.app = parent
         self.image_cache = ImageCacheManager()
         self.setup_ui_for_News()
-        self.default_topic = "Giải trí"
-        self.load_topic(self.default_topic)
-        threading.Thread(target=self.preload_all_topics, daemon=True).start()
 
-    def preload_all_topics(self):
-        all_articles = {}
-        with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
-            topic_futures = {
-                executor.submit(self.fetch_articles_for_topic, topic, sources): topic
-                for topic, sources in self.topics.items()
-            }
-
-            for future in concurrent.futures.as_completed(topic_futures):
-                topic = topic_futures[future]
-                try:
-                    articles = future.result()
-                    all_articles[topic] = articles
-
-                    self.cache_images_for_articles(articles, executor)
-                except Exception as e:
-                    logging.error(f"Error loading topic '{topic}': {e}")
-
-        self.preloaded_articles = all_articles
-
-    def fetch_articles_for_topic(self, topic_name, sources):
-        all_articles = []
-        for source in sources:
-            articles = self.fetch_rss(source['url'])
-            all_articles.extend(articles)
-        return all_articles
 
     def cache_images_for_articles(self, articles, executor):
         image_futures = {

@@ -1,11 +1,10 @@
 import customtkinter as ctk
-from datetime import datetime, timedelta
+from datetime import timedelta
 import json
 import os
 from tkinter import messagebox, Toplevel, Listbox, END, Scrollbar, Text
 import calendar
 import logging
-from tkinter import Text, Scrollbar
 from datetime import datetime
 
 

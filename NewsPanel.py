@@ -15,7 +15,7 @@ from io import BytesIO
 from collections import OrderedDict
 from typing import Optional
 from queue import Queue
-import time
+
 
 
 class ImageCacheManager:

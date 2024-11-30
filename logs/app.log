@@ -906,3 +906,935 @@
 2024-11-30 00:12:39,679 - INFO: Application started successfully
 2024-11-30 00:12:48,086 - WARNING: Image fetch error for https://znews.vn/luong-thuy-linh-toi-tinh-tao-post1514596.html: HTTPSConnectionPool(host='znews.vn', port=443): Read timed out. (read timeout=5)
 2024-11-30 00:14:34,085 - INFO: Application closed
+2024-11-30 07:22:35,164 - INFO: Application started successfully
+2024-11-30 07:22:41,028 - WARNING: Image fetch error for https://tuoitre.vn/tin-tuc-sang-30-11-doi-lich-tra-luong-huu-thang-12-thi-truong-trai-phieu-doanh-nghiep-suy-yeu-20241129183803974.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:22:41,028 - WARNING: Image fetch error for https://genk.vn/mot-so-mang-xa-hoi-lap-lo-thuat-toan-day-noi-dung-doc-hai-len-xu-huong-20241130065653852.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:22:46,079 - WARNING: Image fetch error for https://tuoitre.vn/thoi-tiet-hom-nay-30-11-mien-bac-ret-mien-nam-sang-mat-me-20241129185334935.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:22:46,079 - WARNING: Image fetch error for https://genk.vn/cua-xoay-chien-luoc-khien-ga-khong-lo-hon-200-ty-usd-samsung-dam-chim-trong-hao-quang-qua-khu-co-nguy-co-suy-tan-giong-de-che-la-ma-20241129224745294.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:22:51,092 - WARNING: Image fetch error for https://genk.vn/von-hoa-fpt-bang-5-ngan-hang-cong-lai-gia-tri-co-phieu-ong-truong-gia-binh-nam-giu-gan-cham-nguong-15000-ty-20241129224656887.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:22:51,093 - WARNING: Image fetch error for https://tuoitre.vn/tam-giu-bon-ve-si-dep-duong-cho-xe-dam-cuoi-o-thanh-hoa-20241129230935116.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:22:56,278 - WARNING: Image fetch error for https://genk.vn/pewpew-khoe-vinfast-vf-3-khang-dinh-day-la-chiec-o-to-dau-doi-vua-tau-xong-da-mang-den-xuong-do-de-lam-dep-20241129184612685.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:22:56,326 - WARNING: Image fetch error for https://tuoitre.vn/chinh-phu-phan-hoi-de-xuat-mo-them-ga-duong-sat-toc-do-cao-bac-nam-giua-thanh-hoa-va-nghe-an-20241129214025007.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:23:01,332 - WARNING: Image fetch error for https://tuoitre.vn/giao-cong-an-dieu-tra-vu-ngo-doc-nghi-do-an-banh-mi-o-vung-tau-20241129200329757.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:23:01,488 - WARNING: Image fetch error for https://genk.vn/mutosi-ra-mat-san-pham-dien-giai-ion-kiem-hydrogen-voi-cong-nghe-khac-biet-20241129211652431.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:23:06,505 - WARNING: Image fetch error for https://tuoitre.vn/bat-giam-tai-xe-co-nong-do-con-kich-khung-dung-dao-tan-cong-canh-sat-2024112918415476.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:23:06,506 - WARNING: Image fetch error for https://genk.vn/aqua-ra-mat-tu-lanh-magic-pro-moi-nhieu-ngan-thong-minh-tu-dong-lam-da-va-binh-nuoc-di-dong-20241129190816085.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:23:11,515 - WARNING: Image fetch error for https://genk.vn/starbucks-bi-hacker-tan-cong-phai-dung-giay-but-cham-cong-20241129184441841.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:23:11,516 - WARNING: Image fetch error for https://tuoitre.vn/pho-bi-thu-thanh-uy-tp-hcm-de-nghi-thuc-day-xay-dung-nha-o-thiet-che-van-hoa-cho-cong-nhan-20241129180521792.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:23:16,551 - WARNING: Image fetch error for https://genk.vn/loat-do-gia-re-chi-tu-10000-dong-nang-cap-nha-tam-thanh-phien-ban-thong-minh-xin-dep-hon-20241129163253446.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:23:16,551 - WARNING: Image fetch error for https://tuoitre.vn/cung-ty-xo-so-kien-giang-cung-tra-cho-nguoi-trung-so-co-ve-so-bi-rach-roi-20241129185314095.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:23:33,634 - ERROR: Image load error: HTTPSConnectionPool(host='i1-sohoa.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:24:15,632 - WARNING: Image fetch error for https://genk.vn/mot-so-mang-xa-hoi-lap-lo-thuat-toan-day-noi-dung-doc-hai-len-xu-huong-20241130065653852.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:24:20,667 - WARNING: Image fetch error for https://genk.vn/cua-xoay-chien-luoc-khien-ga-khong-lo-hon-200-ty-usd-samsung-dam-chim-trong-hao-quang-qua-khu-co-nguy-co-suy-tan-giong-de-che-la-ma-20241129224745294.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:24:25,682 - WARNING: Image fetch error for https://genk.vn/von-hoa-fpt-bang-5-ngan-hang-cong-lai-gia-tri-co-phieu-ong-truong-gia-binh-nam-giu-gan-cham-nguong-15000-ty-20241129224656887.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:24:30,745 - WARNING: Image fetch error for https://genk.vn/ong-nguyen-tu-quang-chi-cach-kinh-doanh-ca-cuoc-tro-nen-hop-phap-hon-giup-nguoi-choi-mat-it-tien-hon-20241129224601094.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:24:35,786 - WARNING: Image fetch error for https://genk.vn/pewpew-khoe-vinfast-vf-3-khang-dinh-day-la-chiec-o-to-dau-doi-vua-tau-xong-da-mang-den-xuong-do-de-lam-dep-20241129184612685.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:24:40,816 - WARNING: Image fetch error for https://genk.vn/samsung-vo-tinh-he-lo-ve-one-ui-7-giao-dien-moi-them-loat-tinh-nang-ai-20241129210408479.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:24:45,827 - WARNING: Image fetch error for https://genk.vn/mutosi-ra-mat-san-pham-dien-giai-ion-kiem-hydrogen-voi-cong-nghe-khac-biet-20241129211652431.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:24:50,926 - WARNING: Image fetch error for https://genk.vn/starbucks-bi-hacker-tan-cong-phai-dung-giay-but-cham-cong-20241129184441841.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:24:55,953 - WARNING: Image fetch error for https://genk.vn/loat-do-gia-re-chi-tu-10000-dong-nang-cap-nha-tam-thanh-phien-ban-thong-minh-xin-dep-hon-20241129163253446.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:26:29,021 - INFO: Application closed
+2024-11-30 07:26:42,262 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:42,263 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:42,278 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:42,278 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:42,294 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:42,295 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:42,295 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:42,295 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:42,295 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:42,296 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:42,310 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:42,310 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:42,311 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:42,311 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:42,311 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:42,311 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:43,086 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:43,400 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:43,447 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:43,462 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:43,494 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:43,557 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:43,744 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:43,983 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:44,046 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:44,124 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:44,140 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:44,202 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:44,202 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:44,218 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:44,298 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:44,329 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:44,344 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:44,516 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:44,548 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:44,564 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:44,595 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:44,659 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:44,737 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:44,847 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:45,084 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:45,147 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:45,224 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:45,319 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:45,396 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:45,428 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:45,615 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:45,833 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:45,848 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:45,879 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:45,989 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:45,989 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:46,253 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:46,507 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:46,522 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:46,615 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:46,677 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:46,755 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:46,897 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:47,615 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:47,616 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:47,617 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:47,617 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:47,617 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:47,617 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:47,677 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:48,772 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:48,836 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:48,866 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:48,867 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:48,960 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:49,068 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:49,068 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:49,910 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:49,926 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:49,958 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:49,960 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:50,052 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:50,162 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:50,162 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:51,012 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:51,075 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:51,169 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:51,265 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:51,345 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:51,456 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:51,472 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:26:52,182 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:52,276 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:52,370 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:52,448 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:52,560 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:26:52,583 - INFO: Application started successfully
+2024-11-30 07:27:35,116 - ERROR: Image load error: HTTPSConnectionPool(host='i1-thethao.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:28:28,241 - INFO: Application closed
+2024-11-30 07:28:51,330 - INFO: Application started successfully
+2024-11-30 07:28:59,273 - WARNING: Image fetch error for https://tuoitre.vn/tin-tuc-the-thao-sang-30-11-ronaldo-lai-lap-cu-dup-ban-thang-20241130054833207.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:29:04,313 - WARNING: Image fetch error for https://tuoitre.vn/sanest-khanh-hoa-gap-lai-bien-phong-tai-chung-ket-vo-dich-quoc-gia-20241129222843602.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:29:09,409 - WARNING: Image fetch error for https://tuoitre.vn/hlv-ancelotti-chung-toi-se-vao-chung-ket-champions-league-20241129174600491.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:29:14,524 - WARNING: Image fetch error for https://tuoitre.vn/doi-tuyen-viet-nam-thang-clb-clb-daegu-2-0-20241129153346651.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:29:19,544 - WARNING: Image fetch error for https://tuoitre.vn/pham-tien-san-ky-luc-sinh-ra-la-de-pha-vo-2024112908505301.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:29:36,790 - WARNING: Image fetch error for https://tuoitre.vn/tuyen-thu-thai-lan-co-the-bi-bat-neu-den-singapore-dau-asean-cup-2024-20241129122000367.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:29:53,869 - ERROR: Image load error: HTTPSConnectionPool(host='cdn1.tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:29:58,965 - ERROR: Image load error: HTTPSConnectionPool(host='cdn1.tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:30:45,602 - WARNING: Image fetch error for https://genk.vn/can-trong-khi-ngua-o-2-bo-phan-nay-co-the-la-ung-thu-gan-chu-khong-phai-di-ung-20241130065921697.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:30:50,611 - WARNING: Image fetch error for https://genk.vn/mot-so-mang-xa-hoi-lap-lo-thuat-toan-day-noi-dung-doc-hai-len-xu-huong-20241130065653852.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:30:55,692 - WARNING: Image fetch error for https://genk.vn/von-hoa-fpt-bang-5-ngan-hang-cong-lai-gia-tri-co-phieu-ong-truong-gia-binh-nam-giu-gan-cham-nguong-15000-ty-20241129224656887.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:31:00,709 - WARNING: Image fetch error for https://genk.vn/ong-nguyen-tu-quang-chi-cach-kinh-doanh-ca-cuoc-tro-nen-hop-phap-hon-giup-nguoi-choi-mat-it-tien-hon-20241129224601094.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:31:05,719 - WARNING: Image fetch error for https://genk.vn/pewpew-khoe-vinfast-vf-3-khang-dinh-day-la-chiec-o-to-dau-doi-vua-tau-xong-da-mang-den-xuong-do-de-lam-dep-20241129184612685.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:31:10,732 - WARNING: Image fetch error for https://genk.vn/samsung-vo-tinh-he-lo-ve-one-ui-7-giao-dien-moi-them-loat-tinh-nang-ai-20241129210408479.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:31:15,772 - WARNING: Image fetch error for https://genk.vn/mutosi-ra-mat-san-pham-dien-giai-ion-kiem-hydrogen-voi-cong-nghe-khac-biet-20241129211652431.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:31:20,860 - WARNING: Image fetch error for https://genk.vn/starbucks-bi-hacker-tan-cong-phai-dung-giay-but-cham-cong-20241129184441841.chn: HTTPSConnectionPool(host='genk.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:33:18,343 - INFO: Application closed
+2024-11-30 07:34:47,110 - INFO: Application started successfully
+2024-11-30 07:34:52,743 - WARNING: Image fetch error for https://tuoitre.vn/tin-tuc-sang-30-11-doi-lich-tra-luong-huu-thang-12-thi-truong-trai-phieu-doanh-nghiep-suy-yeu-20241129183803974.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:34:55,262 - WARNING: Image fetch error for https://tuoitre.vn/200-trieu-dong-cho-chuc-vo-dich-giai-futsal-cup-quoc-gia-2024-20241129201500458.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:34:57,756 - WARNING: Image fetch error for https://tuoitre.vn/thoi-tiet-hom-nay-30-11-mien-bac-ret-mien-nam-sang-mat-me-20241129185334935.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:35:00,272 - WARNING: Image fetch error for https://tuoitre.vn/hlv-ancelotti-chung-toi-se-vao-chung-ket-champions-league-20241129174600491.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:35:02,763 - WARNING: Image fetch error for https://tuoitre.vn/tam-giu-bon-ve-si-dep-duong-cho-xe-dam-cuoi-o-thanh-hoa-20241129230935116.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:35:05,289 - WARNING: Image fetch error for https://tuoitre.vn/vi-sao-cho-bac-ha-duoc-chon-lam-linh-vat-giai-taekwondo-canh-sat-chau-a-mo-rong-2024-20241129163157351.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:35:07,868 - WARNING: Image fetch error for https://tuoitre.vn/chinh-phu-phan-hoi-de-xuat-mo-them-ga-duong-sat-toc-do-cao-bac-nam-giua-thanh-hoa-va-nghe-an-20241129214025007.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:35:10,307 - WARNING: Image fetch error for https://tuoitre.vn/doi-tuyen-viet-nam-thang-clb-clb-daegu-2-0-20241129153346651.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:35:12,883 - WARNING: Image fetch error for https://tuoitre.vn/giao-cong-an-dieu-tra-vu-ngo-doc-nghi-do-an-banh-mi-o-vung-tau-20241129200329757.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:35:15,323 - WARNING: Image fetch error for https://tuoitre.vn/pham-tien-san-ky-luc-sinh-ra-la-de-pha-vo-2024112908505301.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:35:18,031 - WARNING: Image fetch error for https://tuoitre.vn/bat-giam-tai-xe-co-nong-do-con-kich-khung-dung-dao-tan-cong-canh-sat-2024112918415476.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:35:20,370 - WARNING: Image fetch error for https://tuoitre.vn/ong-nguyen-phuoc-trung-dac-cu-chu-tich-lien-doan-co-tp-hcm-2024112913553994.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:35:23,046 - WARNING: Image fetch error for https://tuoitre.vn/pho-bi-thu-thanh-uy-tp-hcm-de-nghi-thuc-day-xay-dung-nha-o-thiet-che-van-hoa-cho-cong-nhan-20241129180521792.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:35:25,383 - WARNING: Image fetch error for https://tuoitre.vn/tuyen-thu-thai-lan-co-the-bi-bat-neu-den-singapore-dau-asean-cup-2024-20241129122000367.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:35:56,763 - WARNING: Image fetch error for https://tuoitre.vn/tin-tuc-sang-30-11-doi-lich-tra-luong-huu-thang-12-thi-truong-trai-phieu-doanh-nghiep-suy-yeu-20241129183803974.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:36:01,774 - WARNING: Image fetch error for https://tuoitre.vn/thoi-tiet-hom-nay-30-11-mien-bac-ret-mien-nam-sang-mat-me-20241129185334935.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:36:06,787 - WARNING: Image fetch error for https://tuoitre.vn/tam-giu-bon-ve-si-dep-duong-cho-xe-dam-cuoi-o-thanh-hoa-20241129230935116.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:36:11,925 - WARNING: Image fetch error for https://tuoitre.vn/chinh-phu-phan-hoi-de-xuat-mo-them-ga-duong-sat-toc-do-cao-bac-nam-giua-thanh-hoa-va-nghe-an-20241129214025007.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:36:16,942 - WARNING: Image fetch error for https://tuoitre.vn/giao-cong-an-dieu-tra-vu-ngo-doc-nghi-do-an-banh-mi-o-vung-tau-20241129200329757.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:36:21,963 - WARNING: Image fetch error for https://tuoitre.vn/dien-mao-ga-ngam-ben-thanh-lon-nhat-metro-so-1-san-sang-khai-thac-thuong-mai-20241129165953115.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:36:26,985 - WARNING: Image fetch error for https://tuoitre.vn/bat-giam-tai-xe-co-nong-do-con-kich-khung-dung-dao-tan-cong-canh-sat-2024112918415476.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:36:32,085 - WARNING: Image fetch error for https://tuoitre.vn/cung-ty-xo-so-kien-giang-cung-tra-cho-nguoi-trung-so-co-ve-so-bi-rach-roi-20241129185314095.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:37:09,532 - INFO: Application closed
+2024-11-30 07:39:02,835 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:39:02,836 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:39:02,837 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:39:02,838 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:39:02,839 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:39:02,840 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:39:02,841 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:39:02,842 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:39:02,843 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:39:02,843 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:39:02,865 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:39:02,865 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:39:02,865 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:39:02,867 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:39:02,867 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:39:02,880 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:39:02,881 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:39:02,990 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:39:07,461 - WARNING: Image fetch error for https://tuoitre.vn/tin-tuc-sang-30-11-doi-lich-tra-luong-huu-thang-12-thi-truong-trai-phieu-doanh-nghiep-suy-yeu-20241129183803974.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:39:12,610 - WARNING: Image fetch error for https://tuoitre.vn/tam-giu-bon-ve-si-dep-duong-cho-xe-dam-cuoi-o-thanh-hoa-20241129230935116.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:39:13,065 - INFO: Application started successfully
+2024-11-30 07:39:17,626 - WARNING: Image fetch error for https://tuoitre.vn/dau-gia-dat-ngoai-thanh-ha-noi-tra-toi-30-ti-m-roi-xin-rut-vi-so-qua-cong-an-vao-cuoc-20241129221745194.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:39:18,925 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:39:18,925 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:39:18,925 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:39:18,925 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:39:18,926 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:39:18,926 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:39:18,926 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:39:18,927 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:39:22,645 - WARNING: Image fetch error for https://tuoitre.vn/chinh-phu-phan-hoi-de-xuat-mo-them-ga-duong-sat-toc-do-cao-bac-nam-giua-thanh-hoa-va-nghe-an-20241129214025007.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:39:24,573 - INFO: Application closed
+2024-11-30 07:39:27,662 - WARNING: Image fetch error for https://tuoitre.vn/giao-cong-an-dieu-tra-vu-ngo-doc-nghi-do-an-banh-mi-o-vung-tau-20241129200329757.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:39:32,676 - WARNING: Image fetch error for https://tuoitre.vn/dien-mao-ga-ngam-ben-thanh-lon-nhat-metro-so-1-san-sang-khai-thac-thuong-mai-20241129165953115.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:39:37,689 - WARNING: Image fetch error for https://tuoitre.vn/bat-giam-tai-xe-co-nong-do-con-kich-khung-dung-dao-tan-cong-canh-sat-2024112918415476.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:39:48,289 - WARNING: Image fetch error for https://tuoitre.vn/cung-ty-xo-so-kien-giang-cung-tra-cho-nguoi-trung-so-co-ve-so-bi-rach-roi-20241129185314095.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:39:48,289 - ERROR: Error loading topic 'Chính trị': cannot schedule new futures after shutdown
+2024-11-30 07:40:07,121 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:07,136 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:07,137 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:07,168 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:07,168 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:07,183 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:07,184 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:07,184 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:07,184 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:07,216 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:07,216 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:07,216 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:07,216 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:07,217 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:07,248 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:07,264 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:07,287 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:07,437 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:07,610 - INFO: Application started successfully
+2024-11-30 07:40:11,952 - WARNING: Image fetch error for https://tuoitre.vn/tin-tuc-sang-30-11-doi-lich-tra-luong-huu-thang-12-thi-truong-trai-phieu-doanh-nghiep-suy-yeu-20241129183803974.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:40:12,392 - WARNING: Image fetch error for https://tuoitre.vn/lich-truc-tiep-bong-da-chau-au-30-11-arsenal-ra-san-dai-chien-dortmund-bayern-20241130061056485.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:40:15,878 - INFO: Application closed
+2024-11-30 07:40:16,964 - WARNING: Image fetch error for https://tuoitre.vn/thoi-tiet-hom-nay-30-11-mien-bac-ret-mien-nam-sang-mat-me-20241129185334935.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:40:17,473 - WARNING: Image fetch error for https://tuoitre.vn/sanest-khanh-hoa-gap-lai-bien-phong-tai-chung-ket-vo-dich-quoc-gia-20241129222843602.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:40:21,979 - WARNING: Image fetch error for https://tuoitre.vn/tam-giu-bon-ve-si-dep-duong-cho-xe-dam-cuoi-o-thanh-hoa-20241129230935116.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:40:22,575 - WARNING: Image fetch error for https://tuoitre.vn/hlv-ancelotti-chung-toi-se-vao-chung-ket-champions-league-20241129174600491.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:40:26,999 - WARNING: Image fetch error for https://tuoitre.vn/dau-gia-dat-ngoai-thanh-ha-noi-tra-toi-30-ti-m-roi-xin-rut-vi-so-qua-cong-an-vao-cuoc-20241129221745194.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:40:32,017 - WARNING: Image fetch error for https://tuoitre.vn/chinh-phu-phan-hoi-de-xuat-mo-them-ga-duong-sat-toc-do-cao-bac-nam-giua-thanh-hoa-va-nghe-an-20241129214025007.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:40:37,035 - WARNING: Image fetch error for https://tuoitre.vn/giao-cong-an-dieu-tra-vu-ngo-doc-nghi-do-an-banh-mi-o-vung-tau-20241129200329757.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:40:47,137 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:47,139 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:47,140 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:47,140 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:47,141 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:47,141 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:47,141 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:47,141 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:47,142 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:47,168 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:47,168 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:47,169 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:47,169 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:47,183 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:47,183 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:47,183 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:47,199 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:47,434 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:48,345 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:48,423 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:48,609 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:48,783 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:48,798 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:48,830 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:48,846 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:49,017 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:49,033 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:49,081 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:49,097 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:49,113 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:49,144 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:49,144 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:49,191 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:49,270 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:49,348 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:49,364 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:49,522 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:49,928 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:50,732 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:51,250 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:52,343 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:52,344 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:52,344 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:52,345 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:52,345 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:52,345 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:52,345 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:52,346 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:53,614 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:53,615 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:53,676 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:53,739 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:53,755 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:53,802 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:53,833 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:53,848 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:54,714 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:54,714 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:55,862 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:55,909 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:40:57,012 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:57,012 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:57,012 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:57,012 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:57,012 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:57,012 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:57,012 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:57,012 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:40:57,722 - INFO: Application started successfully
+2024-11-30 07:41:02,146 - ERROR: Image load error: HTTPSConnectionPool(host='i1-sohoa.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:41:02,147 - ERROR: Image load error: HTTPSConnectionPool(host='i1-sohoa.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:41:02,147 - ERROR: Image load error: HTTPSConnectionPool(host='i1-sohoa.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:41:07,546 - INFO: Application closed
+2024-11-30 07:41:42,506 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:42,506 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:42,506 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:42,522 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:42,522 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:42,522 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:42,522 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:42,522 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:42,522 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:42,522 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:42,522 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:42,522 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:42,522 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:42,522 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:42,538 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:42,554 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:42,569 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:42,709 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:43,679 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:43,884 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:43,946 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:43,993 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:44,009 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:44,040 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:44,102 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:44,118 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:44,180 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:44,195 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:44,226 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:44,241 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:44,288 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:44,319 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:44,404 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:44,461 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:44,572 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:44,604 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:45,042 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:45,100 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:46,157 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:46,243 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:47,295 - WARNING: Image fetch error for https://tuoitre.vn/lich-truc-tiep-bong-da-chau-au-30-11-arsenal-ra-san-dai-chien-dortmund-bayern-20241130061056485.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:41:47,310 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:47,312 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:47,313 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:47,315 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:47,316 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:47,317 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:47,319 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:47,320 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:48,488 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:48,489 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:48,521 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:48,643 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:48,768 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:48,783 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:48,814 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:48,909 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:49,562 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:49,562 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:50,797 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:50,907 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:41:51,992 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:51,993 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:51,993 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:51,995 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:51,995 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:51,995 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:51,995 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:51,995 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:41:52,435 - WARNING: Image fetch error for https://tuoitre.vn/sanest-khanh-hoa-gap-lai-bien-phong-tai-chung-ket-vo-dich-quoc-gia-20241129222843602.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:41:52,992 - INFO: Application started successfully
+2024-11-30 07:41:57,009 - ERROR: Image load error: HTTPSConnectionPool(host='i1-sohoa.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:41:57,009 - ERROR: Image load error: HTTPSConnectionPool(host='i1-sohoa.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:41:57,455 - WARNING: Image fetch error for https://tuoitre.vn/200-trieu-dong-cho-chuc-vo-dich-giai-futsal-cup-quoc-gia-2024-20241129201500458.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:42:02,467 - WARNING: Image fetch error for https://tuoitre.vn/hlv-ancelotti-chung-toi-se-vao-chung-ket-champions-league-20241129174600491.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:42:07,558 - WARNING: Image fetch error for https://tuoitre.vn/doi-tuyen-viet-nam-thang-clb-clb-daegu-2-0-20241129153346651.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:42:09,921 - INFO: Application closed
+2024-11-30 07:42:12,570 - WARNING: Image fetch error for https://tuoitre.vn/pham-tien-san-ky-luc-sinh-ra-la-de-pha-vo-2024112908505301.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:43:14,673 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:14,703 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:14,704 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:14,706 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:14,707 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:14,707 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:14,707 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:14,707 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:14,708 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:14,708 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:14,765 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:14,781 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:14,781 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:14,781 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:14,781 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:14,797 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:14,845 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:15,032 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:15,833 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:15,910 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:15,988 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:16,037 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:16,176 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:16,253 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:16,334 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:16,335 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:16,362 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:16,378 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:16,410 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:16,441 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:16,535 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:16,580 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:16,739 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:17,053 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:17,146 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:17,178 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:17,276 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:17,350 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:18,483 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:18,651 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:19,744 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:19,744 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:19,745 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:19,746 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:19,747 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:19,747 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:19,748 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:19,748 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:21,039 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:21,041 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:21,102 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:21,148 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:21,174 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:21,205 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:21,238 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:21,238 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:22,140 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:22,142 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:23,255 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:23,325 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:43:24,390 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:24,391 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:24,392 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:24,393 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:24,394 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:24,394 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:24,395 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:24,395 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:43:25,250 - INFO: Application started successfully
+2024-11-30 07:43:29,404 - ERROR: Image load error: HTTPSConnectionPool(host='i1-sohoa.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:43:29,404 - ERROR: Image load error: HTTPSConnectionPool(host='i1-sohoa.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:43:29,404 - ERROR: Image load error: HTTPSConnectionPool(host='i1-sohoa.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:43:29,405 - ERROR: Image load error: HTTPSConnectionPool(host='i1-sohoa.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:43:29,405 - ERROR: Image load error: HTTPSConnectionPool(host='i1-sohoa.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:43:29,426 - ERROR: Image load error: HTTPSConnectionPool(host='i1-sohoa.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:43:49,109 - INFO: Application closed
+2024-11-30 07:45:45,037 - WARNING: Image fetch error for https://vnexpress.net/5-diem-nong-o-tran-liverpool-man-city-4822080.html: 404 Client Error: Not Found for url: https://vnexpress.net/error.html
+2024-11-30 07:45:46,861 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:46,862 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:46,862 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:46,862 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:46,862 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:46,862 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:46,862 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:46,862 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:46,862 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:46,862 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:46,862 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:46,873 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:46,878 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:46,878 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:46,878 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:46,878 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:46,894 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:47,082 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:48,146 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:48,146 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:48,238 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:48,239 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:48,316 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:48,331 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:48,394 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:48,426 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:48,457 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:48,504 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:48,567 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:48,567 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:48,646 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:48,756 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:48,819 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:48,882 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:48,960 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:49,037 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:49,334 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:49,335 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:50,568 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:50,677 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:51,772 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:51,773 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:51,773 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:51,774 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:51,774 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:51,774 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:51,774 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:51,775 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:51,882 - WARNING: Image fetch error for https://tuoitre.vn/lich-truc-tiep-bong-da-chau-au-30-11-arsenal-ra-san-dai-chien-dortmund-bayern-20241130061056485.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:45:53,036 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:53,209 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:53,210 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:53,210 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:53,412 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:53,412 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:53,490 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:53,645 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:54,129 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:54,300 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:55,305 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:55,572 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:45:56,677 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:56,677 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:56,677 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:56,677 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:56,677 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:56,677 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:56,677 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:56,678 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:45:56,959 - WARNING: Image fetch error for https://tuoitre.vn/tin-tuc-the-thao-sang-30-11-ronaldo-lai-lap-cu-dup-ban-thang-20241130054833207.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:45:57,638 - INFO: Application started successfully
+2024-11-30 07:46:01,720 - ERROR: Image load error: HTTPSConnectionPool(host='i1-sohoa.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:46:01,720 - ERROR: Image load error: HTTPSConnectionPool(host='i1-sohoa.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:46:01,736 - ERROR: Image load error: HTTPSConnectionPool(host='i1-sohoa.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:46:02,141 - WARNING: Image fetch error for https://tuoitre.vn/200-trieu-dong-cho-chuc-vo-dich-giai-futsal-cup-quoc-gia-2024-20241129201500458.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:46:07,250 - WARNING: Image fetch error for https://tuoitre.vn/vi-sao-cho-bac-ha-duoc-chon-lam-linh-vat-giai-taekwondo-canh-sat-chau-a-mo-rong-2024-20241129163157351.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:46:11,051 - INFO: Application closed
+2024-11-30 07:46:12,264 - WARNING: Image fetch error for https://tuoitre.vn/doi-tuyen-viet-nam-thang-clb-clb-daegu-2-0-20241129153346651.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:47:03,894 - WARNING: Image fetch error for https://vnexpress.net/5-diem-nong-o-tran-liverpool-man-city-4822080.html: 404 Client Error: Not Found for url: https://vnexpress.net/error.html
+2024-11-30 07:47:05,392 - INFO: Application started successfully
+2024-11-30 07:47:11,303 - WARNING: Image fetch error for https://tuoitre.vn/tin-tuc-sang-30-11-doi-lich-tra-luong-huu-thang-12-thi-truong-trai-phieu-doanh-nghiep-suy-yeu-20241129183803974.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:47:16,318 - WARNING: Image fetch error for https://tuoitre.vn/thoi-tiet-hom-nay-30-11-mien-bac-ret-mien-nam-sang-mat-me-20241129185334935.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:47:19,677 - INFO: Application closed
+2024-11-30 07:47:21,503 - WARNING: Image fetch error for https://tuoitre.vn/dau-gia-dat-ngoai-thanh-ha-noi-tra-toi-30-ti-m-roi-xin-rut-vi-so-qua-cong-an-vao-cuoc-20241129221745194.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:47:26,521 - WARNING: Image fetch error for https://tuoitre.vn/chinh-phu-phan-hoi-de-xuat-mo-them-ga-duong-sat-toc-do-cao-bac-nam-giua-thanh-hoa-va-nghe-an-20241129214025007.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:47:31,274 - WARNING: Image fetch error for https://vnexpress.net/5-diem-nong-o-tran-liverpool-man-city-4822080.html: 404 Client Error: Not Found for url: https://vnexpress.net/error.html
+2024-11-30 07:47:34,784 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:34,786 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:34,787 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:34,787 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:34,788 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:34,788 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:34,788 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:34,788 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:34,788 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:34,788 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:34,788 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:34,788 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:34,788 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:34,788 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:34,801 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:34,816 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:34,832 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:35,066 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:36,083 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:36,192 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:36,192 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:36,284 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:36,285 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:36,316 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:36,347 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:36,395 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:36,442 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:36,458 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:36,583 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:36,692 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:36,708 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:36,895 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:37,175 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:37,377 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:38,613 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:38,927 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:39,807 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:47:39,808 - ERROR: Image load error: HTTPSConnectionPool(host='i1-kinhdoanh.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:47:39,808 - ERROR: Image load error: HTTPSConnectionPool(host='i1-kinhdoanh.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:47:39,838 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:47:40,897 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:40,898 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:40,898 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:40,899 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:40,899 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:40,900 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:40,900 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:40,901 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:42,117 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:42,133 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:42,258 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:42,290 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:42,305 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:42,320 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:47:43,213 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:43,228 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:47:43,301 - INFO: Application started successfully
+2024-11-30 07:47:45,916 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giadinh.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:47:45,932 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:47:48,227 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:48:03,384 - INFO: Application closed
+2024-11-30 07:48:53,100 - WARNING: Image fetch error for https://vnexpress.net/5-diem-nong-o-tran-liverpool-man-city-4822080.html: 404 Client Error: Not Found for url: https://vnexpress.net/error.html
+2024-11-30 07:48:54,729 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:48:54,760 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:48:54,776 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:48:54,840 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:48:54,856 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:48:54,856 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:48:55,304 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:48:55,387 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:48:55,469 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:48:55,470 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:48:55,481 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:48:55,497 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:48:55,529 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:48:55,529 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:48:55,529 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:48:55,529 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:48:55,529 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:48:55,529 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:48:56,042 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:48:56,072 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:48:56,525 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:48:56,619 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:48:56,649 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:48:56,665 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:48:56,665 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:48:56,742 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:48:56,805 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:48:57,133 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:48:57,164 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:48:58,630 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:48:59,849 - ERROR: Image load error: HTTPSConnectionPool(host='i1-kinhdoanh.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:48:59,881 - ERROR: Image load error: HTTPSConnectionPool(host='i1-kinhdoanh.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:48:59,897 - ERROR: Image load error: HTTPSConnectionPool(host='i1-kinhdoanh.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:48:59,897 - WARNING: Image fetch error for https://tuoitre.vn/lich-truc-tiep-bong-da-chau-au-30-11-arsenal-ra-san-dai-chien-dortmund-bayern-20241130061056485.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:48:59,898 - ERROR: Image load error: HTTPSConnectionPool(host='i1-kinhdoanh.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:49:00,315 - ERROR: Image load error: HTTPSConnectionPool(host='i1-kinhdoanh.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:49:00,478 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:49:00,493 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:49:00,548 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:49:00,548 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:49:02,213 - ERROR: Image load error: HTTPSConnectionPool(host='i1-kinhdoanh.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:49:03,261 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:49:03,261 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:49:03,261 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:49:03,261 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:49:03,277 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:49:03,277 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:49:03,285 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:49:03,285 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:49:04,431 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:49:04,495 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:49:05,086 - INFO: Application started successfully
+2024-11-30 07:49:05,163 - WARNING: Image fetch error for https://tuoitre.vn/sanest-khanh-hoa-gap-lai-bien-phong-tai-chung-ket-vo-dich-quoc-gia-20241129222843602.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:49:08,277 - ERROR: Image load error: HTTPSConnectionPool(host='i1-sohoa.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:49:08,277 - ERROR: Image load error: HTTPSConnectionPool(host='i1-sohoa.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:49:08,277 - ERROR: Image load error: HTTPSConnectionPool(host='i1-sohoa.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:49:08,277 - ERROR: Image load error: HTTPSConnectionPool(host='i1-sohoa.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:49:08,292 - ERROR: Image load error: HTTPSConnectionPool(host='i1-sohoa.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:49:08,302 - ERROR: Image load error: HTTPSConnectionPool(host='i1-sohoa.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:49:10,212 - WARNING: Image fetch error for https://tuoitre.vn/200-trieu-dong-cho-chuc-vo-dich-giai-futsal-cup-quoc-gia-2024-20241129201500458.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:49:15,546 - WARNING: Image fetch error for https://tuoitre.vn/doi-tuyen-viet-nam-thang-clb-clb-daegu-2-0-20241129153346651.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:49:16,361 - INFO: Application closed
+2024-11-30 07:49:20,598 - WARNING: Image fetch error for https://tuoitre.vn/pham-tien-san-ky-luc-sinh-ra-la-de-pha-vo-2024112908505301.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:49:25,621 - WARNING: Image fetch error for https://tuoitre.vn/ong-nguyen-phuoc-trung-dac-cu-chu-tich-lien-doan-co-tp-hcm-2024112913553994.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:49:38,927 - ERROR: Error loading topic 'Thể thao': cannot schedule new futures after shutdown
+2024-11-30 07:50:16,029 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:50:16,030 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:50:16,031 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:50:16,031 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:50:16,031 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:50:16,031 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:50:16,031 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:50:16,031 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:50:16,031 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:50:16,031 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:50:17,356 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:50:17,356 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:50:17,512 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:50:17,574 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:50:17,637 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:50:17,653 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:50:17,684 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:50:17,684 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:50:17,700 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 07:50:21,138 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:50:25,582 - INFO: Application started successfully
+2024-11-30 07:50:38,988 - INFO: Application closed
+2024-11-30 07:50:50,712 - INFO: Application started successfully
+2024-11-30 07:51:06,893 - INFO: Application closed
+2024-11-30 07:52:08,515 - INFO: Application started successfully
+2024-11-30 07:52:10,334 - INFO: Application closed
+2024-11-30 07:52:23,629 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:52:23,637 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:52:23,692 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:52:23,714 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:52:23,716 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:52:23,732 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 07:52:23,845 - INFO: Application started successfully
+2024-11-30 07:52:28,731 - WARNING: Image fetch error for https://tuoitre.vn/hlv-ancelotti-chung-toi-se-vao-chung-ket-champions-league-20241129174600491.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:52:29,833 - INFO: Application closed
+2024-11-30 07:52:33,800 - WARNING: Image fetch error for https://tuoitre.vn/vi-sao-cho-bac-ha-duoc-chon-lam-linh-vat-giai-taekwondo-canh-sat-chau-a-mo-rong-2024-20241129163157351.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:52:38,822 - WARNING: Image fetch error for https://tuoitre.vn/doi-tuyen-viet-nam-thang-clb-clb-daegu-2-0-20241129153346651.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:52:44,025 - WARNING: Image fetch error for https://tuoitre.vn/tuyen-thu-thai-lan-co-the-bi-bat-neu-den-singapore-dau-asean-cup-2024-20241129122000367.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 07:52:44,025 - ERROR: Error loading topic 'Thể thao': cannot schedule new futures after shutdown
+2024-11-30 08:06:13,576 - INFO: Application started successfully
+2024-11-30 08:06:15,265 - INFO: Application closed
+2024-11-30 08:07:05,769 - WARNING: Image fetch error for https://tuoitre.vn/thoi-tiet-hom-nay-30-11-mien-bac-ret-mien-nam-sang-mat-me-20241129185334935.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:07:10,839 - WARNING: Image fetch error for https://tuoitre.vn/tam-giu-bon-ve-si-dep-duong-cho-xe-dam-cuoi-o-thanh-hoa-20241129230935116.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:07:16,007 - WARNING: Image fetch error for https://tuoitre.vn/chinh-phu-phan-hoi-de-xuat-mo-them-ga-duong-sat-toc-do-cao-bac-nam-giua-thanh-hoa-va-nghe-an-20241129214025007.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:07:21,023 - WARNING: Image fetch error for https://tuoitre.vn/giao-cong-an-dieu-tra-vu-ngo-doc-nghi-do-an-banh-mi-o-vung-tau-20241129200329757.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:07:26,043 - WARNING: Image fetch error for https://tuoitre.vn/dien-mao-ga-ngam-ben-thanh-lon-nhat-metro-so-1-san-sang-khai-thac-thuong-mai-20241129165953115.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:07:31,131 - WARNING: Image fetch error for https://tuoitre.vn/bat-giam-tai-xe-co-nong-do-con-kich-khung-dung-dao-tan-cong-canh-sat-2024112918415476.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:08:35,002 - INFO: Application started successfully
+2024-11-30 08:08:37,988 - INFO: Application closed
+2024-11-30 08:08:41,084 - WARNING: Image fetch error for https://tuoitre.vn/tin-tuc-sang-30-11-doi-lich-tra-luong-huu-thang-12-thi-truong-trai-phieu-doanh-nghiep-suy-yeu-20241129183803974.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:09:05,302 - WARNING: Image fetch error for https://tuoitre.vn/chinh-phu-phan-hoi-de-xuat-mo-them-ga-duong-sat-toc-do-cao-bac-nam-giua-thanh-hoa-va-nghe-an-20241129214025007.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:09:10,347 - WARNING: Image fetch error for https://tuoitre.vn/giao-cong-an-dieu-tra-vu-ngo-doc-nghi-do-an-banh-mi-o-vung-tau-20241129200329757.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:09:15,599 - WARNING: Image fetch error for https://tuoitre.vn/cung-ty-xo-so-kien-giang-cung-tra-cho-nguoi-trung-so-co-ve-so-bi-rach-roi-20241129185314095.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:09:25,472 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:25,472 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:25,472 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:25,472 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:25,472 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:25,472 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:25,473 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:25,473 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:25,473 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:25,473 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:25,473 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:25,473 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:25,473 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:25,473 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:25,473 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:25,473 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:25,473 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:25,907 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:26,754 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:09:26,835 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:09:26,861 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:09:26,876 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:09:26,940 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:09:26,969 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:09:26,984 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:09:27,031 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:09:27,079 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:09:27,110 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:09:27,141 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:09:27,188 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:09:27,298 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:09:27,931 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:28,073 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:29,399 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:09:30,486 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:09:30,501 - ERROR: Image load error: HTTPSConnectionPool(host='i1-kinhdoanh.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:09:30,501 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:09:30,501 - ERROR: Image load error: HTTPSConnectionPool(host='i1-kinhdoanh.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:09:30,501 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:09:32,976 - ERROR: Image load error: HTTPSConnectionPool(host='i1-kinhdoanh.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:09:34,037 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:34,038 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:34,039 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:34,041 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:34,042 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:34,043 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:34,044 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:34,045 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:09:35,022 - INFO: Application started successfully
+2024-11-30 08:09:39,056 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:09:39,057 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:09:39,057 - ERROR: Image load error: HTTPSConnectionPool(host='i1-giaitri.vnecdn.net', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:11:36,011 - INFO: Application closed
+2024-11-30 08:12:07,118 - ERROR: Error loading topic 'Kinh tế': 'ImageCacheManager' object has no attribute 'load_image'
+2024-11-30 08:12:07,158 - ERROR: Error loading topic 'Giải trí': 'ImageCacheManager' object has no attribute 'load_image'
+2024-11-30 08:12:17,093 - INFO: Application started successfully
+2024-11-30 08:12:19,122 - ERROR: Error loading topic 'Công nghệ': 'ImageCacheManager' object has no attribute 'load_image'
+2024-11-30 08:12:20,095 - INFO: Application closed
+2024-11-30 08:12:24,145 - WARNING: Image fetch error for https://tuoitre.vn/tin-tuc-sang-30-11-doi-lich-tra-luong-huu-thang-12-thi-truong-trai-phieu-doanh-nghiep-suy-yeu-20241129183803974.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:12:29,158 - WARNING: Image fetch error for https://tuoitre.vn/thoi-tiet-hom-nay-30-11-mien-bac-ret-mien-nam-sang-mat-me-20241129185334935.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:12:34,206 - WARNING: Image fetch error for https://tuoitre.vn/tam-giu-bon-ve-si-dep-duong-cho-xe-dam-cuoi-o-thanh-hoa-20241129230935116.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:12:39,889 - WARNING: Image fetch error for https://tuoitre.vn/bat-giam-tai-xe-co-nong-do-con-kich-khung-dung-dao-tan-cong-canh-sat-2024112918415476.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:12:44,973 - WARNING: Image fetch error for https://tuoitre.vn/cung-ty-xo-so-kien-giang-cung-tra-cho-nguoi-trung-so-co-ve-so-bi-rach-roi-20241129185314095.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:12:44,973 - ERROR: Error loading topic 'Chính trị': 'ImageCacheManager' object has no attribute 'load_image'
+2024-11-30 08:15:09,325 - INFO: Application started successfully
+2024-11-30 08:15:15,402 - WARNING: Image fetch error for https://tuoitre.vn/tin-tuc-the-thao-sang-30-11-ronaldo-lai-lap-cu-dup-ban-thang-20241130054833207.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:15:20,413 - WARNING: Image fetch error for https://tuoitre.vn/sanest-khanh-hoa-gap-lai-bien-phong-tai-chung-ket-vo-dich-quoc-gia-20241129222843602.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:15:22,706 - WARNING: Image fetch error for https://tuoitre.vn/tin-tuc-sang-30-11-doi-lich-tra-luong-huu-thang-12-thi-truong-trai-phieu-doanh-nghiep-suy-yeu-20241129183803974.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:15:25,437 - WARNING: Image fetch error for https://tuoitre.vn/200-trieu-dong-cho-chuc-vo-dich-giai-futsal-cup-quoc-gia-2024-20241129201500458.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:15:27,806 - WARNING: Image fetch error for https://tuoitre.vn/thoi-tiet-hom-nay-30-11-mien-bac-ret-mien-nam-sang-mat-me-20241129185334935.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:15:30,649 - WARNING: Image fetch error for https://tuoitre.vn/pham-tien-san-ky-luc-sinh-ra-la-de-pha-vo-2024112908505301.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:15:33,677 - WARNING: Image fetch error for https://tuoitre.vn/dien-mao-ga-ngam-ben-thanh-lon-nhat-metro-so-1-san-sang-khai-thac-thuong-mai-20241129165953115.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:15:35,667 - WARNING: Image fetch error for https://tuoitre.vn/ong-nguyen-phuoc-trung-dac-cu-chu-tich-lien-doan-co-tp-hcm-2024112913553994.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:15:38,696 - WARNING: Image fetch error for https://tuoitre.vn/bat-giam-tai-xe-co-nong-do-con-kich-khung-dung-dao-tan-cong-canh-sat-2024112918415476.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:16:11,288 - INFO: Application closed
+2024-11-30 08:20:34,099 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:34,099 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:34,100 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:34,100 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:34,100 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:34,100 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:34,369 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:34,369 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:34,369 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:34,369 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:34,369 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:34,369 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:34,369 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:34,369 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:34,369 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:34,369 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:34,393 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:35,266 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:35,313 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:35,344 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:35,391 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:35,560 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:35,560 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:35,683 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:35,808 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:35,887 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:35,903 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:35,918 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:35,934 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:35,965 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:36,042 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:36,166 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:36,322 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:36,338 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:36,354 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:36,401 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:36,433 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:37,480 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:37,574 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:37,748 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:38,850 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:38,851 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:38,852 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:38,853 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:38,853 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:38,853 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:38,853 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:40,008 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:40,135 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:40,213 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:40,245 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:40,277 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:40,293 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:40,308 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:41,108 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:41,232 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:41,310 - WARNING: Cache retrieval error: main thread is not in main loop
+2024-11-30 08:20:42,457 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:42,457 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:42,679 - ERROR: Image load error: main thread is not in main loop
+2024-11-30 08:20:44,063 - INFO: Application started successfully
+2024-11-30 08:20:55,171 - WARNING: Timeout occurred while fetching image from https://tuoitre.vn/tu-1-1-san-bay-da-nang-co-loi-di-uu-tien-gia-dich-vu-100-000-dong-khach-20241129214839638.htm
+2024-11-30 08:21:05,503 - WARNING: Timeout occurred while fetching image from https://tuoitre.vn/thoi-tiet-hom-nay-30-11-mien-bac-ret-mien-nam-sang-mat-me-20241129185334935.htm
+2024-11-30 08:21:15,589 - WARNING: Timeout occurred while fetching image from https://tuoitre.vn/dau-gia-dat-ngoai-thanh-ha-noi-tra-toi-30-ti-m-roi-xin-rut-vi-so-qua-cong-an-vao-cuoc-20241129221745194.htm
+2024-11-30 08:21:25,601 - WARNING: Timeout occurred while fetching image from https://tuoitre.vn/chinh-phu-phan-hoi-de-xuat-mo-them-ga-duong-sat-toc-do-cao-bac-nam-giua-thanh-hoa-va-nghe-an-20241129214025007.htm
+2024-11-30 08:21:27,959 - INFO: Application closed
+2024-11-30 08:24:12,788 - ERROR: Error loading topic 'Giải trí': 'NewsPanel' object has no attribute 'cache_images_for_articles'
+2024-11-30 08:24:12,813 - ERROR: Error loading topic 'Kinh tế': 'NewsPanel' object has no attribute 'cache_images_for_articles'
+2024-11-30 08:24:13,042 - INFO: Application started successfully
+2024-11-30 08:24:13,178 - ERROR: Error loading topic 'Công nghệ': 'NewsPanel' object has no attribute 'cache_images_for_articles'
+2024-11-30 08:24:19,594 - WARNING: Image fetch error for https://tuoitre.vn/tin-tuc-sang-30-11-doi-lich-tra-luong-huu-thang-12-thi-truong-trai-phieu-doanh-nghiep-suy-yeu-20241129183803974.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:24:24,621 - WARNING: Image fetch error for https://tuoitre.vn/thoi-tiet-hom-nay-30-11-mien-bac-ret-mien-nam-sang-mat-me-20241129185334935.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:24:29,633 - WARNING: Image fetch error for https://tuoitre.vn/tam-giu-bon-ve-si-dep-duong-cho-xe-dam-cuoi-o-thanh-hoa-20241129230935116.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:24:34,848 - WARNING: Image fetch error for https://tuoitre.vn/chinh-phu-phan-hoi-de-xuat-mo-them-ga-duong-sat-toc-do-cao-bac-nam-giua-thanh-hoa-va-nghe-an-20241129214025007.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:24:39,885 - WARNING: Image fetch error for https://tuoitre.vn/giao-cong-an-dieu-tra-vu-ngo-doc-nghi-do-an-banh-mi-o-vung-tau-20241129200329757.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:24:44,792 - INFO: Application closed
+2024-11-30 08:24:44,918 - WARNING: Image fetch error for https://tuoitre.vn/dien-mao-ga-ngam-ben-thanh-lon-nhat-metro-so-1-san-sang-khai-thac-thuong-mai-20241129165953115.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:24:54,640 - INFO: Application started successfully
+2024-11-30 08:25:01,733 - WARNING: Image fetch error for https://tuoitre.vn/sanest-khanh-hoa-gap-lai-bien-phong-tai-chung-ket-vo-dich-quoc-gia-20241129222843602.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:25:06,753 - WARNING: Image fetch error for https://tuoitre.vn/200-trieu-dong-cho-chuc-vo-dich-giai-futsal-cup-quoc-gia-2024-20241129201500458.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:25:09,020 - WARNING: Image fetch error for https://tuoitre.vn/200-trieu-dong-cho-chuc-vo-dich-giai-futsal-cup-quoc-gia-2024-20241129201500458.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:25:12,000 - WARNING: Image fetch error for https://tuoitre.vn/vi-sao-cho-bac-ha-duoc-chon-lam-linh-vat-giai-taekwondo-canh-sat-chau-a-mo-rong-2024-20241129163157351.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:25:14,238 - WARNING: Image fetch error for https://tuoitre.vn/vi-sao-cho-bac-ha-duoc-chon-lam-linh-vat-giai-taekwondo-canh-sat-chau-a-mo-rong-2024-20241129163157351.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:25:17,032 - WARNING: Image fetch error for https://tuoitre.vn/doi-tuyen-viet-nam-thang-clb-clb-daegu-2-0-20241129153346651.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:25:19,349 - WARNING: Image fetch error for https://tuoitre.vn/doi-tuyen-viet-nam-thang-clb-clb-daegu-2-0-20241129153346651.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:25:22,053 - WARNING: Image fetch error for https://tuoitre.vn/pham-tien-san-ky-luc-sinh-ra-la-de-pha-vo-2024112908505301.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:25:24,587 - WARNING: Image fetch error for https://tuoitre.vn/ong-nguyen-phuoc-trung-dac-cu-chu-tich-lien-doan-co-tp-hcm-2024112913553994.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:25:27,086 - WARNING: Image fetch error for https://tuoitre.vn/ong-nguyen-phuoc-trung-dac-cu-chu-tich-lien-doan-co-tp-hcm-2024112913553994.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:25:29,634 - WARNING: Image fetch error for https://tuoitre.vn/tuyen-thu-thai-lan-co-the-bi-bat-neu-den-singapore-dau-asean-cup-2024-20241129122000367.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:25:32,123 - WARNING: Image fetch error for https://tuoitre.vn/tuyen-thu-thai-lan-co-the-bi-bat-neu-den-singapore-dau-asean-cup-2024-20241129122000367.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-11-30 08:28:05,435 - INFO: Application closed
+2024-11-30 08:29:42,541 - INFO: Application started successfully
+2024-11-30 08:29:43,162 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,162 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,162 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,170 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,184 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,184 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,184 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,185 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,225 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,225 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,318 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,318 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,318 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,319 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,319 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,319 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,319 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,319 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,319 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,320 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,328 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,328 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,328 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,329 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,329 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,329 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,329 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,329 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,329 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,329 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,686 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,687 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,687 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,687 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,687 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,687 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,687 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,687 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,687 - WARNING: Attempted to load image from non-main thread.
+2024-11-30 08:29:43,688 - WARNING: Attempted to load image from non-main thread.

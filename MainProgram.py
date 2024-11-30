@@ -62,7 +62,6 @@ class ApplicationConfig:
         except (json.JSONDecodeError, IOError) as e:
             logging.error(f"Configuration load error: {e}")
             return ApplicationConfig.DEFAULT_CONFIG
-
 class FunctionExecute:
 
     def __init__(self):
@@ -131,7 +130,7 @@ class FunctionExecute:
         logo_label = ctk.CTkLabel(
             self.sidebar,
             text="App gì gì đó",
-            font=("Arial", 22, "bold"),
+            font=("Roboto", 22, "bold"),
             text_color="#2C3E50"
         )
         logo_label.pack(pady=(30, 40))
@@ -153,7 +152,7 @@ class FunctionExecute:
             category_label = ctk.CTkLabel(
                 self.sidebar,
                 text=section["category"],
-                font=("Arial", 15, "bold"),
+                font=("Roboto", 18, "bold"),
                 text_color="#34495E"
             )
             category_label.pack(pady=(15, 10), anchor="w", padx=20)
@@ -169,7 +168,7 @@ class FunctionExecute:
                     border_width=2,
                     border_color=item['color'],
                     text_color=item['color'],
-                    font=("Arial", 15, "bold"),
+                    font=("Roboto", 18, "bold"),
                     anchor="w",
                     width=210
                 )
@@ -215,7 +214,7 @@ class FunctionExecute:
         title_label = ctk.CTkLabel(
             panel,
             text="Cài Đặt Ứng Dụng",
-            font=("Arial", 18, "bold")
+            font=("Roboto", 18, "bold")
         )
         title_label.pack(pady=20)
         return panel

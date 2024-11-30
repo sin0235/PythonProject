@@ -14,7 +14,7 @@ from PIL import Image, ImageTk
 from io import BytesIO
 from collections import OrderedDict
 from typing import Optional
-import time
+from queue import Queue
 
 
 class ImageCacheManager:
@@ -22,10 +22,41 @@ class ImageCacheManager:
         self.cache_dir = cache_dir
         self.max_size = max_size
         os.makedirs(cache_dir, exist_ok=True)
-
         self._memory_cache = OrderedDict()
+        self._work_queue = Queue()
+        self._start_worker()
+
+    def _start_worker(self):
+        def worker():
+            while True:
+                url, callback = self._work_queue.get()
+                if url is None:
+                    break
+                image = self._download_and_process_image(url)
+                callback(image)
+                self._work_queue.task_done()
+
+        self._worker_thread = threading.Thread(target=worker, daemon=True)
+        self._worker_thread.start()
+
+    def load_image_async(self, image_url: str, callback):
+        self._work_queue.put((image_url, callback))
+
+    def _download_and_process_image(self, image_url: str):
+        try:
+            response = requests.get(image_url, timeout=5)
+            img_data = Image.open(BytesIO(response.content))
+            img_data.thumbnail((150, 100), Image.Resampling.LANCZOS)
+            return img_data
+        except Exception as e:
+            logging.error(f"Error downloading image: {e}")
+            return None
 
     def load_image(self, image_url: str) -> Optional[ImageTk.PhotoImage]:
+        if threading.current_thread() != threading.main_thread():
+            logging.warning("Attempted to load image from non-main thread.")
+            return None
+
         cached_image = self.get_cached_image(image_url)
         if cached_image:
             return cached_image
@@ -50,7 +81,9 @@ class ImageCacheManager:
             return None
 
         key = hashlib.md5(url.encode()).hexdigest()
-
+        if threading.current_thread() != threading.main_thread():
+            logging.warning("Attempted to access cached image from non-main thread.")
+            return None
         if key in self._memory_cache:
             self._memory_cache.move_to_end(key)
             return self._memory_cache[key]
@@ -102,7 +135,6 @@ class NewsPanel(ctk.CTkFrame):
         self.app = parent
         self.image_cache = ImageCacheManager()
         self.setup_ui_for_News()
-        time.sleep(2)
         self.default_topic = "Giải trí"
         self.load_topic(self.default_topic)
         threading.Thread(target=self.preload_all_topics, daemon=True).start()

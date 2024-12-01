@@ -28,11 +28,6 @@
     ],
     "11/23/2024": [
         {
-            "time": "7:00AM",
-            "title": "D\u1eady",
-            "content": "\u0102n s\u00e1ng"
-        },
-        {
             "time": "8:00AM",
             "title": "Python",
             "content": "L\u00e0m b\u00e0i t\u1eadp"
@@ -90,6 +85,13 @@
             "time": "7:30",
             "title": "B\u00e1o c\u00e1o Python",
             "content": "B\u00e1o c\u00e1o cu\u1ed1i k\u00ec l\u1eadp tr\u00ecnh python"
+        }
+    ],
+    "12/13/2024": [
+        {
+            "time": "17:30",
+            "title": "D\u1ec1 qu\u00ea",
+            "content": "Gia Lai th\u1eb3ng ti\u1ebfnnnnnnnnnnnnnnn"
         }
     ]
 }

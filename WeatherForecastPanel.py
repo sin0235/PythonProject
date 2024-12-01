@@ -156,6 +156,7 @@ class WeatherPanel(ctk.CTkFrame):
     def show_weather(self, location):
         self._clear_content()
         try:
+
             response = requests.get(
                 f"https://api.openweathermap.org/data/2.5/weather?q={location}&units=metric&APPID={self.api_key}",
                 timeout=5
@@ -214,9 +215,15 @@ class WeatherPanel(ctk.CTkFrame):
                 self._load_compact_icon(detail_icons_frame, icon_path, text)
 
             self.current_location = location
+        except requests.exceptions.ConnectionError:
+            messagebox.showerror("Network Error", "Không thể kết nối tới mạng. Vui lòng kiểm tra lại kết nối Internet.")
+        except requests.exceptions.HTTPError as e:
+            if response.status_code == 404:
+                messagebox.showerror("City Not Found", f"Không tìm thấy thành phố '{location}'. Vui lòng nhập lại.")
+            else:
+                messagebox.showerror("API Error", f"Đã xảy ra lỗi với API: {e}")
         except Exception as e:
-            messagebox.showerror("Weather Error", str(e))
-
+            messagebox.showerror("Error", f"Đã xảy ra lỗi: {e}")
     def _load_compact_icon(self, parent_frame, icon_path, text):
         try:
             image = Image.open(icon_path)

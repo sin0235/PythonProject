@@ -18,6 +18,19 @@ from queue import Queue
 
 
 
+import os
+import hashlib
+import threading
+import logging
+from queue import Queue
+from collections import OrderedDict
+from PIL import Image, ImageTk
+from io import BytesIO
+import requests
+from typing import Optional
+import time
+
+
 class ImageCacheManager:
     def __init__(self, cache_dir='./image_cache', max_size=100):
         self.cache_dir = cache_dir
@@ -26,6 +39,7 @@ class ImageCacheManager:
         self._memory_cache = OrderedDict()
         self._work_queue = Queue()
         self._start_worker()
+        self._start_cleanup_task()
 
     def _start_worker(self):
         def worker():
@@ -39,6 +53,25 @@ class ImageCacheManager:
 
         self._worker_thread = threading.Thread(target=worker, daemon=True)
         self._worker_thread.start()
+
+    def _start_cleanup_task(self):
+        def cleanup():
+            while True:
+                time.sleep(300)
+                self._clean_cache()
+
+        threading.Thread(target=cleanup, daemon=True).start()
+
+    def _clean_cache(self):
+        try:
+            cache_files = [os.path.join(self.cache_dir, f) for f in os.listdir(self.cache_dir)]
+            cache_files.sort(key=os.path.getmtime)
+            while len(cache_files) > self.max_size:
+                oldest = cache_files.pop(0)
+                os.remove(oldest)
+                logging.info(f"Removed old cache file: {oldest}")
+        except Exception as e:
+            logging.error(f"Error during cache cleanup: {e}")
 
     def load_image_async(self, image_url: str, callback):
         self._work_queue.put((image_url, callback))
@@ -104,27 +137,23 @@ class ImageCacheManager:
         return None
 
     def cache_image(self, url: str, image: Image.Image):
-        if not url:
-            return
-
         key = hashlib.md5(url.encode()).hexdigest()
         cache_path = os.path.join(self.cache_dir, f"{key}.webp")
 
-        try:
-            image.thumbnail((300, 200), Image.Resampling.LANCZOS)
-            image.save(cache_path, 'WEBP', quality=80)
-
-            photo_image = ImageTk.PhotoImage(image)
-            self._memory_cache[key] = photo_image
-
+        if key not in self._memory_cache:
+            self._memory_cache[key] = ImageTk.PhotoImage(image)
             self._ensure_cache_size()
-        except Exception as e:
-            logging.error(f"Image caching error: {e}")
+
+        if not os.path.exists(cache_path):
+            try:
+                image.save(cache_path, format='WEBP')
+            except Exception as e:
+                logging.error(f"Error saving image to cache: {e}")
 
     def _ensure_cache_size(self):
         while len(self._memory_cache) > self.max_size:
-            old_key, _ = self._memory_cache.popitem(last=False)
-            logging.info(f"Removed least recently used cache item: {old_key}")
+            self._memory_cache.popitem(last=False)
+
 
 
 

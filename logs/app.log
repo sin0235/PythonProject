@@ -5106,3 +5106,69 @@
 2024-12-02 00:21:08,260 - INFO: Calendar panel initialized successfully
 2024-12-02 00:21:08,264 - INFO: Application started successfully
 2024-12-02 00:21:48,864 - INFO: Application closed
+2024-12-02 00:28:51,973 - INFO: Events saved successfully
+2024-12-02 00:28:52,084 - INFO: Calendar panel initialized successfully
+2024-12-02 00:28:52,086 - INFO: Application started successfully
+2024-12-02 00:30:15,768 - INFO: Application closed
+2024-12-02 00:31:12,007 - INFO: Events saved successfully
+2024-12-02 00:31:12,181 - INFO: Calendar panel initialized successfully
+2024-12-02 00:31:12,185 - INFO: Application started successfully
+2024-12-02 00:32:15,384 - INFO: Application closed
+2024-12-02 00:34:03,305 - INFO: Events saved successfully
+2024-12-02 00:34:03,389 - INFO: Calendar panel initialized successfully
+2024-12-02 00:34:03,391 - INFO: Application started successfully
+2024-12-02 00:35:10,847 - INFO: Application closed
+2024-12-02 00:37:19,525 - INFO: Events saved successfully
+2024-12-02 00:37:19,629 - INFO: Calendar panel initialized successfully
+2024-12-02 00:37:19,633 - INFO: Application started successfully
+2024-12-02 00:39:02,284 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,290 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,294 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,300 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,305 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,310 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,316 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,321 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,325 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,330 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,336 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,363 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,369 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,374 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,380 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,389 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,400 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,409 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,731 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,740 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,746 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,751 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,757 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,763 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,777 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,783 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:02,788 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:03,306 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:03,312 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:03,317 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:03,322 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:03,326 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:03,332 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:03,337 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:03,433 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:03,437 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:03,443 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:03,890 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:03,897 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:03,902 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:03,907 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:03,912 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:03,917 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:03,922 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:03,929 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:03,934 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel13"
+2024-12-02 00:39:59,122 - INFO: Application closed
+2024-12-02 00:41:29,429 - INFO: Events saved successfully
+2024-12-02 00:41:29,717 - INFO: Calendar panel initialized successfully
+2024-12-02 00:41:29,725 - INFO: Application started successfully
+2024-12-02 00:42:47,793 - INFO: Application closed

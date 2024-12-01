@@ -143,7 +143,7 @@ class WeatherPanel(ctk.CTkFrame):
         )
         forecast_button.pack(side="left", padx=10)
 
-    def _handle_loonation_entry(self, event):
+    def _handle_location_entry(self, event):
         if event.keysym == "Return":
             self._show_weather_for_location()
 

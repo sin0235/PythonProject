@@ -3,7 +3,7 @@ from tkinter import messagebox
 import requests
 from PIL import Image
 from datetime import datetime
-
+import darkdetect
 
 class WeatherPanel(ctk.CTkFrame):
     def __init__(self, master, **kwargs):
@@ -94,7 +94,7 @@ class WeatherPanel(ctk.CTkFrame):
         location_label = ctk.CTkLabel(
             input_frame,
             text="Vị trí khác",
-            font=('Roboto', 20, 'bold'),
+            font=('Inter', 20, 'bold'),
             text_color=self.colors['text_primary']
         )
         location_label.pack(pady=10)
@@ -106,7 +106,7 @@ class WeatherPanel(ctk.CTkFrame):
             corner_radius=20,
             fg_color="transparent",
             text_color=self.colors['text_primary'],
-            font=("Roboto", 16),
+            font=("Inter", 16),
             border_width=2,
             border_color=self.colors['accent'],
             activate_scrollbars=False
@@ -120,7 +120,7 @@ class WeatherPanel(ctk.CTkFrame):
         ok_button = ctk.CTkButton(
             button_frame,
             width=120,
-            font=("Roboto", 15, 'bold'),
+            font=("Inter", 15, 'bold'),
             text="Search",
             command=self._show_weather_for_location,
             corner_radius=20,
@@ -135,7 +135,7 @@ class WeatherPanel(ctk.CTkFrame):
             width=120,
             text="Xem thêm",
             command=self._show_extended_forecast,
-            font= ("Roboto", 15, 'bold'),
+            font= ("Inter", 15, 'bold'),
             corner_radius=20,
             fg_color=self.colors['accent'],
             hover_color='#2980B9',
@@ -182,7 +182,7 @@ class WeatherPanel(ctk.CTkFrame):
             location_label = ctk.CTkLabel(
                 details_frame,
                 text=f"{location.title()}",
-                font=('Roboto', 40, 'bold'),
+                font=('Inter', 38, 'bold'),
                 text_color=self.colors['text_primary']
             )
             location_label.pack(pady=20)
@@ -190,7 +190,7 @@ class WeatherPanel(ctk.CTkFrame):
             temp_label = ctk.CTkLabel(
                 details_frame,
                 text=f"{temp}°C",
-                font=('Roboto', 40, 'bold'),
+                font=('Inter', 36, 'bold'),
                 text_color=self.colors['accent']
             )
             temp_label.pack(pady=10)
@@ -220,7 +220,7 @@ class WeatherPanel(ctk.CTkFrame):
     def _load_compact_icon(self, parent_frame, icon_path, text):
         try:
             image = Image.open(icon_path)
-            picture = ctk.CTkImage(dark_image=image, light_image=image, size=(40, 40))
+            picture = ctk.CTkImage(dark_image=image, light_image=image, size=(30, 30))
 
             icon_frame = ctk.CTkFrame(parent_frame, fg_color="transparent")
             icon_frame.pack(side="left", padx=10, expand=True)
@@ -231,7 +231,7 @@ class WeatherPanel(ctk.CTkFrame):
             text_label = ctk.CTkLabel(
                 icon_frame,
                 text=text,
-                font=("Roboto", 16),
+                font=("Inter", 16),
                 text_color="black"
             )
             text_label.pack()
@@ -250,7 +250,7 @@ class WeatherPanel(ctk.CTkFrame):
             'Thunderstorm': "Icon/storm.png"
         }
         icon_path = icon_paths.get(description, "Icon/clear.png")
-        icon_size = (250, 250)
+        icon_size = (200, 200)
         try:
             image = Image.open(icon_path)
             picture = ctk.CTkImage(dark_image=image, light_image=image, size=icon_size)
@@ -273,7 +273,7 @@ class WeatherPanel(ctk.CTkFrame):
             ctk.CTkLabel(
                 self.content_frame,
                 text=f"Dự báo thời tiết 5 ngày tới: {self.current_location}",
-                font=('Roboto', 20, 'bold'),
+                font=('Inter', 20, 'bold'),
                 text_color='black'
             ).pack(pady=10)
 
@@ -302,7 +302,7 @@ class WeatherPanel(ctk.CTkFrame):
                 ctk.CTkLabel(
                     forecast_item,
                     text=datetime.strptime(date, "%Y-%m-%d").strftime("%B %d"),
-                    font=('Roboto', 16, 'bold'),
+                    font=('Inter', 16, 'bold'),
                     text_color='#30cfd0'
                 ).pack(pady=5)
 
@@ -324,13 +324,13 @@ class WeatherPanel(ctk.CTkFrame):
                 ctk.CTkLabel(
                     forecast_item,
                     text=f"{midday_forecast['main']['temp']:.1f}°C",
-                    font=('Roboto', 20)
+                    font=('Inter', 20)
                 ).pack()
 
                 ctk.CTkLabel(
                     forecast_item,
                     text=description,
-                    font=('Roboto', 14)
+                    font=('Inter', 14)
                 ).pack(pady=5)
 
             back_button = ctk.CTkButton(
@@ -356,7 +356,7 @@ class WeatherPanel(ctk.CTkFrame):
             text_label = ctk.CTkLabel(
                 icon_frame,
                 text=text,
-                font=("Roboto", 16),
+                font=("Inter", 16),
                 text_color="black"
             )
             text_label.pack()

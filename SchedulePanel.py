@@ -7,7 +7,6 @@ import calendar
 import logging
 from datetime import datetime
 
-
 class CalendarPanel(ctk.CTkFrame):
     def __init__(self, master, **kwargs):
         super().__init__(master, **kwargs)
@@ -135,7 +134,7 @@ class CalendarPanel(ctk.CTkFrame):
 
         self.label_year = ctk.CTkLabel(self.frame_controls, text="Year:",
                                        text_color=self.COLORS["text_dark"],
-                                       font=("Roboto", 14, "bold"))
+                                       font=("Inter", 14, "bold"))
         self.label_year.pack(side="left", padx=5)
         self.entry_year = ctk.CTkEntry(self.frame_controls,
                                        width=80,
@@ -145,7 +144,7 @@ class CalendarPanel(ctk.CTkFrame):
 
         self.label_month = ctk.CTkLabel(self.frame_controls, text="Month:",
                                         text_color=self.COLORS["text_dark"],
-                                        font=("Roboto", 14, "bold"))
+                                        font=("Inter", 14, "bold"))
         self.label_month.pack(side="left", padx=5)
         self.entry_month = ctk.CTkEntry(self.frame_controls,
                                         width=50,
@@ -157,7 +156,7 @@ class CalendarPanel(ctk.CTkFrame):
             "fg_color": self.COLORS["primary"],
             "hover_color": self.COLORS["hover"],
             "text_color": "white",
-            "font": ("Roboto", 14, "bold"),
+            "font": ("Inter", 14, "bold"),
             "border_width": 0
         }
 
@@ -218,7 +217,7 @@ class CalendarPanel(ctk.CTkFrame):
                 widget.configure(
                     fg_color=self.COLORS["primary"],
                     text_color="white",
-                    font=("Roboto", 12, "bold")
+                    font=("Inter", 12, "bold")
                 )
                 break
 
@@ -232,7 +231,7 @@ class CalendarPanel(ctk.CTkFrame):
                     widget.configure(
                         fg_color=self.COLORS["secondary"],
                         text_color=self.COLORS["text_dark"],
-                        font=("Roboto", 12)
+                        font=("Inter", 12)
                     )
                 except ValueError:
                     pass
@@ -261,7 +260,7 @@ class CalendarPanel(ctk.CTkFrame):
         title_label = ctk.CTkLabel(
             events_frame,
             text=f"Events on {self.selected_date}",
-            font=("Roboto", 18, "bold"),
+            font=("Inter", 18, "bold"),
             text_color=self.COLORS["primary"]
         )
         title_label.pack(pady=(0, 10))
@@ -278,7 +277,7 @@ class CalendarPanel(ctk.CTkFrame):
                 time_label = ctk.CTkLabel(
                     event_frame,
                     text=f"Time: {event['time']}",
-                    font=("Roboto", 14),
+                    font=("Inter", 14),
                     text_color=self.COLORS["text_dark"],
                     anchor="w"
                 )
@@ -287,7 +286,7 @@ class CalendarPanel(ctk.CTkFrame):
                 title_label = ctk.CTkLabel(
                     event_frame,
                     text=f"Title: {event['title']}",
-                    font=("Roboto", 14, "bold"),
+                    font=("Inter", 14, "bold"),
                     text_color=self.COLORS["primary"],
                     anchor="w"
                 )
@@ -296,7 +295,7 @@ class CalendarPanel(ctk.CTkFrame):
                 content_label = ctk.CTkLabel(
                     event_frame,
                     text=f"Content: {event['content']}",
-                    font=("Roboto", 12),
+                    font=("Inter", 12),
                     text_color=self.COLORS["text_dark"],
                     anchor="w",
                     wraplength=350
@@ -343,7 +342,7 @@ class CalendarPanel(ctk.CTkFrame):
         days_of_week = ["Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy", "Chủ nhật"]
         for col, day in enumerate(days_of_week):
             day_label = ctk.CTkLabel(self.calendar_frame, text=day,
-                                     font=("Roboto", 12, "bold"),
+                                     font=("Inter", 12, "bold"),
                                      fg_color=self.COLORS["hover"],
                                      text_color=self.COLORS["text_dark"],
                                      width=60,
@@ -364,7 +363,7 @@ class CalendarPanel(ctk.CTkFrame):
             text_color = self.COLORS["text_dark"] if not is_selected else "white"
 
             day_label = ctk.CTkLabel(self.calendar_frame, text=str(day),
-                                     font=("Roboto", 12),
+                                     font=("Inter", 12),
                                      fg_color=bg_color,
                                      text_color=text_color,
                                      width=60,
@@ -469,7 +468,7 @@ class CalendarPanel(ctk.CTkFrame):
             height=12,
             width=50,
             selectmode="single",
-            font=("Roboto", 14),
+            font=("Inter", 14),
             yscrollcommand=scrollbar.set
         )
         listbox_events.pack(side="left", fill="both", expand=True)
@@ -584,7 +583,7 @@ class CalendarPanel(ctk.CTkFrame):
         title_label = ctk.CTkLabel(
             events_container,
             text="📅 Upcoming Events",
-            font=("Roboto", 18, "bold"),
+            font=("Inter", 18, "bold"),
             text_color=self.COLORS["text_dark"],
             fg_color="transparent"
         )
@@ -601,7 +600,7 @@ class CalendarPanel(ctk.CTkFrame):
             relief="flat",
             padx=10,
             pady=10,
-            font=("Roboto", 14)
+            font=("Inter", 14)
         )
 
         scrollbar = ctk.CTkScrollbar(
@@ -615,11 +614,11 @@ class CalendarPanel(ctk.CTkFrame):
         text_widget.pack(side="left", expand=True, fill="both", padx=10, pady=10)
 
         upcoming_events = self.get_upcoming_events()
-        text_widget.tag_configure("title", foreground=self.COLORS["primary"], font=("Roboto", 16, "bold"))
-        text_widget.tag_configure("date", foreground=self.COLORS["accent"], font=("Roboto", 14, "italic"))
-        text_widget.tag_configure("time", foreground="#D69E2E", font=("Roboto", 14))
-        text_widget.tag_configure("content", foreground=self.COLORS["text_dark"], font=("Roboto", 14))
-        text_widget.tag_configure("separator", foreground="#718096", font=("Roboto", 12))
+        text_widget.tag_configure("title", foreground=self.COLORS["primary"], font=("Inter", 16, "bold"))
+        text_widget.tag_configure("date", foreground=self.COLORS["accent"], font=("Inter", 14, "italic"))
+        text_widget.tag_configure("time", foreground="#D69E2E", font=("Inter", 14))
+        text_widget.tag_configure("content", foreground=self.COLORS["text_dark"], font=("Inter", 14))
+        text_widget.tag_configure("separator", foreground="#718096", font=("Inter", 12))
 
         if not upcoming_events:
             text_widget.insert("end", "No upcoming events", "title")

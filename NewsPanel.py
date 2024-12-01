@@ -175,7 +175,7 @@ class NewsPanel(ctk.CTkFrame):
                 hover_color="#E0E0E0",
                 border_width=2,
                 border_color=self.gradient_colors.get(topic, ("#4A90E2", "#50E3C2"))[0],
-            font= ("Roboto", 16, 'bold'),
+            font= ("Inter", 16, 'bold'),
             )
             button.pack(side="left", padx=5)
 
@@ -193,7 +193,7 @@ class NewsPanel(ctk.CTkFrame):
         loading_label = ctk.CTkLabel(
             self.news_frame,
             text=f"Đang tải tin tức {topic_name}...",
-            font=("Segoe UI", 18, "bold")
+            font=("Inter", 18, "bold")
         )
         loading_label.pack(pady=20)
 
@@ -296,7 +296,7 @@ class NewsPanel(ctk.CTkFrame):
             no_articles_label = ctk.CTkLabel(
                 self.news_frame,
                 text="Không tìm thấy bài viết nào.",
-                font=("Segoe UI", 16, "italic"),
+                font=("Inter", 16, "italic"),
                 text_color="gray"
             )
             no_articles_label.pack(pady=20)
@@ -333,14 +333,14 @@ class NewsPanel(ctk.CTkFrame):
                     placeholder_label = ctk.CTkLabel(
                         card,
                         text="📰",
-                        font=("Segoe UI", 40),
+                        font=("Inter", 40),
                         text_color="gray"
                     )
                     placeholder_label.grid(row=0, column=0, rowspan=2, padx=10, pady=10, sticky="n")
                 title_label = ctk.CTkLabel(
                     card,
                     text=article['title'],
-                    font=("Segoe UI", 16, "bold"),
+                    font=("Inter", 16, "bold"),
                     wraplength=600,
                     justify="left",
                     anchor="w",
@@ -356,7 +356,7 @@ class NewsPanel(ctk.CTkFrame):
                 desc_label = ctk.CTkLabel(
                     card,
                     text=article['description'],
-                    font=("Segoe UI", 14, "normal"),
+                    font=("Inter", 14, "normal"),
                     wraplength=600,
                     justify="left",
                     anchor="w",

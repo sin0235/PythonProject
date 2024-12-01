@@ -106,6 +106,8 @@ class FunctionExecute:
         self.root.minsize(screen_width, screen_height)
         self.root.maxsize(screen_width, screen_height)
         self.root.iconbitmap('bieuTuong.ico')
+        ctk.set_widget_scaling(1.1)
+        ctk.set_window_scaling(1.0)
 
 
     def create_layout(self):
@@ -120,28 +122,30 @@ class FunctionExecute:
 
         self.content_frame = ctk.CTkFrame(
             self.main_container,
-            corner_radius=15,
-            fg_color="#FFFFFF"
+            corner_radius=20,
+            fg_color="#FFFFFF",
+            border_width=1,
+            border_color="#E0E0E0"
         )
         self.content_frame.pack(side="right", fill="both", expand=True, padx=(10, 0))
 
     def create_sidebar(self):
         self.sidebar = ctk.CTkFrame(
             self.main_container,
-            width=250,
-            corner_radius=15,
+            width=270,
+            corner_radius=20,
             fg_color="#F0F2F5"
         )
-        self.sidebar.pack(side="left", fill="y", padx=(0, 10))
+        self.sidebar.pack(side="left", fill="y", padx=(0, 15))
         self.sidebar.pack_propagate(False)
 
         logo_label = ctk.CTkLabel(
             self.sidebar,
             text="Trợ thủ ◡̈\ntin tức - lịch trình",
-            font=("Fz - Lemands", 22, "italic" , "bold"),
+            font=("Inter", 24, "bold", "italic"),
             text_color="#2C3E50"
         )
-        logo_label.pack(pady=(30, 40))
+        logo_label.pack(pady=(40, 30))
 
         nav_items = [
             {"category": "Thông Tin", "items": [
@@ -160,7 +164,7 @@ class FunctionExecute:
             category_label = ctk.CTkLabel(
                 self.sidebar,
                 text=section["category"],
-                font=("Fz - Lemands", 20, "bold"),
+                font=("Inter", 20, "bold"),
                 text_color="#34495E"
             )
             category_label.pack(pady=(15, 10), anchor="w", padx=20)
@@ -171,12 +175,12 @@ class FunctionExecute:
                     text=f"{item['icon']} {item['name']}",
                     command=item['method'],
                     corner_radius=12,
-                    hover_color=item['color'],
+                    hover_color="#E0E0E0",
                     fg_color="transparent",
                     border_width=2,
                     border_color=item['color'],
                     text_color=item['color'],
-                    font=("Fz - Lemands", 16, "bold"),
+                    font=("Inter", 16, "bold"),
                     anchor="w",
                     width=210
                 )
@@ -222,7 +226,7 @@ class FunctionExecute:
         title_label = ctk.CTkLabel(
             panel,
             text="Cài Đặt Ứng Dụng",
-            font=("Fz - Lemands", 18, "bold")
+            font=("Inter", 18, "bold")
         )
         title_label.pack(pady=20)
         return panel
@@ -243,6 +247,23 @@ class FunctionExecute:
     def show_settings_panel(self):
         self.show_panel('settings')
 
+    def create_nav_button(self, parent, text, icon, color, method):
+        return ctk.CTkButton(
+            parent,
+            text=f"{icon} {text}",
+            command=method,
+            corner_radius=15,
+            hover_color=color + "20",  # Màu hover nhạt
+            fg_color="transparent",
+            border_width=1,
+            border_color=color,
+            text_color=color,
+            font=("Inter", 16, "medium"),
+            anchor="w",
+            width=230,
+            transition_duration=0.3,  # Hiệu ứng chuyển đổi mượt
+            hover_animation=True
+        )
     def run(self):
         try:
             logging.info("Application started successfully")

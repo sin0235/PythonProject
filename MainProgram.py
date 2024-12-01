@@ -100,11 +100,6 @@ class FunctionExecute:
         self.root = ctk.CTk()
         self.root.title("Nhịp sống số")
 
-
-        # window_size = self.config.get('window_size', {'width': 1400, 'height': 900})
-        # self.root.geometry(f"{window_size['width']}x{window_size['height']}")
-        # self.root.minsize(1400, 900)
-
         screen_width = self.root.winfo_screenwidth()
         screen_height = self.root.winfo_screenheight()
         self.root.geometry(f"{screen_width}x{screen_height}+0+0")

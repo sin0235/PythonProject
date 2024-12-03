@@ -46,7 +46,7 @@ class ImageCacheManager:
     def _start_cleanup_task(self):
         def cleanup():
             while True:
-                time.sleep(300)
+                time.sleep(500)
                 self._clean_cache()
 
         threading.Thread(target=cleanup, daemon=True).start()
@@ -77,7 +77,6 @@ class ImageCacheManager:
 
     def load_image(self, image_url: str) -> Optional[ImageTk.PhotoImage]:
         if threading.current_thread() != threading.main_thread():
-            logging.warning("Attempted to load image from non-main thread.")
             return None
 
         cached_image = self.get_cached_image(image_url)
@@ -92,7 +91,7 @@ class ImageCacheManager:
             img_data = Image.open(BytesIO(response.content))
             img_data = img_data.resize((150, 100), Image.Resampling.LANCZOS)
 
-            photo_image = ImageTk.PhotoImage(img_data)
+            photo_image = ctk.CTkImage(light_image=img_data, dark_image=img_data, size=(150, 100))
             self.cache_image(image_url, img_data)
             return photo_image
         except Exception as e:
@@ -115,7 +114,7 @@ class ImageCacheManager:
         if os.path.exists(cache_path):
             try:
                 image = Image.open(cache_path)
-                photo_image = ImageTk.PhotoImage(image)
+                photo_image = ctk.CTkImage(light_image=image, dark_image=image, size = (150, 100))
 
                 self._memory_cache[key] = photo_image
                 self._ensure_cache_size()
@@ -130,7 +129,7 @@ class ImageCacheManager:
         cache_path = os.path.join(self.cache_dir, f"{key}.webp")
 
         if key not in self._memory_cache:
-            self._memory_cache[key] = ImageTk.PhotoImage(image)
+            self._memory_cache[key] = ctk.CTkImage(light_image=image, dark_image=image, size = (150, 100))
             self._ensure_cache_size()
 
         if not os.path.exists(cache_path):
@@ -207,105 +206,36 @@ class NewsPanel(ctk.CTkFrame):
     def load_topic(self, topic_name):
         for widget in self.news_frame.winfo_children():
             widget.destroy()
-        self.loading_label = ctk.CTkLabel(
+
+        loading_label = ctk.CTkLabel(
             self.news_frame,
             text=f"Đang tải tin tức {topic_name}...",
-            font=("Inter", 14, "italic"),
-            text_color="gray"
+            font=("Inter", 18, "bold")
         )
-        self.loading_label.pack(pady=10, anchor="center")
-
-        article_queue = queue.Queue()
+        loading_label.pack(pady=20)
 
         def fetch_articles():
-            try:
-                sources = self.topics.get(topic_name, [])
-                with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
-                    futures = [executor.submit(self.fetch_rss, source['url']) for source in sources]
-                    for future in concurrent.futures.as_completed(futures):
-                        articles = future.result()
-                        for article in articles:
-                            article_queue.put(article)
+            all_articles = []
+            sources = self.topics.get(topic_name, [])
+            with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+                article_futures = [executor.submit(self.fetch_rss, source['url']) for source in sources]
+                for future in concurrent.futures.as_completed(article_futures):
+                    all_articles.extend(future.result())
 
-                article_queue.put(None)
-            except Exception as e:
-                logging.error(f"Error fetching articles: {e}")
-                article_queue.put(None)
+                image_futures = {
+                    executor.submit(self.image_cache.load_image, article.get('image_url')): article
+                    for article in all_articles if article.get('image_url')
+                }
+                for future in concurrent.futures.as_completed(image_futures):
+                    article = image_futures[future]
+                    try:
+                        article['image'] = future.result()
+                    except Exception:
+                        article['image'] = None
 
-        def process_articles():
-            while True:
-                try:
-                    article = article_queue.get(timeout=0.1)
-                    if article is None:
-                        self.app.after(0, self.loading_label.destroy)
-                        break
-                    self.app.after(0, lambda: self.add_article_to_ui(article))
-                except queue.Empty:
-                    continue
+            self.app.after(0, lambda: self.display_articles(all_articles))
 
         threading.Thread(target=fetch_articles, daemon=True).start()
-        threading.Thread(target=process_articles, daemon=True).start()
-
-    def add_article_to_ui(self, article):
-        if article is None:
-            return
-
-        card = ctk.CTkFrame(
-            self.news_frame,
-            corner_radius=15,
-            fg_color="white",
-            border_width=1,
-            border_color="#E0E0E0"
-        )
-        card.pack(fill="x", pady=8, padx=5)
-        card.columnconfigure(1, weight=1)
-
-        try:
-            image_photo = article.get('image') or self.image_cache.load_image(article['image_url'])
-            if image_photo:
-                img_label = ctk.CTkLabel(
-                    card,
-                    image=image_photo,
-                    text=""
-                )
-                img_label.image = image_photo
-                img_label.grid(row=0, column=0, rowspan=2, padx=10, pady=10, sticky="n")
-            else:
-                placeholder_label = ctk.CTkLabel(
-                    card,
-                    text="📰",
-                    font=("Inter", 40),
-                    text_color="gray"
-                )
-                placeholder_label.grid(row=0, column=0, rowspan=2, padx=10, pady=10, sticky="n")
-            title_label = ctk.CTkLabel(
-                card,
-                text=article['title'],
-                font=("Inter", 16, "bold"),
-                wraplength=600,
-                justify="left",
-                anchor="w",
-                text_color="#333333",
-                cursor="hand2"
-            )
-            title_label.grid(row=0, column=1, sticky="w", padx=10, pady=(10, 5))
-            title_label.bind("<Button-1>", lambda e, link=article['link']: webbrowser.open(link))
-            title_label.bind("<Enter>", lambda e, label=title_label: label.configure(text_color="#2196F3"))
-            title_label.bind("<Leave>", lambda e, label=title_label: label.configure(text_color="#333333"))
-            desc_label = ctk.CTkLabel(
-                card,
-                text=article['description'],
-                font=("Inter", 14, "normal"),
-                wraplength=600,
-                justify="left",
-                anchor="w",
-                text_color="gray"
-            )
-            desc_label.grid(row=1, column=1, sticky="w", padx=10, pady=(0, 10))
-            self.loading_label.lift()
-
-        except Exception as e:
-            logging.error(f"Error displaying article: {e}")
 
     def fetch_rss(self, url):
         try:
@@ -332,6 +262,7 @@ class NewsPanel(ctk.CTkFrame):
 
     def get_featured_image(self, article_url):
         try:
+
             response = requests.get(article_url, timeout=5, headers={'User-Agent': 'Mozilla/5.0'})
             response.raise_for_status()
 
@@ -346,19 +277,37 @@ class NewsPanel(ctk.CTkFrame):
             ]
 
             for selector in image_selectors:
-                result = selector()
-                if result:
-                    img_url = result.get('content') or result.get('href') or result.get('src')
-                    return self.normalize_url(img_url, article_url)
+                try:
+                    result = selector()
+                    if result:
+                        img_url = result.get('content') or result.get('href') or result.get('src')
+                        img_url = self.normalize_url(img_url, article_url)
+                        if img_url and re.match(r'^https?://', img_url):
+                            return img_url
+                except Exception as e:
+                    logging.warning(f"Error processing selector: {e}")
 
+            logging.info(f"No featured image found for {article_url}")
+            return None
+
+        except requests.RequestException as e:
+            logging.warning(f"HTTP request failed for {article_url}: {e}")
             return None
 
         except Exception as e:
-            logging.warning(f"Image fetch error for {article_url}: {e}")
+            logging.error(f"Unexpected error fetching image for {article_url}: {e}")
             return None
 
     def truncate_description(self, description, max_length=250):
-        description = BeautifulSoup(description, 'html.parser').get_text()
+        if not isinstance(description, str):
+            return "Không có mô tả chi tiết"
+
+        try:
+            description = BeautifulSoup(description, 'html.parser').get_text()
+        except Exception as e:
+            logging.warning(f"Error parsing description with BeautifulSoup: {e}")
+            return "Không có mô tả chi tiết"
+
         description = description.strip()
 
         if not description:

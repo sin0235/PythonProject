@@ -212,8 +212,10 @@ class CalendarPanel(ctk.CTkFrame):
 
         self.selected_date = date_str
 
+        day_to_select = str(int(date_str.split("/")[1]))
+
         for widget in self.calendar_frame.winfo_children():
-            if isinstance(widget, ctk.CTkLabel) and widget.cget("text") == date_str.split("/")[1]:
+            if isinstance(widget, ctk.CTkLabel) and widget.cget("text") == day_to_select:
                 widget.configure(
                     fg_color=self.COLORS["primary"],
                     text_color="white",

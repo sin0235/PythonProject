@@ -14,33 +14,29 @@ class ApplicationConfig:
         "news_sources": {
             "Giải trí": [
                 {"name": "VnExpress", "url": "https://vnexpress.net/rss/giai-tri.rss"},
-                {"name": "Dân Trí", "url": "https://dantri.com.vn/giai-tri.rss"},
-                {"name": "Zing News", "url": "https://zingnews.vn/rss/giai-tri.rss"},
-                {"name": "Thanh Niên", "url": "https://thanhnien.vn/rss/giai-tri.rss"}
+                {"name": "24H", "url": "https://www.24h.com.vn/upload/rss/tintuctrongngay.rss"},
+                {"name": "Soha", "url": "https://soha.vn/rss/giai-tri.rss"}
+
             ],
             "Thể thao": [
                 {"name": "VnExpress", "url": "https://vnexpress.net/rss/the-thao.rss"},
-                {"name": "Tuổi Trẻ", "url": "https://tuoitre.vn/rss/the-thao.rss"},
-                {"name": "Zing News", "url": "https://zingnews.vn/rss/the-thao.rss"},
-                {"name": "Thanh Niên", "url": "https://thanhnien.vn/rss/the-thao.rss"}
+                {"name": "Soha", "url": "https://soha.vn/rss/the-thao.rss"},
+                {"name": "Người lao động", "url": "https://nld.com.vn/rss/the-thao.rss"}
             ],
             "Công nghệ": [
-                {"name": "VnExpress", "url": "https://vnexpress.net/rss/so-hoa.rss"},
-                {"name": "ICTNews", "url": "https://ictnews.vietnamnet.vn/rss/cong-nghe.rss"},
-                {"name": "Thanh Niên", "url": "https://thanhnien.vn/rss/cong-nghe.rss"},
-                {"name": "Zing News", "url": "https://zingnews.vn/rss/cong-nghe.rss"}
+                {"name": "24H", "url": "https://cdn.24h.com.vn/upload/rss/congnghethongtin.rss"},
+                {"name": "Soha", "url": " https://soha.vn/rss/cong-nghe.rss"},
+                {"name": "Người lao động", "url": " https://nld.com.vn/rss/ai-365.rss"}
             ],
             "Kinh tế": [
                 {"name": "VnExpress", "url": "https://vnexpress.net/rss/kinh-doanh.rss"},
-                {"name": "Dân Trí", "url": "https://dantri.com.vn/kinh-doanh.rss"},
-                {"name": "Thanh Niên", "url": "https://thanhnien.vn/rss/kinh-doanh.rss"},
-                {"name": "Zing News", "url": "https://zingnews.vn/rss/kinh-doanh.rss"}
+                {"name": "Soha", "url": "https://soha.vn/rss/kinh-doanh.rss"},
+                {"name": "Dân trí", "url": "https://dantri.com.vn/rss/kinh-doanh.rss"}
             ],
-            "Chính trị": [
+            "Thời sự": [
                 {"name": "VnExpress", "url": "https://vnexpress.net/rss/thoi-su.rss"},
                 {"name": "Tuổi Trẻ", "url": "https://tuoitre.vn/rss/thoi-su.rss"},
-                {"name": "Thanh Niên", "url": "https://thanhnien.vn/rss/thoi-su.rss"},
-                {"name": "Zing News", "url": "https://zingnews.vn/rss/thoi-su.rss"}
+                {"Nguời lao động": "Soha", "url": "https://nld.com.vn/rss/thoi-su.rss"}
             ]
         },
         "api_keys": {

@@ -1206,3 +1206,72 @@
 2024-12-03 20:43:26,795 - INFO: Calendar panel initialized successfully
 2024-12-03 20:43:26,798 - INFO: Application started successfully
 2024-12-03 20:43:34,919 - INFO: Application closed
+2024-12-04 07:12:28,810 - INFO: Events saved successfully
+2024-12-04 07:12:28,947 - INFO: Calendar panel initialized successfully
+2024-12-04 07:12:28,951 - INFO: Application started successfully
+2024-12-04 07:12:31,894 - WARNING: HTTP request failed for https://www.24h.com.vn/tin-tuc-trong-ngay/luoi-chan-bo-chau-be-11-tuoi-bia-chuyen-bi-bat-coc-gay-hoang-mang-du-luan-c46a1104142.html: 503 Server Error: Service Temporarily Unavailable for url: https://www.24h.com.vn/tin-tuc-trong-ngay/luoi-chan-bo-chau-be-11-tuoi-bia-chuyen-bi-bat-coc-gay-hoang-mang-du-luan-c46a1104142.html
+2024-12-04 07:13:08,789 - WARNING: HTTP request failed for https://www.24h.com.vn/cong-nghe-thong-tin/top-5-o-ssd-di-dong-co-toc-do-nhanh-va-dang-mua-nhat-hien-nay-c55a1623259.html: 503 Server Error: Service Temporarily Unavailable for url: https://www.24h.com.vn/cong-nghe-thong-tin/top-5-o-ssd-di-dong-co-toc-do-nhanh-va-dang-mua-nhat-hien-nay-c55a1623259.html
+2024-12-04 07:13:12,142 - WARNING: HTTP request failed for https://soha.vn/bang-xep-hang-cup-c1-chau-a-moi-nhat-ronaldo-di-tiep-clb-dong-nam-a-gap-kho-198241204070245484.htm: HTTPSConnectionPool(host='soha.vn', port=443): Read timed out. (read timeout=5)
+2024-12-04 07:13:15,024 - WARNING: HTTP request failed for https://tuoitre.vn/tin-tuc-sang-4-12-kon-plong-lai-lien-tiep-dong-dat-sot-xuat-huyet-dien-bien-kho-luong-20241203204240726.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-12-04 07:13:17,165 - WARNING: HTTP request failed for https://soha.vn/hlv-mourinho-mot-so-bao-dai-o-tho-nhi-ky-dang-co-dim-chet-toi-198241203204712857.htm: HTTPSConnectionPool(host='soha.vn', port=443): Read timed out. (read timeout=5)
+2024-12-04 07:13:20,116 - WARNING: HTTP request failed for https://tuoitre.vn/xay-san-bay-o-mang-den-chuyen-gia-khuyen-cao-tinh-van-noi-can-thiet-20241203234457882.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-12-04 07:13:22,350 - WARNING: HTTP request failed for https://soha.vn/theerathon-bunmathan-nhan-the-do-vi-hanh-vi-kho-do-o-cup-c1-chau-a-198241203204546336.htm: HTTPSConnectionPool(host='soha.vn', port=443): Read timed out. (read timeout=5)
+2024-12-04 07:13:25,413 - WARNING: HTTP request failed for https://tuoitre.vn/thoi-tiet-hom-nay-4-12-nam-bo-co-noi-mua-to-troi-mu-bac-bo-mua-lanh-20241203171948523.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-12-04 07:13:27,397 - WARNING: HTTP request failed for https://soha.vn/goi-them-tien-dao-hlv-kim-sang-sik-se-gach-ten-2-cau-thu-lo-hagl-khoi-tuyen-viet-nam-198241203213941488.htm: HTTPSConnectionPool(host='soha.vn', port=443): Read timed out. (read timeout=5)
+2024-12-04 07:13:30,887 - WARNING: HTTP request failed for https://tuoitre.vn/chieu-tro-tra-gia-30-ti-dong-m2-dat-ngoai-thanh-ha-noi-duoc-thuc-hien-ra-sao-20241203194609698.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-12-04 07:13:32,456 - WARNING: HTTP request failed for https://soha.vn/clb-da-nang-thay-chu-tich-198241203203542608.htm: HTTPSConnectionPool(host='soha.vn', port=443): Read timed out. (read timeout=5)
+2024-12-04 07:13:36,396 - WARNING: HTTP request failed for https://tuoitre.vn/tong-bi-thu-to-lam-bao-tang-lich-su-quan-su-la-dia-chi-do-de-hoc-tap-qua-trinh-giu-nuoc-20241203170410259.htm: HTTPSConnectionPool(host='tuoitre.vn', port=443): Read timed out. (read timeout=5)
+2024-12-04 07:13:37,468 - WARNING: HTTP request failed for https://soha.vn/chi-dep-chau-tuyet-van-gianh-2-huy-chuong-vang-the-gioi-198241203200129737.htm: HTTPSConnectionPool(host='soha.vn', port=443): Read timed out. (read timeout=5)
+2024-12-04 07:13:42,539 - WARNING: HTTP request failed for https://soha.vn/ong-kim-sang-sik-chinh-thuc-goi-nguyen-xuan-son-nhung-bo-qua-tuan-anh-vi-sao-198241203190544063.htm: HTTPSConnectionPool(host='soha.vn', port=443): Read timed out. (read timeout=5)
+2024-12-04 07:15:08,701 - WARNING: HTTP request failed for https://soha.vn/my-nam-cu-choi-voi-ai-la-nguoi-do-xau-ho-e-che-nhan-sac-cuc-pham-nhung-ngao-man-khong-ai-bang-19824120400045464.htm: HTTPSConnectionPool(host='soha.vn', port=443): Read timed out. (read timeout=5)
+2024-12-04 07:15:09,575 - WARNING: HTTP request failed for https://soha.vn/clb-da-nang-thay-chu-tich-198241203203542608.htm: HTTPSConnectionPool(host='soha.vn', port=443): Read timed out. (read timeout=5)
+2024-12-04 07:15:14,492 - WARNING: HTTP request failed for https://soha.vn/hari-won-gap-tai-nan-khi-di-thang-cuon-tran-thanh-lai-con-lam-mot-hanh-dong-khien-vo-nong-mau-198241203182059658.htm: HTTPSConnectionPool(host='soha.vn', port=443): Read timed out. (read timeout=5)
+2024-12-04 07:15:14,584 - WARNING: HTTP request failed for https://soha.vn/chi-dep-chau-tuyet-van-gianh-2-huy-chuong-vang-the-gioi-198241203200129737.htm: HTTPSConnectionPool(host='soha.vn', port=443): Read timed out. (read timeout=5)
+2024-12-04 07:15:19,682 - WARNING: HTTP request failed for https://soha.vn/ho-ngoc-ha-toi-va-anh-cuong-kho-noi-chuyen-voi-subeo-198241203165526079.htm: HTTPSConnectionPool(host='soha.vn', port=443): Read timed out. (read timeout=5)
+2024-12-04 07:15:19,915 - WARNING: HTTP request failed for https://soha.vn/doi-tuyen-viet-nam-tro-ve-nuoc-sau-khi-ket-thuc-dot-tap-huan-tai-han-quoc-198241203185847299.htm: HTTPSConnectionPool(host='soha.vn', port=443): Read timed out. (read timeout=5)
+2024-12-04 07:15:25,333 - WARNING: HTTP request failed for https://soha.vn/hoa-hau-chau-a-tai-my-2025-toi-mong-muon-tiep-noi-su-menh-cua-chi-jennifer-pham-198241203193712809.htm: HTTPSConnectionPool(host='soha.vn', port=443): Read timed out. (read timeout=5)
+2024-12-04 07:15:59,794 - INFO: Events saved successfully
+2024-12-04 07:15:59,894 - INFO: Calendar panel initialized successfully
+2024-12-04 07:15:59,896 - INFO: Application started successfully
+2024-12-04 07:16:01,125 - INFO: Application closed
+2024-12-04 07:17:09,402 - INFO: Events saved successfully
+2024-12-04 07:17:09,558 - INFO: Calendar panel initialized successfully
+2024-12-04 07:17:09,561 - INFO: Application started successfully
+2024-12-04 07:21:49,189 - INFO: Application closed
+2024-12-04 07:23:08,265 - INFO: Events saved successfully
+2024-12-04 07:23:08,349 - INFO: Calendar panel initialized successfully
+2024-12-04 07:23:08,351 - INFO: Application started successfully
+2024-12-04 07:23:48,128 - INFO: Application closed
+2024-12-04 07:52:19,852 - INFO: Events saved successfully
+2024-12-04 07:52:19,929 - INFO: Calendar panel initialized successfully
+2024-12-04 07:52:19,930 - INFO: Application started successfully
+2024-12-04 08:15:20,012 - INFO: Application closed
+2024-12-04 08:51:16,713 - INFO: Events saved successfully
+2024-12-04 08:51:16,798 - INFO: Calendar panel initialized successfully
+2024-12-04 08:51:16,800 - INFO: Application started successfully
+2024-12-04 08:51:45,142 - INFO: Application closed
+2024-12-04 08:52:19,093 - INFO: Events saved successfully
+2024-12-04 08:52:19,174 - INFO: Calendar panel initialized successfully
+2024-12-04 08:52:19,176 - INFO: Application started successfully
+2024-12-04 08:53:05,138 - INFO: Events saved successfully
+2024-12-04 08:53:05,220 - INFO: Calendar panel initialized successfully
+2024-12-04 08:53:05,222 - INFO: Application started successfully
+2024-12-04 08:54:39,793 - INFO: Events saved successfully
+2024-12-04 08:54:39,897 - INFO: Calendar panel initialized successfully
+2024-12-04 08:54:39,899 - INFO: Application started successfully
+2024-12-04 08:56:13,453 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel3"
+2024-12-04 08:56:14,030 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel3"
+2024-12-04 08:56:14,700 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel3"
+2024-12-04 08:56:14,705 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel3"
+2024-12-04 08:56:15,085 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel3"
+2024-12-04 08:56:15,470 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel3"
+2024-12-04 08:56:15,796 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel3"
+2024-12-04 08:56:16,155 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel3"
+2024-12-04 08:56:16,164 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel3"
+2024-12-04 08:56:16,820 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel3"
+2024-12-04 08:56:16,825 - ERROR: Error displaying article: bad window path name ".!ctkframe.!ctkframe2.!newspanel.!ctkframe2.!canvas.!ctkscrollableframe.!ctklabel3"
+2024-12-04 08:56:19,885 - INFO: Application closed
+2025-03-16 09:43:42,001 - INFO: Events saved successfully
+2025-03-16 09:43:42,072 - INFO: Calendar panel initialized successfully
+2025-03-16 09:43:42,074 - INFO: Application started successfully
+2025-03-16 09:43:44,018 - INFO: Application closed

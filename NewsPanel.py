@@ -1,8 +1,8 @@
 import queue
 import re
 import webbrowser
-from urllib.parse import urljoin
 import feedparser
+from urllib.parse import urljoin
 import customtkinter as ctk
 import concurrent.futures
 from bs4 import BeautifulSoup
@@ -204,38 +204,121 @@ class NewsPanel(ctk.CTkFrame):
         self.news_frame.pack(fill="both", expand=True, padx=15, pady=(10, 15))
 
     def load_topic(self, topic_name):
+        # Xóa nội dung cũ trong `news_frame`
         for widget in self.news_frame.winfo_children():
             widget.destroy()
 
-        loading_label = ctk.CTkLabel(
+        # Thêm nhãn "Đang tải tin tức..." ở cuối
+        self.loading_label = ctk.CTkLabel(
             self.news_frame,
             text=f"Đang tải tin tức {topic_name}...",
-            font=("Inter", 18, "bold")
+            font=("Inter", 14, "italic"),
+            text_color="gray"
         )
-        loading_label.pack(pady=20)
+        self.loading_label.pack(pady=10, anchor="center")
+
+        article_queue = queue.Queue()
 
         def fetch_articles():
-            all_articles = []
-            sources = self.topics.get(topic_name, [])
-            with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
-                article_futures = [executor.submit(self.fetch_rss, source['url']) for source in sources]
-                for future in concurrent.futures.as_completed(article_futures):
-                    all_articles.extend(future.result())
+            try:
+                sources = self.topics.get(topic_name, [])
+                with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+                    futures = [executor.submit(self.fetch_rss, source['url']) for source in sources]
+                    for future in concurrent.futures.as_completed(futures):
+                        articles = future.result()
+                        for article in articles:
+                            article_queue.put(article)
 
-                image_futures = {
-                    executor.submit(self.image_cache.load_image, article.get('image_url')): article
-                    for article in all_articles if article.get('image_url')
-                }
-                for future in concurrent.futures.as_completed(image_futures):
-                    article = image_futures[future]
-                    try:
-                        article['image'] = future.result()
-                    except Exception:
-                        article['image'] = None
+                article_queue.put(None)  # Đánh dấu hoàn thành
+            except Exception as e:
+                logging.error(f"Error fetching articles: {e}")
+                article_queue.put(None)
 
-            self.app.after(0, lambda: self.display_articles(all_articles))
+        def process_articles():
+            while True:
+                try:
+                    article = article_queue.get(timeout=0.1)
+                    if article is None:
+                        # Khi hoàn tất, xóa nhãn "Đang tải tin tức..."
+                        self.app.after(0, self.loading_label.destroy)
+                        break
+                    # Cập nhật giao diện trên luồng chính
+                    self.app.after(0, lambda: self.add_article_to_ui(article))
+                except queue.Empty:
+                    continue
 
+        # Khởi chạy luồng tải bài viết
         threading.Thread(target=fetch_articles, daemon=True).start()
+        # Khởi chạy luồng xử lý bài viết
+        threading.Thread(target=process_articles, daemon=True).start()
+
+    def add_article_to_ui(self, article):
+        if article is None:
+            return
+
+        card = ctk.CTkFrame(
+            self.news_frame,
+            corner_radius=15,
+            fg_color="white",
+            border_width=1,
+            border_color="#E0E0E0"
+        )
+        card.pack(fill="x", pady=8, padx=5)
+        card.columnconfigure(1, weight=1)
+
+        try:
+            # Tải hình ảnh nếu có
+            image_photo = article.get('image') or self.image_cache.load_image(article['image_url'])
+            if image_photo:
+                img_label = ctk.CTkLabel(
+                    card,
+                    image=image_photo,
+                    text=""
+                )
+                img_label.image = image_photo
+                img_label.grid(row=0, column=0, rowspan=2, padx=10, pady=10, sticky="n")
+            else:
+                placeholder_label = ctk.CTkLabel(
+                    card,
+                    text="📰",
+                    font=("Inter", 40),
+                    text_color="gray"
+                )
+                placeholder_label.grid(row=0, column=0, rowspan=2, padx=10, pady=10, sticky="n")
+
+            # Tiêu đề bài viết
+            title_label = ctk.CTkLabel(
+                card,
+                text=article['title'],
+                font=("Inter", 16, "bold"),
+                wraplength=600,
+                justify="left",
+                anchor="w",
+                text_color="#333333",
+                cursor="hand2"
+            )
+            title_label.grid(row=0, column=1, sticky="w", padx=10, pady=(10, 5))
+            title_label.bind("<Button-1>", lambda e, link=article['link']: webbrowser.open(link))
+            title_label.bind("<Enter>", lambda e, label=title_label: label.configure(text_color="#2196F3"))
+            title_label.bind("<Leave>", lambda e, label=title_label: label.configure(text_color="#333333"))
+
+            # Mô tả bài viết
+            desc_label = ctk.CTkLabel(
+                card,
+                text=article['description'],
+                font=("Inter", 14, "normal"),
+                wraplength=600,
+                justify="left",
+                anchor="w",
+                text_color="gray"
+            )
+            desc_label.grid(row=1, column=1, sticky="w", padx=10, pady=(0, 10))
+
+            # Đảm bảo "Đang tải tin tức..." luôn ở cuối
+            self.loading_label.lift()
+
+        except Exception as e:
+            logging.error(f"Error displaying article: {e}")
 
     def fetch_rss(self, url):
         try:
